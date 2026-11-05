@@ -1,0 +1,65 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 31-jul-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Nov  4 23:28:15 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source inspect_wave.tcl -notrace
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/AESL_inst_max_pool_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity
+open_wave_config pool_proj/solution1/sim/verilog/max_pool.wcfg
+DATABASE simulation_1
+WAVE_COMMANDS save_wave_config find_next_wave_value add_wave_group suspend_wave_config_updates add_wave_virtual_bus open_wave_database add_wave get_wave_configs add_wave_marker select_wave_objects open_wave_config create_wave_config set_wave_prop move_wave current_wave_config remove_wave get_waves log_wave resume_wave_config_updates add_wave_divider close_wave_config report_wave_props
+RDI_WAVE_COMMANDS 
+RDI_DATA_COMMANDS ::rdi::get_app_data ::rdi::get_app_data_release ::rdi::get_data_dir
+COMMAND report_property [get_waves -r *TVALID*] RC 1 RESULT ERROR: [Common 17-56] 'report_property' expects exactly one object got '3'.
+
+Property  Type    Read-only  Value
+CLASS     string  true       xsim_hdl_object
+NAME      string  true       /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID
+RADIX     string  false      default
+TYPE      enum    true       in_port
+VALUE     string  false      
+COMMAND report_property [get_objects /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID] RC 0 RESULT 
+COMMAND help find_next_wave_value RC 0 RESULT find_next_wave_value
+
+Description: 
+Find next waveform value
+
+Syntax: 
+find_next_wave_value  [-wave <arg>] [-radix <arg>] [-match <arg>] [-time <arg>]
+                      [-quiet] [-verbose] [<pattern>]
+
+Usage: 
+  Name         Description
+  ------------------------
+  [-wave]      the wave object to search for value
+  [-radix]     radix specifies the radix to use for the value pattern. Allowed
+               values are: dec, bin, oct,hex, unsigned
+  [-match]     match specifies the match location to use for the value 
+               pattern. Allowed values are: exact, beginning, end
+  [-time]      starting time. The defaul time unit is ns.
+  [-quiet]     Ignore command errors
+  [-verbose]   Suspend message limits during command execution
+  [<pattern>]  value pattern to be search
+
+Categories: 
+Waveform
+
+DEBUG: Welcome to find_next_wave_value::execute ...
+DEBUG: wvobjectName = /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID
+DEBUG: wvobject = (NULL)
+DEBUG: time = 0
+DEBUG: pattern = 1
+DEBUG: Next value is not found.
+COMMAND find_next_wave_value -wave [get_waves -r *s_in_TVALID*] -time 0ns 1 RC 0 RESULT 
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 23:28:20 2026...

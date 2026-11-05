@@ -1,0 +1,3 @@
+{"kind":"START","tx":0,"index":0,"remaining":21,"output":0}
+{"kind":"HREAD","tx":4294967295,"index":1,"remaining":20,"output":0}
+{"kind":"ERROR","tx":4294967295,"index":1,"remaining":20,"output":0}

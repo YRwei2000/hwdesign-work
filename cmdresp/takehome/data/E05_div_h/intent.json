@@ -1,0 +1,16 @@
+{
+  "purpose": "Isolated parameter violation div_h",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1119,
+      "h": 3,
+      "w": 4,
+      "k": 2,
+      "opcode": 1,
+      "error": 7,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}

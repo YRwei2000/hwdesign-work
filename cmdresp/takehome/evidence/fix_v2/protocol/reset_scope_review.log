@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/analyze_protocol.py", line 127, in <module>
+    if __name__=="__main__":analyze()
+                            ^^^^^^^^^
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/analyze_protocol.py", line 123, in analyze
+    assert all(r["pass_"] for r in report.values()),{n:r["problems"] for n,r in report.items() if not r["pass_"]}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'R_BP_payload_error': ['stream-path reset not observed']}

@@ -1,0 +1,24 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 31-jul-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Nov  4 23:26:59 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source inspect_wave.tcl -notrace
+WAVE_COMMANDS 
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/AESL_inst_max_pool_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity
+open_wave_config pool_proj/solution1/sim/verilog/max_pool.wcfg
+DATABASE simulation_1
+DATA_HELP
+WAVES 
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 23:27:04 2026...

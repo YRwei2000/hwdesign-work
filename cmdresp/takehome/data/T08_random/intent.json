@@ -1,0 +1,114 @@
+{
+  "purpose": "Deterministic independent random legal shapes",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 801,
+      "h": 3,
+      "w": 6,
+      "k": 3,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 18,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 2
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 802,
+      "h": 16,
+      "w": 24,
+      "k": 8,
+      "input_start": 24,
+      "header_end": 30,
+      "received": 384,
+      "output_start": 5,
+      "error": 0,
+      "result_count": 6
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 803,
+      "h": 12,
+      "w": 18,
+      "k": 6,
+      "input_start": 414,
+      "header_end": 420,
+      "received": 216,
+      "output_start": 14,
+      "error": 0,
+      "result_count": 6
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 804,
+      "h": 7,
+      "w": 7,
+      "k": 7,
+      "input_start": 636,
+      "header_end": 642,
+      "received": 49,
+      "output_start": 23,
+      "error": 0,
+      "result_count": 1
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 805,
+      "h": 10,
+      "w": 20,
+      "k": 5,
+      "input_start": 691,
+      "header_end": 697,
+      "received": 200,
+      "output_start": 27,
+      "error": 0,
+      "result_count": 8
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 806,
+      "h": 8,
+      "w": 16,
+      "k": 4,
+      "input_start": 897,
+      "header_end": 903,
+      "received": 128,
+      "output_start": 38,
+      "error": 0,
+      "result_count": 8
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 807,
+      "h": 1,
+      "w": 1,
+      "k": 1,
+      "input_start": 1031,
+      "header_end": 1037,
+      "received": 1,
+      "output_start": 49,
+      "error": 0,
+      "result_count": 1
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 808,
+      "h": 32,
+      "w": 64,
+      "k": 2,
+      "input_start": 1038,
+      "header_end": 1044,
+      "received": 2048,
+      "output_start": 53,
+      "error": 0,
+      "result_count": 512
+    },
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 3092
+    }
+  ]
+}

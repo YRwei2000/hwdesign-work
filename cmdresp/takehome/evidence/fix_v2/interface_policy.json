@@ -1,0 +1,27 @@
+{
+  "pass_": true,
+  "requested": {
+    "s_in": "off",
+    "m_out": "off"
+  },
+  "actual": {
+    "s_in": "off",
+    "m_out": "off"
+  },
+  "rtgen_log_lines": [
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_data_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_keep_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_strb_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_last_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_data_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_keep_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_strb_V' to 'axis'.",
+    "INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_last_V' to 'axis'."
+  ],
+  "input_output_regslice_absent": true,
+  "kernel_idle_input_ready_zero": true,
+  "rtl_sha256": "1c7f9dfdfa999480742e5766e9456bbc7a390b49204dbd6769f1294d11d63a56",
+  "generated_cpp_sha256": "8f213bc200082db9309592f1df3e72a37848ae76bd34068f33402b5e1683a4e4",
+  "generator_adapter": "generate_fix.py",
+  "installed_waveflow_unchanged": true
+}

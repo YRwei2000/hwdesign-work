@@ -1,0 +1,1685 @@
+<profile>
+    <ReportVersion>
+        <Version>2026.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>max_pool</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>8.812</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <command_loop>
+                <Slack>7.30</Slack>
+                <TripCount>undef</TripCount>
+                <isPerfectNested>0</isPerfectNested>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <IterationLatency>
+                    <range>
+                        <min>16</min>
+                        <max>590166</max>
+                    </range>
+                </IterationLatency>
+                <PerformancePragma>-</PerformancePragma>
+                <InstanceList/>
+                <pool_rows>
+                    <Slack>7.30</Slack>
+                    <TripCount>
+                        <range>
+                            <min>1</min>
+                            <max>64</max>
+                        </range>
+                    </TripCount>
+                    <isPerfectNested>0</isPerfectNested>
+                    <Latency>
+                        <range>
+                            <min>19</min>
+                            <max>581824</max>
+                        </range>
+                    </Latency>
+                    <AbsoluteTimeLatency>
+                        <range>
+                            <min>190</min>
+                            <max>5818240</max>
+                        </range>
+                    </AbsoluteTimeLatency>
+                    <IterationLatency>
+                        <range>
+                            <min>19</min>
+                            <max>9091</max>
+                        </range>
+                    </IterationLatency>
+                    <PerformancePragma>-</PerformancePragma>
+                    <InstanceList/>
+                    <pool_columns>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>64</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>1</isPerfectNested>
+                        <Latency>
+                            <range>
+                                <min>16</min>
+                                <max>9088</max>
+                            </range>
+                        </Latency>
+                        <AbsoluteTimeLatency>
+                            <range>
+                                <min>160</min>
+                                <max>90880</max>
+                            </range>
+                        </AbsoluteTimeLatency>
+                        <IterationLatency>
+                            <range>
+                                <min>16</min>
+                                <max>142</max>
+                            </range>
+                        </IterationLatency>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </pool_columns>
+                </pool_rows>
+            </command_loop>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>Timing Violation</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>gen/max_pool.cpp:3</SourceLocation>
+            <SummaryOfLoopViolations>
+                <command_loop>
+                    <Name>command_loop</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:29~gen/max_pool.cpp:16</SourceLocation>
+                    <pool_rows>
+                        <Name>pool_rows</Name>
+                        <IssueType>-</IssueType>
+                        <ViolationType>-</ViolationType>
+                        <SourceLocation>gen/../max_pool_body_impl.tpp:72~gen/max_pool.cpp:16</SourceLocation>
+                        <pool_columns>
+                            <Name>pool_columns</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:74~gen/max_pool.cpp:16</SourceLocation>
+                        </pool_columns>
+                    </pool_rows>
+                </command_loop>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>16</BRAM_18K>
+            <DSP>12</DSP>
+            <FF>3854</FF>
+            <LUT>4219</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>max_pool</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>max_pool</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>max_pool</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TDATA</name>
+            <Object>s_in_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TVALID</name>
+            <Object>s_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TREADY</name>
+            <Object>s_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TLAST</name>
+            <Object>s_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TKEEP</name>
+            <Object>s_in_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_in_TSTRB</name>
+            <Object>s_in_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TDATA</name>
+            <Object>m_out_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TVALID</name>
+            <Object>m_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TREADY</name>
+            <Object>m_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TLAST</name>
+            <Object>m_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TKEEP</name>
+            <Object>m_out_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_out_TSTRB</name>
+            <Object>m_out_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>max_pool</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_max_pool_Pipeline_1_fu_318</InstName>
+                    <ModuleName>max_pool_Pipeline_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>318</ID>
+                    <BindInstances>add_ln30_fu_100_p2 icmp_ln30_fu_120_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_max_pool_Pipeline_header_loop_fu_328</InstName>
+                    <ModuleName>max_pool_Pipeline_header_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>328</ID>
+                    <BindInstances>icmp_ln33_fu_298_p2 add_ln33_fu_304_p2 icmp_ln37_fu_341_p2 id_fu_346_p3 icmp_ln39_fu_354_p2 icmp_ln39_1_fu_359_p2 and_ln39_fu_365_p2 icmp_ln39_2_fu_371_p2 xor_ln39_fu_376_p2 or_ln39_fu_381_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_write_axi4_stream_impl_fu_352</InstName>
+                    <ModuleName>write_axi4_stream_impl</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>352</ID>
+                </Instance>
+                <Instance>
+                    <InstName>grp_max_pool_Pipeline_receive_loop_fu_367</InstName>
+                    <ModuleName>max_pool_Pipeline_receive_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>367</ID>
+                    <BindInstances>icmp_ln56_fu_129_p2 add_ln56_fu_135_p2 icmp_ln64_fu_158_p2 xor_ln64_fu_164_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_max_pool_Pipeline_window_rows_window_columns_fu_383</InstName>
+                    <ModuleName>max_pool_Pipeline_window_rows_window_columns</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>383</ID>
+                    <BindInstances>icmp_ln77_fu_159_p2 add_ln77_fu_164_p2 icmp_ln79_fu_173_p2 select_ln76_fu_186_p3 empty_22_fu_192_p3 add_ln77_1_fu_199_p2 ama_addmuladd_12s_12s_12s_12s_12_4_1_U39 ama_addmuladd_12s_12s_12s_12s_12_4_1_U39 add_ln81_1_fu_213_p2 ama_addmuladd_12s_12s_12s_12s_12_4_1_U39 icmp_ln82_fu_289_p2 icmp_ln82_1_fu_295_p2 or_ln82_fu_301_p2 icmp_ln82_2_fu_260_p2 icmp_ln82_3_fu_266_p2 or_ln82_1_fu_307_p2 fcmp_32ns_32ns_1_2_no_dsp_1_U38 and_ln82_fu_311_p2 and_ln82_1_fu_317_p2 best_4_fu_323_p3 add_ln79_fu_218_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_max_pool_Pipeline_emit_loop_fu_395</InstName>
+                    <ModuleName>max_pool_Pipeline_emit_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>395</ID>
+                    <BindInstances>icmp_ln89_fu_111_p2 add_ln89_fu_117_p2 tlast_fu_128_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>matrix_U results_U add_ln12_fu_501_p2 icmp_ln12_fu_517_p2 add_ln13_fu_523_p2 icmp_ln13_fu_539_p2 add_ln14_fu_545_p2 icmp_ln14_fu_561_p2 icmp_ln15_fu_567_p2 icmp_ln15_1_fu_573_p2 or_ln15_fu_579_p2 urem_32s_32ns_32_36_seq_1_U59 icmp_ln16_fu_648_p2 urem_32s_32ns_32_36_seq_1_U60 icmp_ln16_1_fu_658_p2 mul_32s_32s_32_2_1_U58 udiv_32s_32ns_32_36_seq_1_U61 udiv_32s_32ns_32_36_seq_1_U62 grp_fu_424_p2 icmp_ln56_fu_692_p2 select_ln65_cast_cast_fu_701_p3 mul_32ns_32ns_64_2_1_U57 icmp_ln72_fu_728_p2 r_1_fu_733_p2 mul_12s_12s_12_1_1_U63 mul_12s_12s_12_1_1_U65 mul_12s_12s_12_1_1_U64 icmp_ln74_fu_757_p2 add_ln74_fu_762_p2 mul_12s_12s_12_1_1_U66 add_ln76_fu_782_p2 add_ln85_fu_777_p2 mul_32s_32s_32_2_1_U58 grp_fu_424_p2 control_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>max_pool_Pipeline_1</Name>
+            <Loops>
+                <Loop1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.826</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>7</Best-caseLatency>
+                    <Average-caseLatency>7</Average-caseLatency>
+                    <Worst-caseLatency>7</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>70.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>70.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>70.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>6</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Loop1>
+                        <Name>Loop 1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>6</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>5</Latency>
+                        <AbsoluteTimeLatency>50.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </Loop1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:30~gen/max_pool.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Loop1>
+                            <Name>Loop 1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:30~gen/max_pool.cpp:16</SourceLocation>
+                        </Loop1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>5</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>49</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop 1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln30_fu_100_p2" SOURCE="gen/../max_pool_body_impl.tpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Loop 1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln30_fu_120_p2" SOURCE="gen/../max_pool_body_impl.tpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln30" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>max_pool_Pipeline_header_loop</Name>
+            <Loops>
+                <header_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.118</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>16</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.160 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3 ~ 16</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <header_loop>
+                        <Name>header_loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>0</min>
+                                <max>6</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>1 ~ 13</Latency>
+                        <AbsoluteTimeLatency>10.000 ns ~ 0.130 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </header_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:32~gen/max_pool.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <header_loop>
+                            <Name>header_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:33~gen/max_pool.cpp:16</SourceLocation>
+                        </header_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>274</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>289</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln33_fu_298_p2" SOURCE="gen/../max_pool_body_impl.tpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln33" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="header_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_304_p2" SOURCE="gen/../max_pool_body_impl.tpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln37_fu_341_p2" SOURCE="gen/../max_pool_body_impl.tpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln37" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="header_loop" OPTYPE="select" PRAGMA="" RTLNAME="id_fu_346_p3" SOURCE="gen/../max_pool_body_impl.tpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="id" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_354_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln39_1_fu_359_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="and" PRAGMA="" RTLNAME="and_ln39_fu_365_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_2_fu_371_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln39_fu_376_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="header_loop" OPTYPE="or" PRAGMA="" RTLNAME="or_ln39_fu_381_p2" SOURCE="gen/../max_pool_body_impl.tpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln39" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>write_axi4_stream_impl</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.290</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>3</Average-caseLatency>
+                    <Worst-caseLatency>3</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>include/streamutils_hls.h:180~include/pool_resp.h:108</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>4</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>70</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>max_pool_Pipeline_receive_loop</Name>
+            <Loops>
+                <receive_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.706</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>2050</Average-caseLatency>
+                    <Worst-caseLatency>4098</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.500 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>40.980 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2 ~ 4097</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <receive_loop>
+                        <Name>receive_loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>4096</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>1 ~ 4096</Latency>
+                        <AbsoluteTimeLatency>10.000 ns ~ 40.960 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </receive_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:56~gen/max_pool.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <receive_loop>
+                            <Name>receive_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:56~gen/max_pool.cpp:16</SourceLocation>
+                        </receive_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>101</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>197</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="receive_loop" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln56_fu_129_p2" SOURCE="gen/../max_pool_body_impl.tpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="receive_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_135_p2" SOURCE="gen/../max_pool_body_impl.tpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="receive_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln64_fu_158_p2" SOURCE="gen/../max_pool_body_impl.tpp:64" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln64" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="receive_loop" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln64_fu_164_p2" SOURCE="gen/../max_pool_body_impl.tpp:64" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln64" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>max_pool_Pipeline_window_rows_window_columns</Name>
+            <Loops>
+                <window_rows_window_columns/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.107</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>40</Average-caseLatency>
+                    <Worst-caseLatency>136</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.400 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.360 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4 ~ 130</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <window_rows_window_columns>
+                        <Name>window_rows_window_columns</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>64</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8 ~ 134</Latency>
+                        <AbsoluteTimeLatency>80.000 ns ~ 1.340 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>9</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </window_rows_window_columns>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:76~gen/max_pool.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <window_rows_window_columns>
+                            <Name>window_rows_window_columns</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:77~gen/max_pool.cpp:16</SourceLocation>
+                        </window_rows_window_columns>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>379</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>555</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln77_fu_159_p2" SOURCE="gen/../max_pool_body_impl.tpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln77" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_164_p2" SOURCE="gen/../max_pool_body_impl.tpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln79_fu_173_p2" SOURCE="gen/../max_pool_body_impl.tpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln79" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="select" PRAGMA="" RTLNAME="select_ln76_fu_186_p3" SOURCE="gen/../max_pool_body_impl.tpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="select" PRAGMA="" RTLNAME="empty_22_fu_192_p3" SOURCE="gen/../max_pool_body_impl.tpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_22" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_1_fu_199_p2" SOURCE="gen/../max_pool_body_impl.tpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="ama_addmuladd_12s_12s_12s_12s_12_4_1_U39" SOURCE="gen/../max_pool_body_impl.tpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="window_rows_window_columns" OPTYPE="mul" PRAGMA="" RTLNAME="ama_addmuladd_12s_12s_12s_12s_12_4_1_U39" SOURCE="gen/../max_pool_body_impl.tpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln81_1_fu_213_p2" SOURCE="gen/../max_pool_body_impl.tpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="ama_addmuladd_12s_12s_12s_12s_12_4_1_U39" SOURCE="gen/../max_pool_body_impl.tpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln82_fu_289_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln82" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln82_1_fu_295_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln82_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="or" PRAGMA="" RTLNAME="or_ln82_fu_301_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln82" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln82_2_fu_260_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln82_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln82_3_fu_266_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln82_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="or" PRAGMA="" RTLNAME="or_ln82_1_fu_307_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln82_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op fcmp" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="window_rows_window_columns" OPTYPE="fcmp" PRAGMA="" RTLNAME="fcmp_32ns_32ns_1_2_no_dsp_1_U38" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="and" PRAGMA="" RTLNAME="and_ln82_fu_311_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln82" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="and" PRAGMA="" RTLNAME="and_ln82_1_fu_317_p2" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln82_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="select" PRAGMA="" RTLNAME="best_4_fu_323_p3" SOURCE="gen/../max_pool_body_impl.tpp:82" STORAGESUBTYPE="" URAM="0" VARIABLE="best_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="window_rows_window_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln79_fu_218_p2" SOURCE="gen/../max_pool_body_impl.tpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln79" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>max_pool_Pipeline_emit_loop</Name>
+            <Loops>
+                <emit_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.728</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>2050</Average-caseLatency>
+                    <Worst-caseLatency>4098</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.500 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>40.980 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2 ~ 4097</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stp</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <emit_loop>
+                        <Name>emit_loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>4096</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>1 ~ 4096</Latency>
+                        <AbsoluteTimeLatency>10.000 ns ~ 40.960 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </emit_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/../max_pool_body_impl.tpp:89~gen/max_pool.cpp:16</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <emit_loop>
+                            <Name>emit_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:89~gen/max_pool.cpp:16</SourceLocation>
+                        </emit_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>36</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>166</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="emit_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln89_fu_111_p2" SOURCE="gen/../max_pool_body_impl.tpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln89" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="emit_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln89_fu_117_p2" SOURCE="gen/../max_pool_body_impl.tpp:89" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="emit_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="tlast_fu_128_p2" SOURCE="gen/../max_pool_body_impl.tpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="tlast" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>max_pool</Name>
+            <Loops>
+                <command_loop>
+                    <pool_rows>
+                        <pool_columns/>
+                    </pool_rows>
+                </command_loop>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>8.812</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <command_loop>
+                        <Name>command_loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>
+                            <range>
+                                <min>16</min>
+                                <max>590166</max>
+                            </range>
+                        </IterationLatency>
+                        <PipelineDepth>16 ~ 590166</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList>
+                            <Instance>grp_max_pool_Pipeline_1_fu_318</Instance>
+                            <Instance>grp_max_pool_Pipeline_header_loop_fu_328</Instance>
+                            <Instance>grp_write_axi4_stream_impl_fu_352</Instance>
+                            <Instance>grp_max_pool_Pipeline_receive_loop_fu_367</Instance>
+                            <Instance>grp_max_pool_Pipeline_emit_loop_fu_395</Instance>
+                        </InstanceList>
+                        <pool_rows>
+                            <Name>pool_rows</Name>
+                            <Slack>7.30</Slack>
+                            <TripCount>
+                                <range>
+                                    <min>1</min>
+                                    <max>64</max>
+                                </range>
+                            </TripCount>
+                            <isPerfectNested>0</isPerfectNested>
+                            <Latency>19 ~ 581824</Latency>
+                            <AbsoluteTimeLatency>0.190 us ~ 5.818 ms</AbsoluteTimeLatency>
+                            <IterationLatency>
+                                <range>
+                                    <min>19</min>
+                                    <max>9091</max>
+                                </range>
+                            </IterationLatency>
+                            <PipelineDepth>19 ~ 9091</PipelineDepth>
+                            <PipelineType>no</PipelineType>
+                            <PerformancePragma>-</PerformancePragma>
+                            <InstanceList/>
+                            <pool_columns>
+                                <Name>pool_columns</Name>
+                                <Slack>7.30</Slack>
+                                <TripCount>
+                                    <range>
+                                        <min>1</min>
+                                        <max>64</max>
+                                    </range>
+                                </TripCount>
+                                <isPerfectNested>1</isPerfectNested>
+                                <Latency>16 ~ 9088</Latency>
+                                <AbsoluteTimeLatency>0.160 us ~ 90.880 us</AbsoluteTimeLatency>
+                                <IterationLatency>
+                                    <range>
+                                        <min>16</min>
+                                        <max>142</max>
+                                    </range>
+                                </IterationLatency>
+                                <PipelineDepth>16 ~ 142</PipelineDepth>
+                                <PipelineType>no</PipelineType>
+                                <PerformancePragma>-</PerformancePragma>
+                                <InstanceList>
+                                    <Instance>grp_max_pool_Pipeline_window_rows_window_columns_fu_383</Instance>
+                                </InstanceList>
+                            </pool_columns>
+                        </pool_rows>
+                    </command_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>gen/max_pool.cpp:3</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <command_loop>
+                            <Name>command_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>gen/../max_pool_body_impl.tpp:29~gen/max_pool.cpp:16</SourceLocation>
+                            <pool_rows>
+                                <Name>pool_rows</Name>
+                                <IssueType>-</IssueType>
+                                <ViolationType>-</ViolationType>
+                                <SourceLocation>gen/../max_pool_body_impl.tpp:72~gen/max_pool.cpp:16</SourceLocation>
+                                <pool_columns>
+                                    <Name>pool_columns</Name>
+                                    <IssueType>-</IssueType>
+                                    <ViolationType>-</ViolationType>
+                                    <SourceLocation>gen/../max_pool_body_impl.tpp:74~gen/max_pool.cpp:16</SourceLocation>
+                                </pool_columns>
+                            </pool_rows>
+                        </command_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>16</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>5</UTIL_BRAM>
+                    <DSP>12</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>3854</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>4219</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>7</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDID="34359738412" BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="matrix_U" SOURCE="gen/../max_pool_body_impl.tpp:26" STORAGESIZE="32 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="matrix" VISIBLE="true"/>
+                <BindNode BINDID="34359738413" BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" CE_REG="N" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="results_U" SOURCE="gen/../max_pool_body_impl.tpp:27" STORAGESIZE="32 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="results" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="command_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_501_p2" SOURCE="gen/../max_pool_body_impl.tpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln12_fu_517_p2" SOURCE="gen/../max_pool_body_impl.tpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln12" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="command_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_523_p2" SOURCE="gen/../max_pool_body_impl.tpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln13_fu_539_p2" SOURCE="gen/../max_pool_body_impl.tpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="command_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_545_p2" SOURCE="gen/../max_pool_body_impl.tpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln14_fu_561_p2" SOURCE="gen/../max_pool_body_impl.tpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln14" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln15_fu_567_p2" SOURCE="gen/../max_pool_body_impl.tpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln15_1_fu_573_p2" SOURCE="gen/../max_pool_body_impl.tpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln15_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="or" PRAGMA="" RTLNAME="or_ln15_fu_579_p2" SOURCE="gen/../max_pool_body_impl.tpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op urem" DSP="0" ID="" IMPL="auto_seq" LATENCY="35" LOOP="command_loop" OPTYPE="urem" PRAGMA="" RTLNAME="urem_32s_32ns_32_36_seq_1_U59" SOURCE="gen/../max_pool_body_impl.tpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="urem_ln16" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln16_fu_648_p2" SOURCE="gen/../max_pool_body_impl.tpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln16" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op urem" DSP="0" ID="" IMPL="auto_seq" LATENCY="35" LOOP="command_loop" OPTYPE="urem" PRAGMA="" RTLNAME="urem_32s_32ns_32_36_seq_1_U60" SOURCE="gen/../max_pool_body_impl.tpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="urem_ln16_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln16_1_fu_658_p2" SOURCE="gen/../max_pool_body_impl.tpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln16_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="command_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U58" SOURCE="gen/../max_pool_body_impl.tpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="count" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op udiv" DSP="0" ID="" IMPL="auto_seq" LATENCY="35" LOOP="command_loop" OPTYPE="udiv" PRAGMA="" RTLNAME="udiv_32s_32ns_32_36_seq_1_U61" SOURCE="gen/../max_pool_body_impl.tpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="oh" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op udiv" DSP="0" ID="" IMPL="auto_seq" LATENCY="35" LOOP="command_loop" OPTYPE="udiv" PRAGMA="" RTLNAME="udiv_32s_32ns_32_36_seq_1_U62" SOURCE="gen/../max_pool_body_impl.tpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="ow" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="command_loop" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_424_p2" SOURCE="gen/../max_pool_body_impl.tpp:64" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln64" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="command_loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln56_fu_692_p2" SOURCE="gen/../max_pool_body_impl.tpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="command_loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln65_cast_cast_fu_701_p3" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln65_cast_cast" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="command_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U57" SOURCE="gen/../max_pool_body_impl.tpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="pool_rows" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln72_fu_728_p2" SOURCE="gen/../max_pool_body_impl.tpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln72" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pool_rows" OPTYPE="add" PRAGMA="" RTLNAME="r_1_fu_733_p2" SOURCE="gen/../max_pool_body_impl.tpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="r_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pool_rows" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_12s_12_1_1_U63" SOURCE="gen/../max_pool_body_impl.tpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pool_rows" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_12s_12_1_1_U65" SOURCE="gen/../max_pool_body_impl.tpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln76_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pool_rows" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_12s_12_1_1_U64" SOURCE="gen/../max_pool_body_impl.tpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="pool_columns" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln74_fu_757_p2" SOURCE="gen/../max_pool_body_impl.tpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pool_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln74_fu_762_p2" SOURCE="gen/../max_pool_body_impl.tpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="pool_columns" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_12s_12_1_1_U66" SOURCE="gen/../max_pool_body_impl.tpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln76_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pool_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln76_fu_782_p2" SOURCE="gen/../max_pool_body_impl.tpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="pool_columns" OPTYPE="add" PRAGMA="" RTLNAME="add_ln85_fu_777_p2" SOURCE="gen/../max_pool_body_impl.tpp:85" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln85" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="command_loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U58" SOURCE="gen/../max_pool_body_impl.tpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="nout" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" CE_REG="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="command_loop" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_424_p2" SOURCE="gen/../max_pool_body_impl.tpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93" VISIBLE="true"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" CE_REG="" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_interface m_axi_alignment_size="1"/>
+        <config_rtl auto_prefix="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="s_in" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0UL, 0UL, 0UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="s_in" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="m_out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0UL, 0UL, 0UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="m_out" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="halted" index="2" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="halted" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="halted_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="error" index="3" direction="out" srcType="ap_uint&lt;8&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="error" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="error_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="tx_id" index="4" direction="out" srcType="ap_uint&lt;32&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="tx_id" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="tx_id_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="halted" access="R" description="Data signal of halted" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="halted" access="R" description="Bit 0 to 0 of halted"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x14" name="halted_ctrl" access="R" description="Control signal of halted" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="halted_ap_vld" access="R" description="Control signal halted_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="error" access="R" description="Data signal of error" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="error" access="R" description="Bit 7 to 0 of error"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x24" name="error_ctrl" access="R" description="Control signal of error" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="error_ap_vld" access="R" description="Control signal error_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="tx_id" access="R" description="Data signal of tx_id" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="tx_id" access="R" description="Bit 31 to 0 of tx_id"/>
+                    </fields>
+                </register>
+                <register offset="0x34" name="tx_id_ctrl" access="R" description="Control signal of tx_id" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="tx_id_ap_vld" access="R" description="Control signal tx_id_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="halted"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="error"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="tx_id"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:s_in:m_out</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="s_in" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="s_in_">
+            <ports>
+                <port>s_in_TDATA</port>
+                <port>s_in_TKEEP</port>
+                <port>s_in_TLAST</port>
+                <port>s_in_TREADY</port>
+                <port>s_in_TSTRB</port>
+                <port>s_in_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="s_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="m_out" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="m_out_">
+            <ports>
+                <port>m_out_TDATA</port>
+                <port>m_out_TKEEP</port>
+                <port>m_out_TLAST</port>
+                <port>m_out_TREADY</port>
+                <port>m_out_TSTRB</port>
+                <port>m_out_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="m_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 6, 16, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">halted, 0x10, 32, R, Data signal of halted, </column>
+                    <column name="s_axi_control">halted_ctrl, 0x14, 32, R, Control signal of halted, 0=halted_ap_vld</column>
+                    <column name="s_axi_control">error, 0x20, 32, R, Data signal of error, </column>
+                    <column name="s_axi_control">error_ctrl, 0x24, 32, R, Control signal of error, 0=error_ap_vld</column>
+                    <column name="s_axi_control">tx_id, 0x30, 32, R, Data signal of tx_id, </column>
+                    <column name="s_axi_control">tx_id_ctrl, 0x34, 32, R, Control signal of tx_id, 0=tx_id_ap_vld</column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table>
+                    <keys size="9">Interface, Direction, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="m_out">out, both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="s_in">in, both, 32, 4, 1, 1, 4, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="s_in">in, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 0UL 0UL 0UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="m_out">out, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 0UL 0UL 0UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="halted">out, ap_uint&lt;1&gt;&amp;</column>
+                    <column name="error">out, ap_uint&lt;8&gt;&amp;</column>
+                    <column name="tx_id">out, ap_uint&lt;32&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="s_in">s_in, interface, </column>
+                    <column name="m_out">m_out, interface, </column>
+                    <column name="halted">s_axi_control, register, name=halted offset=0x10 range=32</column>
+                    <column name="halted">s_axi_control, register, name=halted_ctrl offset=0x14 range=32</column>
+                    <column name="error">s_axi_control, register, name=error offset=0x20 range=32</column>
+                    <column name="error">s_axi_control, register, name=error_ctrl offset=0x24 range=32</column>
+                    <column name="tx_id">s_axi_control, register, name=tx_id offset=0x30 range=32</column>
+                    <column name="tx_id">s_axi_control, register, name=tx_id_ctrl offset=0x34 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:10" parentFunction="max_pool" variable="s_in" isDirective="0" options="axis port=s_in"/>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:11" parentFunction="max_pool" variable="m_out" isDirective="0" options="axis port=m_out"/>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:12" parentFunction="max_pool" variable="halted" isDirective="0" options="s_axilite port=halted bundle=control"/>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:13" parentFunction="max_pool" variable="error" isDirective="0" options="s_axilite port=error bundle=control"/>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:14" parentFunction="max_pool" variable="tx_id" isDirective="0" options="s_axilite port=tx_id bundle=control"/>
+        <Pragma type="interface" status="valid" location="gen/max_pool.cpp:15" parentFunction="max_pool" variable="return" isDirective="0" options="s_axilite port=return bundle=control"/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:51" parentFunction="run_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:58" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:78" parentFunction="write_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:84" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:104" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="valid" location="include/float32_array_utils.h:126" parentFunction="run" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:152" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="valid" location="include/float32_array_utils.h:174" parentFunction="run" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:196" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:223" parentFunction="run" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:238" parentFunction="read_array_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:244" parentFunction="write_array_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:250" parentFunction="read_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:256" parentFunction="write_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="valid" location="include/float32_array_utils.h:262" parentFunction="read_axi4_stream_lane" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:268" parentFunction="read_axi4_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="valid" location="include/float32_array_utils.h:275" parentFunction="write_axi4_stream_lane" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:284" parentFunction="read_framed_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:290" parentFunction="read_framed_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:297" parentFunction="write_framed_stream_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:307" parentFunction="read_boundary_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:313" parentFunction="read_boundary_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:319" parentFunction="write_boundary_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:325" parentFunction="write_boundary_lane" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:336" parentFunction="elem_read" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:343" parentFunction="elem_write" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:382" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:393" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:404" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:408" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:418" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:427" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:432" parentFunction="read_array_slice_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:439" parentFunction="read_array_slice" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:456" parentFunction="write_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:463" parentFunction="write_array_slice_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:466" parentFunction="write_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:479" parentFunction="write_array_slice_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:484" parentFunction="write_array_slice_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:491" parentFunction="write_array_slice" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:507" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:519" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:531" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:534" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="unroll" status="invalid" location="include/float32_array_utils.h:547" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:558" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/float32_array_utils.h:563" parentFunction="write_array_slice_rmw_dispatch" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:570" parentFunction="write_array_slice_rmw" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:580" parentFunction="read_array_slice" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:586" parentFunction="write_array_slice" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:592" parentFunction="read_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:603" parentFunction="read_axi4_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:630" parentFunction="read_axi4_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:637" parentFunction="read_axi4_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:644" parentFunction="read_axi4_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:652" parentFunction="write_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:663" parentFunction="write_axi4_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:677" parentFunction="read_framed_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:693" parentFunction="read_framed_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="inline" status="invalid" location="include/float32_array_utils.h:700" parentFunction="write_framed_stream" variable="" isDirective="0" options="">
+            <Msg msg_id="" msg_severity="ERROR" msg_body="Not implemented"/>
+        </Pragma>
+        <Pragma type="pipeline" status="valid" location="include/streamutils_hls.h:191" parentFunction="flush_axi4_stream_to_tlast" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="inline" status="valid" location="max_pool_body_impl.tpp:11" parentFunction="parameter_error" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="valid" location="max_pool_body_impl.tpp:23" parentFunction="body" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" status="valid" location="max_pool_body_impl.tpp:57" parentFunction="body" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:58" parentFunction="body" variable="" isDirective="0" options="min=1 max=4096"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:73" parentFunction="body" variable="" isDirective="0" options="min=1 max=64"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:75" parentFunction="body" variable="" isDirective="0" options="min=1 max=64"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:78" parentFunction="body" variable="" isDirective="0" options="min=1 max=8"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:80" parentFunction="body" variable="" isDirective="0" options="min=1 max=8"/>
+        <Pragma type="pipeline" status="valid" location="max_pool_body_impl.tpp:90" parentFunction="body" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" status="valid" location="max_pool_body_impl.tpp:91" parentFunction="body" variable="" isDirective="0" options="min=1 max=4096"/>
+        <Pragma type="inline" status="implemented" location="include/float32_array_utils.h:126" parentFunction="_zn19float32_array_utils26read_axi4_stream_elem_implili32ee3runern3hls6streamins2_4axisi6ap_intili32eelm0elm0elm0elh56elb0eeeli0eeepfrn11streamutils12tlast_statusei" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="implemented" location="include/float32_array_utils.h:174" parentFunction="_zn19float32_array_utils27write_axi4_stream_elem_implili32ee3runern3hls6streamins2_4axisi6ap_intili32eelm0elm0elm0elh56elb0eeeli0eeepkfbi" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="implemented" location="include/float32_array_utils.h:262" parentFunction="_zn19float32_array_utils21read_axi4_stream_laneili32eeevrn3hls6streamins1_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeepfirn11streamutils12tlast_statuse" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="implemented" location="include/float32_array_utils.h:275" parentFunction="_zn19float32_array_utils22write_axi4_stream_laneili32eeevpkfrn3hls6streamins3_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeebi" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="implemented" location="max_pool_body_impl.tpp:11" parentFunction="_zn9pool_impll15parameter_errorejjj" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" status="implemented" location="max_pool_body_impl.tpp:23" parentFunction="_zn9pool_impl4bodyili32eli32eeevrn3hls6streamins1_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeerns2_ins3_is4_ixt0_eelm0elm0elm0elh56elb0eeeli0eeer7ap_uintili1eersd_ili8eersd_ili32ee" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:30" parentFunction="max_pool_pipeline_1" variable="" isDirective="0" options="max=6 min=6 avg=6"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:32" parentFunction="max_pool_pipeline_header_loop" variable="" isDirective="0" options="max=6 min=0 avg=3"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:58" parentFunction="max_pool_pipeline_receive_loop" variable="" isDirective="0" options="max=4096 min=1 avg=2048"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:73" parentFunction="max_pool" variable="" isDirective="0" options="max=64 min=1 avg=32"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:75" parentFunction="max_pool" variable="" isDirective="0" options="max=64 min=1 avg=32"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:78" parentFunction="max_pool" variable="" isDirective="0" options="max=8 min=1 avg=4"/>
+        <Pragma type="loop_flatten" status="implemented" location="max_pool_body_impl.tpp:79" parentFunction="max_pool" variable="" isDirective="0" options=" "/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:80" parentFunction="max_pool" variable="" isDirective="0" options="max=8 min=1 avg=4"/>
+        <Pragma type="loop_tripcount" status="implemented" location="max_pool_body_impl.tpp:91" parentFunction="max_pool_pipeline_emit_loop" variable="" isDirective="0" options="max=4096 min=1 avg=2048"/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="pipeline" parentFunction="max_pool" options="" pragmaLocId="max_pool_body_impl.tpp:79:0" pragmaLocOpt="max_pool/window_columns" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=max_pool/window_columns " loopName="window_columns" loopLoc="gen/../max_pool_body_impl.tpp:79:37"/>
+        <AutoPragma type="pipeline" parentFunction="max_pool" options="" pragmaLocId="max_pool_body_impl.tpp:33:0" pragmaLocOpt="max_pool/header_loop" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=max_pool/header_loop " loopName="header_loop" loopLoc="gen/../max_pool_body_impl.tpp:33:22"/>
+        <AutoPragma type="pipeline" parentFunction="max_pool" options="" pragmaLocId="max_pool_body_impl.tpp:30:0" pragmaLocOpt="max_pool/anonymous" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=max_pool/anonymous " loopName="anonymous" loopLoc="gen/../max_pool_body_impl.tpp:30:28"/>
+    </AutoPragmaReport>
+</profile>

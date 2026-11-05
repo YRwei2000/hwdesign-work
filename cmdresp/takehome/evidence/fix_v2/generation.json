@@ -1,0 +1,27 @@
+{
+  "generator": "Waveflow HlsCodegenStep",
+  "policy": {
+    "s_in": "off",
+    "m_out": "off"
+  },
+  "installed_emitter_sha256": "5d86b608626ccf9815648aedef4e7e54bca0d81a1ba459541c8b633c6954f973",
+  "installed_package_modified": false,
+  "generated_files_postedited": false,
+  "only_two_pragma_options_changed": true,
+  "generated_cpp_sha256": "8f213bc200082db9309592f1df3e72a37848ae76bd34068f33402b5e1683a4e4",
+  "diff": [
+    "--- gen/max_pool.cpp\n",
+    "+++ gen_off/max_pool.cpp\n",
+    "@@ -7,8 +7,8 @@\n",
+    "     ap_uint<8>& error,",
+    "     ap_uint<32>& tx_id",
+    " ) {",
+    "-#pragma HLS INTERFACE axis port=s_in",
+    "-#pragma HLS INTERFACE axis port=m_out",
+    "+#pragma HLS INTERFACE axis port=s_in register_mode=off",
+    "+#pragma HLS INTERFACE axis port=m_out register_mode=off",
+    " #pragma HLS INTERFACE s_axilite port=halted       bundle=control",
+    " #pragma HLS INTERFACE s_axilite port=error        bundle=control",
+    " #pragma HLS INTERFACE s_axilite port=tx_id        bundle=control"
+  ]
+}

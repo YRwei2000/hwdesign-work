@@ -1,0 +1,10 @@
+{
+  "pass_": true,
+  "activations": 66,
+  "model_reused": true,
+  "csim_fix_pass": true,
+  "cosim_fix_pass": true,
+  "raw_rtl_vector_pass": true,
+  "actual_interface_policy_verified": true,
+  "original_evidence_unchanged": true
+}

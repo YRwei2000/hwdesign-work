@@ -1,0 +1,16 @@
+{
+  "purpose": "Bad identifier before tx_id",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1007,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "opcode": 1,
+      "error": 1,
+      "input_start": 0,
+      "read_count": 1
+    }
+  ]
+}

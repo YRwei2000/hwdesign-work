@@ -1,0 +1,62 @@
+{
+  "purpose": "Rectangular matrices and changing all parameters",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 301,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 16,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 302,
+      "h": 4,
+      "w": 6,
+      "k": 2,
+      "input_start": 22,
+      "header_end": 28,
+      "received": 24,
+      "output_start": 7,
+      "error": 0,
+      "result_count": 6
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 303,
+      "h": 8,
+      "w": 8,
+      "k": 4,
+      "input_start": 52,
+      "header_end": 58,
+      "received": 64,
+      "output_start": 16,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 304,
+      "h": 1,
+      "w": 1,
+      "k": 1,
+      "input_start": 122,
+      "header_end": 128,
+      "received": 1,
+      "output_start": 23,
+      "error": 0,
+      "result_count": 1
+    },
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 129
+    }
+  ]
+}

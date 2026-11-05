@@ -1,0 +1,10 @@
+{
+  "pass_": true,
+  "specification_version": "v2",
+  "standard_activations": 66,
+  "protocol_activations": 69,
+  "original_error_activations": 29,
+  "added_error_activations": 1,
+  "synthesis_clock_pass": true,
+  "timing_pass": true
+}

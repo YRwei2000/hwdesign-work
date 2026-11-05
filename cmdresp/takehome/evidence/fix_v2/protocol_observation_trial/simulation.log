@@ -1,0 +1,163 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Nov  4 23:59:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/protocol/xsim_script.tcl
+# xsim {protocol} -testplusarg FIXTURE_ROOT=/home/yw9286/hwdesign-work/cmdresp/takehome/evidence/fix_v2/protocol_fixtures -testplusarg OUTPUT_ROOT=/home/yw9286/hwdesign-work/cmdresp/takehome/evidence/fix_v2/protocol -autoloadwcfg -tclbatch {capture.tcl}
+Time resolution is 1 ps
+source capture.tcl
+## open_vcd /home/yw9286/hwdesign-work/cmdresp/takehome/evidence/fix_v2/protocol/protocol.vcd
+## log_vcd [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /rtl_protocol_tb/dut/*]
+## log_vcd [get_objects /rtl_protocol_tb/case_index]
+## log_vcd [get_objects /rtl_protocol_tb/active]
+## run all
+PROTOCOL BEGIN 0 T01_worked offered=28 stop=28
+PROTOCOL END T01_worked failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 1 T02_negative_ties_zero offered=78 stop=78
+PROTOCOL END T02_negative_ties_zero failures=0 received=78 remaining=0 outputs=30 bp=0
+PROTOCOL BEGIN 2 T03_parameter_changes offered=148 stop=135
+PROTOCOL END T03_parameter_changes failures=0 received=135 remaining=13 outputs=27 bp=0
+PROTOCOL BEGIN 3 T04_bounds offered=8350 stop=8350
+PROTOCOL END T04_bounds failures=0 received=8350 remaining=0 outputs=4300 bp=0
+PROTOCOL BEGIN 4 T05_end_first offered=19 stop=6
+PROTOCOL END T05_end_first failures=0 received=6 remaining=13 outputs=0 bp=0
+PROTOCOL BEGIN 5 T06_normal_boundary offered=20 stop=20
+PROTOCOL END T06_normal_boundary failures=0 received=20 remaining=0 outputs=11 bp=0
+PROTOCOL BEGIN 6 T07_performance offered=4108 stop=4108
+PROTOCOL END T07_performance failures=0 received=4108 remaining=0 outputs=1027 bp=0
+PROTOCOL BEGIN 7 T08_random offered=3098 stop=3098
+PROTOCOL END T08_random failures=0 received=3098 remaining=0 outputs=568 bp=0
+PROTOCOL BEGIN 8 E01_magic offered=21 stop=1
+PROTOCOL END E01_magic failures=0 received=1 remaining=20 outputs=0 bp=0
+PROTOCOL BEGIN 9 R_E01_magic offered=28 stop=28
+PROTOCOL END R_E01_magic failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 10 E02_header_short_1 offered=16 stop=1
+PROTOCOL END E02_header_short_1 failures=0 received=1 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 11 R_E02_header_short_1 offered=28 stop=28
+PROTOCOL END R_E02_header_short_1 failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 12 E02_header_short_2 offered=17 stop=2
+PROTOCOL END E02_header_short_2 failures=0 received=2 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 13 R_E02_header_short_2 offered=28 stop=28
+PROTOCOL END R_E02_header_short_2 failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 14 E02_header_short_3 offered=18 stop=3
+PROTOCOL END E02_header_short_3 failures=0 received=3 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 15 R_E02_header_short_3 offered=28 stop=28
+PROTOCOL END R_E02_header_short_3 failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 16 E02_header_short_4 offered=19 stop=4
+PROTOCOL END E02_header_short_4 failures=0 received=4 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 17 R_E02_header_short_4 offered=28 stop=28
+PROTOCOL END R_E02_header_short_4 failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 18 E02_header_short_5 offered=20 stop=5
+PROTOCOL END E02_header_short_5 failures=0 received=5 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 19 R_E02_header_short_5 offered=28 stop=28
+PROTOCOL END R_E02_header_short_5 failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 20 E03_header_missing offered=21 stop=6
+PROTOCOL END E03_header_missing failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 21 R_E03_header_missing offered=28 stop=28
+PROTOCOL END R_E03_header_missing failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 22 E04_unknown_opcode offered=21 stop=6
+PROTOCOL END E04_unknown_opcode failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 23 R_E04_unknown_opcode offered=28 stop=28
+PROTOCOL END R_E04_unknown_opcode failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 24 E05_h_zero offered=21 stop=6
+PROTOCOL END E05_h_zero failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 25 R_E05_h_zero offered=28 stop=28
+PROTOCOL END R_E05_h_zero failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 26 E05_h_large offered=21 stop=6
+PROTOCOL END E05_h_large failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 27 R_E05_h_large offered=28 stop=28
+PROTOCOL END R_E05_h_large failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 28 E05_w_zero offered=21 stop=6
+PROTOCOL END E05_w_zero failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 29 R_E05_w_zero offered=28 stop=28
+PROTOCOL END R_E05_w_zero failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 30 E05_w_large offered=21 stop=6
+PROTOCOL END E05_w_large failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 31 R_E05_w_large offered=28 stop=28
+PROTOCOL END R_E05_w_large failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 32 E05_k_zero offered=21 stop=6
+PROTOCOL END E05_k_zero failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 33 R_E05_k_zero offered=28 stop=28
+PROTOCOL END R_E05_k_zero failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 34 E05_k_large offered=21 stop=6
+PROTOCOL END E05_k_large failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 35 R_E05_k_large offered=28 stop=28
+PROTOCOL END R_E05_k_large failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 36 E05_window_h offered=21 stop=6
+PROTOCOL END E05_window_h failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 37 R_E05_window_h offered=28 stop=28
+PROTOCOL END R_E05_window_h failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 38 E05_window_w offered=21 stop=6
+PROTOCOL END E05_window_w failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 39 R_E05_window_w offered=28 stop=28
+PROTOCOL END R_E05_window_w failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 40 E05_div_h offered=21 stop=6
+PROTOCOL END E05_div_h failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 41 R_E05_div_h offered=28 stop=28
+PROTOCOL END R_E05_div_h failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 42 E05_div_w offered=21 stop=6
+PROTOCOL END E05_div_w failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 43 R_E05_div_w offered=28 stop=28
+PROTOCOL END R_E05_div_w failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 44 E06_format_before_opcode offered=21 stop=6
+PROTOCOL END E06_format_before_opcode failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 45 R_E06_format_before_opcode offered=28 stop=28
+PROTOCOL END R_E06_format_before_opcode failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 46 E06_opcode_before_parameters offered=21 stop=6
+PROTOCOL END E06_opcode_before_parameters failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 47 R_E06_opcode_before_parameters offered=28 stop=28
+PROTOCOL END R_E06_opcode_before_parameters failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 48 E06_h_before_w_k offered=21 stop=6
+PROTOCOL END E06_h_before_w_k failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 49 R_E06_h_before_w_k offered=28 stop=28
+PROTOCOL END R_E06_h_before_w_k failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 50 E06_w_before_k offered=21 stop=6
+PROTOCOL END E06_w_before_k failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 51 R_E06_w_before_k offered=28 stop=28
+PROTOCOL END R_E06_w_before_k failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 52 E06_k_before_window offered=21 stop=6
+PROTOCOL END E06_k_before_window failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 53 R_E06_k_before_window offered=28 stop=28
+PROTOCOL END R_E06_k_before_window failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 54 E06_window_before_div offered=21 stop=6
+PROTOCOL END E06_window_before_div failures=0 received=6 remaining=15 outputs=0 bp=0
+PROTOCOL BEGIN 55 R_E06_window_before_div offered=28 stop=28
+PROTOCOL END R_E06_window_before_div failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 56 E07_payload_first offered=20 stop=7
+PROTOCOL END E07_payload_first failures=0 received=7 remaining=13 outputs=3 bp=0
+PROTOCOL BEGIN 57 R_E07_payload_first offered=28 stop=28
+PROTOCOL END R_E07_payload_first failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 58 E07_payload_later offered=26 stop=13
+PROTOCOL END E07_payload_later failures=0 received=13 remaining=13 outputs=3 bp=0
+PROTOCOL BEGIN 59 R_E07_payload_later offered=28 stop=28
+PROTOCOL END R_E07_payload_later failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 60 E07_payload_missing offered=35 stop=22
+PROTOCOL END E07_payload_missing failures=0 received=22 remaining=13 outputs=3 bp=0
+PROTOCOL BEGIN 61 R_E07_payload_missing offered=28 stop=28
+PROTOCOL END R_E07_payload_missing failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 62 E07_payload_one_missing offered=20 stop=7
+PROTOCOL END E07_payload_one_missing failures=0 received=7 remaining=13 outputs=3 bp=0
+PROTOCOL BEGIN 63 R_E07_payload_one_missing offered=28 stop=28
+PROTOCOL END R_E07_payload_one_missing failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 64 E08_prior_success offered=50 stop=37
+PROTOCOL END E08_prior_success failures=0 received=37 remaining=13 outputs=10 bp=0
+PROTOCOL BEGIN 65 R_E08_prior_success offered=28 stop=28
+PROTOCOL END R_E08_prior_success failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL BEGIN 66 BP_success offered=28 stop=28
+PROTOCOL END BP_success failures=0 received=28 remaining=0 outputs=7 bp=12
+PROTOCOL BEGIN 67 BP_payload_error offered=20 stop=7
+PROTOCOL END BP_payload_error failures=0 received=7 remaining=13 outputs=3 bp=12
+PROTOCOL BEGIN 68 R_BP_payload_error offered=28 stop=28
+PROTOCOL END R_BP_payload_error failures=0 received=28 remaining=0 outputs=7 bp=0
+PROTOCOL ALL PASS: 69 activations with complete fixtures
+$finish called at time : 1407150 ns : File "/home/yw9286/hwdesign-work/cmdresp/takehome/rtl_protocol_tb.sv" Line 181
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:25 . Memory (MB): peak = 1721.336 ; gain = 0.000 ; free physical = 236943 ; free virtual = 1165436
+## close_vcd
+## quit
+INFO: xsimkernel Simulation Memory Usage: 533568 KB (Peak: 573928 KB), Simulation CPU Usage: 6280 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 00:00:14 2026...

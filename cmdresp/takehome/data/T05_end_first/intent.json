@@ -1,0 +1,10 @@
+{
+  "purpose": "END before COMPUTE and trailing command unread",
+  "actions": [
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 0
+    }
+  ]
+}

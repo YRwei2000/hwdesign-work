@@ -1,0 +1,13 @@
+{
+  "requested": {
+    "s_in": "off",
+    "m_out": "off"
+  },
+  "actual": {
+    "s_in": "both",
+    "m_out": "both"
+  },
+  "pass": false,
+  "evidence": "vitis_synth.log: RTGEN 206-500 reports both mode for all eight stream component signals; max_pool.v retains regslice_both",
+  "minimal_fix": "Make project-controlled Waveflow code generation emit explicit register_mode=off at both source pragmas; no generated-file edits or installed package changes"
+}

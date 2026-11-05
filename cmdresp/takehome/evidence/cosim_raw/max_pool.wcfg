@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="max_pool.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_dataflow_monitor_sv " />
+            <top_module name="\$unit_sv_module_top_sv " />
+            <top_module name="apatb_max_pool_top" />
+            <top_module name="axi_pkg" />
+            <top_module name="file_agent_pkg" />
+            <top_module name="glbl" />
+            <top_module name="math_real" />
+            <top_module name="max_pool_subsystem_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="standard" />
+            <top_module name="std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="svr_pkg" />
+            <top_module name="textio" />
+            <top_module name="uvm_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool//AESL_inst_max_pool_activity">
+         <obj_property name="label">AESL_inst_max_pool_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_max_pool_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_max_pool_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool//AESL_inst_max_pool_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool//AESL_inst_max_pool_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool//AESL_inst_max_pool_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity">
+            <obj_property name="label">grp_max_pool_Pipeline_1_fu_318_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_max_pool_Pipeline_1_fu_318_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pool_Pipeline_1_fu_318_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity">
+            <obj_property name="label">grp_max_pool_Pipeline_header_loop_fu_328_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_max_pool_Pipeline_header_loop_fu_328_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pool_Pipeline_header_loop_fu_328_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity">
+            <obj_property name="label">grp_write_axi4_stream_impl_fu_352_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_write_axi4_stream_impl_fu_352_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_write_axi4_stream_impl_fu_352_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity">
+            <obj_property name="label">grp_max_pool_Pipeline_receive_loop_fu_367_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_max_pool_Pipeline_receive_loop_fu_367_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pool_Pipeline_receive_loop_fu_367_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity">
+            <obj_property name="label">grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity">
+            <obj_property name="label">grp_max_pool_Pipeline_emit_loop_fu_395_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_max_pool_Pipeline_emit_loop_fu_395_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_max_pool_Pipeline_emit_loop_fu_395_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/AESL_inst_max_pool_activity">
+      <obj_property name="ElementShortName">AESL_inst_max_pool_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_max_pool_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_max_pool_group">
+      <obj_property name="label">AESL_inst_max_pool</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity">
+         <obj_property name="ElementShortName">grp_max_pool_Pipeline_1_fu_318_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pool_Pipeline_1_fu_318_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity">
+         <obj_property name="ElementShortName">grp_max_pool_Pipeline_header_loop_fu_328_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pool_Pipeline_header_loop_fu_328_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity">
+         <obj_property name="ElementShortName">grp_write_axi4_stream_impl_fu_352_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_write_axi4_stream_impl_fu_352_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity">
+         <obj_property name="ElementShortName">grp_max_pool_Pipeline_receive_loop_fu_367_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pool_Pipeline_receive_loop_fu_367_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity">
+         <obj_property name="ElementShortName">grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity">
+         <obj_property name="ElementShortName">grp_max_pool_Pipeline_emit_loop_fu_395_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_max_pool_Pipeline_emit_loop_fu_395_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_max_pool_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_max_pool_Pipeline_1_fu_318_group">
+         <obj_property name="label">grp_max_pool_Pipeline_1_fu_318</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_max_pool_Pipeline_1_fu_318_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_max_pool_Pipeline_header_loop_fu_328_group">
+         <obj_property name="label">grp_max_pool_Pipeline_header_loop_fu_328</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_max_pool_Pipeline_header_loop_fu_328_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_write_axi4_stream_impl_fu_352_group">
+         <obj_property name="label">grp_write_axi4_stream_impl_fu_352</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_write_axi4_stream_impl_fu_352_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_max_pool_Pipeline_receive_loop_fu_367_group">
+         <obj_property name="label">grp_max_pool_Pipeline_receive_loop_fu_367</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_max_pool_Pipeline_receive_loop_fu_367_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_max_pool_Pipeline_window_rows_window_columns_fu_383_group">
+         <obj_property name="label">grp_max_pool_Pipeline_window_rows_window_columns_fu_383</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_max_pool_Pipeline_window_rows_window_columns_fu_383_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_max_pool_Pipeline_emit_loop_fu_395_group">
+         <obj_property name="label">grp_max_pool_Pipeline_emit_loop_fu_395</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_max_pool_Pipeline_emit_loop_fu_395_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group107">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group108">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group109">
+            <obj_property name="label">return(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TLAST">
+               <obj_property name="ElementShortName">m_out_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_out_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TSTRB">
+               <obj_property name="ElementShortName">m_out_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">m_out_TSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TKEEP">
+               <obj_property name="ElementShortName">m_out_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">m_out_TKEEP[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TREADY">
+               <obj_property name="ElementShortName">m_out_TREADY</obj_property>
+               <obj_property name="ObjectShortName">m_out_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TVALID">
+               <obj_property name="ElementShortName">m_out_TVALID</obj_property>
+               <obj_property name="ObjectShortName">m_out_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/m_out_TDATA">
+               <obj_property name="ElementShortName">m_out_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">m_out_TDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group116">
+            <obj_property name="label">halted__error__tx_id__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/interrupt">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_BRESP">
+               <obj_property name="ElementShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_BREADY">
+               <obj_property name="ElementShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_BVALID">
+               <obj_property name="ElementShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_RRESP">
+               <obj_property name="ElementShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_RDATA">
+               <obj_property name="ElementShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_RREADY">
+               <obj_property name="ElementShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_RVALID">
+               <obj_property name="ElementShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_ARREADY">
+               <obj_property name="ElementShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_ARVALID">
+               <obj_property name="ElementShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_ARADDR">
+               <obj_property name="ElementShortName">s_axi_control_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_WSTRB">
+               <obj_property name="ElementShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_WDATA">
+               <obj_property name="ElementShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_WREADY">
+               <obj_property name="ElementShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_WVALID">
+               <obj_property name="ElementShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_AWREADY">
+               <obj_property name="ElementShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_AWVALID">
+               <obj_property name="ElementShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_axi_control_AWADDR">
+               <obj_property name="ElementShortName">s_axi_control_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group135">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group136">
+            <obj_property name="label">return(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TLAST">
+               <obj_property name="ElementShortName">s_in_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">s_in_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TSTRB">
+               <obj_property name="ElementShortName">s_in_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_in_TSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TKEEP">
+               <obj_property name="ElementShortName">s_in_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_in_TKEEP[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TREADY">
+               <obj_property name="ElementShortName">s_in_TREADY</obj_property>
+               <obj_property name="ObjectShortName">s_in_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID">
+               <obj_property name="ElementShortName">s_in_TVALID</obj_property>
+               <obj_property name="ObjectShortName">s_in_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/s_in_TDATA">
+               <obj_property name="ElementShortName">s_in_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_in_TDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group143">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group145">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_max_pool_top/AESL_inst_max_pool/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

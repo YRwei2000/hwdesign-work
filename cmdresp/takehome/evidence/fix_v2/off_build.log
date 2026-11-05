@@ -1,0 +1,590 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 23:54:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/takehome/fix_run.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset off_proj 
+WARNING: [HLS 200-2182] The 'off_proj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Creating and opening solution '/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj'.
+INFO: [HLS 200-1510] Running: set_top max_pool 
+INFO: [HLS 200-1510] Running: add_files /home/yw9286/hwdesign-work/cmdresp/takehome/gen_off/max_pool.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/takehome -std=c++14 -fno-fast-math 
+INFO: [HLS 200-10] Adding design file '/home/yw9286/hwdesign-work/cmdresp/takehome/gen_off/max_pool.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/yw9286/hwdesign-work/cmdresp/takehome/pool_tb.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/takehome -std=c++14 -fno-fast-math 
+INFO: [HLS 200-10] Adding test bench file '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode off max_pool s_in 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode off max_pool m_out 
+POOL_FIX_REQUEST s_in=off m_out=off
+INFO: [HLS 200-1510] Running: csim_design -clean -argv /home/yw9286/hwdesign-work/cmdresp/takehome/data csim_fix 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../pool_tb.cpp in debug mode
+   Compiling ../../../../gen_off/max_pool.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../pool_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../pool_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.hpp:21:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/../max_pool_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+In file included from ../../../../gen_off/max_pool.cpp:1:
+In file included from ../../../../gen_off/max_pool.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../gen_off/max_pool.cpp:1:
+In file included from ../../../../gen_off/max_pool.hpp:21:
+In file included from ../../../../gen_off/../max_pool_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+BEGIN 0 T01_worked stage=csim_fix initial=28
+END T01_worked halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 1 T02_negative_ties_zero stage=csim_fix initial=78
+END T02_negative_ties_zero halted=0 error=0 tx=0 consumed=78 unread=0
+BEGIN 2 T03_parameter_changes stage=csim_fix initial=148
+END T03_parameter_changes halted=0 error=0 tx=0 consumed=135 unread=13
+BEGIN 3 T04_bounds stage=csim_fix initial=8350
+END T04_bounds halted=0 error=0 tx=0 consumed=8350 unread=0
+BEGIN 4 T05_end_first stage=csim_fix initial=19
+END T05_end_first halted=0 error=0 tx=0 consumed=6 unread=13
+BEGIN 5 T06_normal_boundary stage=csim_fix initial=20
+END T06_normal_boundary halted=0 error=0 tx=0 consumed=20 unread=0
+BEGIN 6 T07_performance stage=csim_fix initial=4108
+END T07_performance halted=0 error=0 tx=0 consumed=4108 unread=0
+BEGIN 7 T08_random stage=csim_fix initial=3098
+END T08_random halted=0 error=0 tx=0 consumed=3098 unread=0
+BEGIN 8 E01_magic stage=csim_fix initial=21
+END E01_magic halted=1 error=1 tx=4294967295 consumed=1 unread=20
+BEGIN 9 R_E01_magic stage=csim_fix initial=28
+END R_E01_magic halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 10 E02_header_short_1 stage=csim_fix initial=16
+END E02_header_short_1 halted=1 error=1 tx=4294967295 consumed=1 unread=15
+BEGIN 11 R_E02_header_short_1 stage=csim_fix initial=28
+END R_E02_header_short_1 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 12 E02_header_short_2 stage=csim_fix initial=17
+END E02_header_short_2 halted=1 error=1 tx=1021 consumed=2 unread=15
+BEGIN 13 R_E02_header_short_2 stage=csim_fix initial=28
+END R_E02_header_short_2 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 14 E02_header_short_3 stage=csim_fix initial=18
+END E02_header_short_3 halted=1 error=1 tx=1028 consumed=3 unread=15
+BEGIN 15 R_E02_header_short_3 stage=csim_fix initial=28
+END R_E02_header_short_3 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 16 E02_header_short_4 stage=csim_fix initial=19
+END E02_header_short_4 halted=1 error=1 tx=1035 consumed=4 unread=15
+BEGIN 17 R_E02_header_short_4 stage=csim_fix initial=28
+END R_E02_header_short_4 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 18 E02_header_short_5 stage=csim_fix initial=20
+END E02_header_short_5 halted=1 error=1 tx=1042 consumed=5 unread=15
+BEGIN 19 R_E02_header_short_5 stage=csim_fix initial=28
+END R_E02_header_short_5 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 20 E03_header_missing stage=csim_fix initial=21
+END E03_header_missing halted=1 error=1 tx=1049 consumed=6 unread=15
+BEGIN 21 R_E03_header_missing stage=csim_fix initial=28
+END R_E03_header_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 22 E04_unknown_opcode stage=csim_fix initial=21
+END E04_unknown_opcode halted=1 error=2 tx=1056 consumed=6 unread=15
+BEGIN 23 R_E04_unknown_opcode stage=csim_fix initial=28
+END R_E04_unknown_opcode halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 24 E05_h_zero stage=csim_fix initial=21
+END E05_h_zero halted=1 error=3 tx=1063 consumed=6 unread=15
+BEGIN 25 R_E05_h_zero stage=csim_fix initial=28
+END R_E05_h_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 26 E05_h_large stage=csim_fix initial=21
+END E05_h_large halted=1 error=3 tx=1070 consumed=6 unread=15
+BEGIN 27 R_E05_h_large stage=csim_fix initial=28
+END R_E05_h_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 28 E05_w_zero stage=csim_fix initial=21
+END E05_w_zero halted=1 error=4 tx=1077 consumed=6 unread=15
+BEGIN 29 R_E05_w_zero stage=csim_fix initial=28
+END R_E05_w_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 30 E05_w_large stage=csim_fix initial=21
+END E05_w_large halted=1 error=4 tx=1084 consumed=6 unread=15
+BEGIN 31 R_E05_w_large stage=csim_fix initial=28
+END R_E05_w_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 32 E05_k_zero stage=csim_fix initial=21
+END E05_k_zero halted=1 error=5 tx=1091 consumed=6 unread=15
+BEGIN 33 R_E05_k_zero stage=csim_fix initial=28
+END R_E05_k_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 34 E05_k_large stage=csim_fix initial=21
+END E05_k_large halted=1 error=5 tx=1098 consumed=6 unread=15
+BEGIN 35 R_E05_k_large stage=csim_fix initial=28
+END R_E05_k_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 36 E05_window_h stage=csim_fix initial=21
+END E05_window_h halted=1 error=6 tx=1105 consumed=6 unread=15
+BEGIN 37 R_E05_window_h stage=csim_fix initial=28
+END R_E05_window_h halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 38 E05_window_w stage=csim_fix initial=21
+END E05_window_w halted=1 error=6 tx=1112 consumed=6 unread=15
+BEGIN 39 R_E05_window_w stage=csim_fix initial=28
+END R_E05_window_w halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 40 E05_div_h stage=csim_fix initial=21
+END E05_div_h halted=1 error=7 tx=1119 consumed=6 unread=15
+BEGIN 41 R_E05_div_h stage=csim_fix initial=28
+END R_E05_div_h halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 42 E05_div_w stage=csim_fix initial=21
+END E05_div_w halted=1 error=7 tx=1126 consumed=6 unread=15
+BEGIN 43 R_E05_div_w stage=csim_fix initial=28
+END R_E05_div_w halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 44 E06_format_before_opcode stage=csim_fix initial=21
+END E06_format_before_opcode halted=1 error=1 tx=1133 consumed=6 unread=15
+BEGIN 45 R_E06_format_before_opcode stage=csim_fix initial=28
+END R_E06_format_before_opcode halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 46 E06_opcode_before_parameters stage=csim_fix initial=21
+END E06_opcode_before_parameters halted=1 error=2 tx=1140 consumed=6 unread=15
+BEGIN 47 R_E06_opcode_before_parameters stage=csim_fix initial=28
+END R_E06_opcode_before_parameters halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 48 E06_h_before_w_k stage=csim_fix initial=21
+END E06_h_before_w_k halted=1 error=3 tx=1147 consumed=6 unread=15
+BEGIN 49 R_E06_h_before_w_k stage=csim_fix initial=28
+END R_E06_h_before_w_k halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 50 E06_w_before_k stage=csim_fix initial=21
+END E06_w_before_k halted=1 error=4 tx=1154 consumed=6 unread=15
+BEGIN 51 R_E06_w_before_k stage=csim_fix initial=28
+END R_E06_w_before_k halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 52 E06_k_before_window stage=csim_fix initial=21
+END E06_k_before_window halted=1 error=5 tx=1161 consumed=6 unread=15
+BEGIN 53 R_E06_k_before_window stage=csim_fix initial=28
+END R_E06_k_before_window halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 54 E06_window_before_div stage=csim_fix initial=21
+END E06_window_before_div halted=1 error=6 tx=1168 consumed=6 unread=15
+BEGIN 55 R_E06_window_before_div stage=csim_fix initial=28
+END R_E06_window_before_div halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 56 E07_payload_first stage=csim_fix initial=20
+END E07_payload_first halted=1 error=8 tx=1175 consumed=7 unread=13
+BEGIN 57 R_E07_payload_first stage=csim_fix initial=28
+END R_E07_payload_first halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 58 E07_payload_later stage=csim_fix initial=26
+END E07_payload_later halted=1 error=8 tx=1182 consumed=13 unread=13
+BEGIN 59 R_E07_payload_later stage=csim_fix initial=28
+END R_E07_payload_later halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 60 E07_payload_missing stage=csim_fix initial=35
+END E07_payload_missing halted=1 error=9 tx=1189 consumed=22 unread=13
+BEGIN 61 R_E07_payload_missing stage=csim_fix initial=28
+END R_E07_payload_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 62 E07_payload_one_missing stage=csim_fix initial=20
+END E07_payload_one_missing halted=1 error=9 tx=1196 consumed=7 unread=13
+BEGIN 63 R_E07_payload_one_missing stage=csim_fix initial=28
+END R_E07_payload_one_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 64 E08_prior_success stage=csim_fix initial=50
+END E08_prior_success halted=1 error=8 tx=1204 consumed=37 unread=13
+BEGIN 65 R_E08_prior_success stage=csim_fix initial=28
+END R_E08_prior_success halted=0 error=0 tx=0 consumed=28 unread=0
+RECORDED 66 activations (all scenarios; fresh streams every call)
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8350
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:06; Allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.99 seconds. CPU system time: 0.18 seconds. Elapsed time: 1.29 seconds; current allocated memory: 286.730 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'gen_off/max_pool.cpp' ... 
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:219:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:220:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:221:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:222:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:223:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:224:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:238:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:239:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:240:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:241:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:242:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:243:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:244:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.73 seconds. CPU system time: 0.87 seconds. Elapsed time: 8.3 seconds; current allocated memory: 291.844 MB.
+INFO: [HLS 200-1995] There were 2,413 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'float32_array_utils::read_axi4_stream_elem_impl<32>::run(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, streamutils::tlast_status&, int)' into 'void float32_array_utils::read_axi4_stream_lane<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, int, streamutils::tlast_status&)' (include/float32_array_utils.h:263:5)
+INFO: [HLS 214-131] Inlining function 'float32_array_utils::write_axi4_stream_elem_impl<32>::run(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float const*, bool, int)' into 'void float32_array_utils::write_axi4_stream_lane<32>(float const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool, int)' (include/float32_array_utils.h:276:5)
+INFO: [HLS 214-131] Inlining function 'void float32_array_utils::write_axi4_stream_lane<32>(float const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool, int)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/../max_pool_body_impl.tpp:93:13)
+INFO: [HLS 214-131] Inlining function 'void float32_array_utils::read_axi4_stream_lane<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, int, streamutils::tlast_status&)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/../max_pool_body_impl.tpp:61:13)
+INFO: [HLS 214-131] Inlining function 'pool_impl::parameter_error(unsigned int, unsigned int, unsigned int)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/../max_pool_body_impl.tpp:50:27)
+INFO: [HLS 214-131] Inlining function 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:16:5)
+INFO: [HLS 200-1995] There were 706 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 536 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'PoolCmd::read_array_impl(PoolCmd::word_bw_tag<32>, PoolCmd*, ap_uint<32> const*)' into 'void PoolCmd::read_array<32>(ap_uint<32> const*)' (include/pool_cmd.h:170:0)
+INFO: [HLS 214-178] Inlining function 'void streamutils::write_axi4_word<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'PoolResp::write_axi4_stream_impl(PoolResp::word_bw_tag<32>, PoolResp const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool)' (include/pool_resp.h:105:0)
+INFO: [HLS 214-178] Inlining function 'void PoolCmd::read_array<32>(ap_uint<32> const*)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'void PoolResp::write_axi4_stream<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool) const' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'streamutils::uint_to_float(unsigned int)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'streamutils::float_to_uint(float)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'void streamutils::write_axi4_word<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen_off/max_pool.cpp:9:0)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 410 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 380 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 601 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-376] Pipelining loop< window_columns> at gen_off/../max_pool_body_impl.tpp:79:37 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< header_loop> at gen_off/../max_pool_body_impl.tpp:33:22 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at gen_off/../max_pool_body_impl.tpp:30:28 due to pipeline_loops threshold
+INFO: [HLS 200-1995] There were 477 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'raw.i' due to pipeline pragma (gen_off/../max_pool_body_impl.tpp:30:21)
+INFO: [HLS 214-248] Applying array_partition to 'raw.i': Complete partitioning on dimension 1. (gen_off/../max_pool_body_impl.tpp:30:21)
+INFO: [HLS 200-1995] There were 424 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 381 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 301 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.9 seconds. CPU system time: 0.7 seconds. Elapsed time: 9 seconds; current allocated memory: 301.973 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 301.973 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 303.184 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 304.945 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 327.844 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'window_rows'(gen_off/../max_pool_body_impl.tpp:77:30) and 'window_columns'(gen_off/../max_pool_body_impl.tpp:79:37) in function 'max_pool' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'pool_columns'(gen_off/../max_pool_body_impl.tpp:74:27) and 'window_rows'(gen_off/../max_pool_body_impl.tpp:77:30) in function 'max_pool' into perfectly nested loops.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'window_columns' (gen_off/../max_pool_body_impl.tpp:79:37) and outer loop 'window_rows' (gen_off/../max_pool_body_impl.tpp:77:30) in function 'max_pool' successfully.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'max_pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_header_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'header_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 2, loop 'header_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_axi4_stream_impl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_receive_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'receive_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'receive_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_window_rows_window_columns' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln81_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'window_rows_window_columns'.
+WARNING: [HLS 200-880] The II Violation in module 'max_pool_Pipeline_window_rows_window_columns' (loop 'window_rows_window_columns'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'and' operation 1 bit ('and_ln82_1', gen_off/../max_pool_body_impl.tpp:82->gen_off/max_pool.cpp:16) and 'fcmp' operation 1 bit ('tmp_2', gen_off/../max_pool_body_impl.tpp:82->gen_off/max_pool.cpp:16).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 10, loop 'window_rows_window_columns'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_emit_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'emit_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'emit_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 377.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (8.294 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'max_pool' consists of the following:
+	'call' operation 1 bit ('targetBlock1', gen_off/../max_pool_body_impl.tpp:52->gen_off/max_pool.cpp:16) to 'max_pool_Pipeline_receive_loop' [136]  (8.294 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 379.477 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 379.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 379.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_header_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_header_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 380.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_axi4_stream_impl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_axi4_stream_impl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 382.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_receive_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_receive_loop' pipeline 'receive_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_receive_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 382.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_window_rows_window_columns' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_window_rows_window_columns' pipeline 'window_rows_window_columns' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_12s_12s_12s_12s_12_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_window_rows_window_columns'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 383.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_emit_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_emit_loop' pipeline 'emit_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_emit_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 385.379 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/halted' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/error' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/tx_id' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'max_pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'halted', 'error', 'tx_id' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_12s_12_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_32s_32ns_32_36_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32s_32ns_32_36_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool'.
+INFO: [RTMG 210-278] Implementing memory 'max_pool_matrix_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 387.949 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.92 seconds; current allocated memory: 395.703 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/yw9286/hwdesign-work/cmdresp/takehome/off_proj/solution1/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.16 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.44 seconds; current allocated memory: 400.207 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for max_pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for max_pool.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.57 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:22; Allocated memory: 113.742 MB.
+POOL_FIX_STAGE_COMPLETED synth
+INFO: [HLS 200-112] Total CPU user time: 21.09 seconds. Total CPU system time: 3.15 seconds. Total elapsed time: 31.78 seconds; peak allocated memory: 400.207 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 33s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

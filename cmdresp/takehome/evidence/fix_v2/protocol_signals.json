@@ -1,0 +1,24 @@
+{
+  "signals": {
+    "ap_clk": "rtl_protocol_tb.dut.ap_clk",
+    "ap_rst_n": "rtl_protocol_tb.dut.ap_rst_n",
+    "s_in_TDATA": "rtl_protocol_tb.dut.s_in_TDATA[31:0]",
+    "s_in_TVALID": "rtl_protocol_tb.dut.s_in_TVALID",
+    "s_in_TREADY": "rtl_protocol_tb.dut.s_in_TREADY",
+    "s_in_TLAST": "rtl_protocol_tb.dut.s_in_TLAST[0:0]",
+    "m_out_TDATA": "rtl_protocol_tb.dut.m_out_TDATA[31:0]",
+    "m_out_TVALID": "rtl_protocol_tb.dut.m_out_TVALID",
+    "m_out_TREADY": "rtl_protocol_tb.dut.m_out_TREADY",
+    "m_out_TLAST": "rtl_protocol_tb.dut.m_out_TLAST[0:0]",
+    "s_axi_control_ARADDR": "rtl_protocol_tb.dut.s_axi_control_ARADDR[5:0]",
+    "s_axi_control_ARVALID": "rtl_protocol_tb.dut.s_axi_control_ARVALID",
+    "s_axi_control_ARREADY": "rtl_protocol_tb.dut.s_axi_control_ARREADY",
+    "s_axi_control_RDATA": "rtl_protocol_tb.dut.s_axi_control_RDATA[31:0]",
+    "s_axi_control_RVALID": "rtl_protocol_tb.dut.s_axi_control_RVALID",
+    "s_axi_control_RREADY": "rtl_protocol_tb.dut.s_axi_control_RREADY",
+    "case_index": "rtl_protocol_tb.case_index[31:0]",
+    "active": "rtl_protocol_tb.active"
+  },
+  "sampling": "strictly before clock edge",
+  "cycle_numbering": "1-based, first edge 5 ns"
+}

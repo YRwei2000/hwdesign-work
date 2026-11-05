@@ -1,0 +1,16 @@
+{
+  "purpose": "Isolated parameter violation w_large",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1084,
+      "h": 4,
+      "w": 65,
+      "k": 2,
+      "opcode": 1,
+      "error": 4,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}

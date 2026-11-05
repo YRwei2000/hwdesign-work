@@ -1,0 +1,261 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 23:22:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/takehome/run.tcl'
+INFO: [HLS 200-1510] Running: open_project pool_proj 
+WARNING: [HLS 200-2182] The 'pool_proj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Opening solution '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj'.
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.63 seconds; current allocated memory: 286.230 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'gen/max_pool.cpp' ... 
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:219:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:220:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:221:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:222:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:223:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:224:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:238:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:239:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:240:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:241:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:242:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:243:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/eda/xilinx/2026.1/Vitis/common/technology/autopilot/ap_axi_sdata.h:244:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.81 seconds. CPU system time: 0.88 seconds. Elapsed time: 10.96 seconds; current allocated memory: 291.078 MB.
+INFO: [HLS 200-1995] There were 2,411 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'float32_array_utils::read_axi4_stream_elem_impl<32>::run(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, streamutils::tlast_status&, int)' into 'void float32_array_utils::read_axi4_stream_lane<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, int, streamutils::tlast_status&)' (include/float32_array_utils.h:263:5)
+INFO: [HLS 214-131] Inlining function 'float32_array_utils::write_axi4_stream_elem_impl<32>::run(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float const*, bool, int)' into 'void float32_array_utils::write_axi4_stream_lane<32>(float const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool, int)' (include/float32_array_utils.h:276:5)
+INFO: [HLS 214-131] Inlining function 'void float32_array_utils::write_axi4_stream_lane<32>(float const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool, int)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/../max_pool_body_impl.tpp:93:13)
+INFO: [HLS 214-131] Inlining function 'void float32_array_utils::read_axi4_stream_lane<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, float*, int, streamutils::tlast_status&)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/../max_pool_body_impl.tpp:61:13)
+INFO: [HLS 214-131] Inlining function 'pool_impl::parameter_error(unsigned int, unsigned int, unsigned int)' into 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/../max_pool_body_impl.tpp:50:27)
+INFO: [HLS 214-131] Inlining function 'void pool_impl::body<32, 32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:16:5)
+INFO: [HLS 200-1995] There were 704 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 536 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'PoolCmd::read_array_impl(PoolCmd::word_bw_tag<32>, PoolCmd*, ap_uint<32> const*)' into 'void PoolCmd::read_array<32>(ap_uint<32> const*)' (include/pool_cmd.h:170:0)
+INFO: [HLS 214-178] Inlining function 'void streamutils::write_axi4_word<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'PoolResp::write_axi4_stream_impl(PoolResp::word_bw_tag<32>, PoolResp const*, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool)' (include/pool_resp.h:105:0)
+INFO: [HLS 214-178] Inlining function 'void PoolCmd::read_array<32>(ap_uint<32> const*)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'void PoolResp::write_axi4_stream<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, bool) const' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'streamutils::uint_to_float(unsigned int)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'streamutils::float_to_uint(float)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'void streamutils::write_axi4_word<32>(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<32>, bool)' into 'max_pool(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_uint<1>&, ap_uint<8>&, ap_uint<32>&)' (gen/max_pool.cpp:9:0)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 410 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 380 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 601 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-376] Pipelining loop< window_columns> at gen/../max_pool_body_impl.tpp:79:37 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< header_loop> at gen/../max_pool_body_impl.tpp:33:22 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at gen/../max_pool_body_impl.tpp:30:28 due to pipeline_loops threshold
+INFO: [HLS 200-1995] There were 477 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'raw.i' due to pipeline pragma (gen/../max_pool_body_impl.tpp:30:21)
+INFO: [HLS 214-248] Applying array_partition to 'raw.i': Complete partitioning on dimension 1. (gen/../max_pool_body_impl.tpp:30:21)
+INFO: [HLS 200-1995] There were 424 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 381 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 301 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.15 seconds. CPU system time: 0.71 seconds. Elapsed time: 10.7 seconds; current allocated memory: 301.156 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 301.156 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 302.219 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 303.219 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 326.973 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'window_rows'(gen/../max_pool_body_impl.tpp:77:30) and 'window_columns'(gen/../max_pool_body_impl.tpp:79:37) in function 'max_pool' into perfectly nested loops.
+INFO: [HLS 200-2060] Failed to convert nested loops 'pool_columns'(gen/../max_pool_body_impl.tpp:74:27) and 'window_rows'(gen/../max_pool_body_impl.tpp:77:30) in function 'max_pool' into perfectly nested loops.
+INFO: [HLS 200-2259] Flattening a loop nest with inner loop 'window_columns' (gen/../max_pool_body_impl.tpp:79:37) and outer loop 'window_rows' (gen/../max_pool_body_impl.tpp:77:30) in function 'max_pool' successfully.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-2255] Checking Wire Delay Status: Wire Delay Mode is ON
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'max_pool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.06 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_header_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'header_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 2, loop 'header_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_axi4_stream_impl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_receive_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'receive_loop'.
+WARNING: [HLS 200-887] Cannot meet target clock period from basic block for.body50.i to axis read operation ('empty', include/float32_array_utils.h:129->include/float32_array_utils.h:263->gen/../max_pool_body_impl.tpp:61->gen/max_pool.cpp:16) on port 's_in_V_data_V' (include/float32_array_utils.h:129->include/float32_array_utils.h:263->gen/../max_pool_body_impl.tpp:61->gen/max_pool.cpp:16) (combination delay: 7.394 ns) to honor II or Latency constraint in region 'receive_loop'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'receive_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_window_rows_window_columns' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln81_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'window_rows_window_columns'.
+WARNING: [HLS 200-880] The II Violation in module 'max_pool_Pipeline_window_rows_window_columns' (loop 'window_rows_window_columns'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'and' operation 1 bit ('and_ln82_1', gen/../max_pool_body_impl.tpp:82->gen/max_pool.cpp:16) and 'fcmp' operation 1 bit ('tmp_2', gen/../max_pool_body_impl.tpp:82->gen/max_pool.cpp:16).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 10, loop 'window_rows_window_columns'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_Pipeline_emit_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'emit_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'emit_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 376.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (8.812 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'max_pool' consists of the following:
+	'call' operation 1 bit ('targetBlock1', gen/../max_pool_body_impl.tpp:52->gen/max_pool.cpp:16) to 'max_pool_Pipeline_receive_loop' [136]  (8.812 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 378.586 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 378.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 378.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_header_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_header_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 379.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_axi4_stream_impl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_axi4_stream_impl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 381.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_receive_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_receive_loop' pipeline 'receive_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_receive_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 381.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_window_rows_window_columns' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_window_rows_window_columns' pipeline 'window_rows_window_columns' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_12s_12s_12s_12s_12_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_window_rows_window_columns'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 382.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_Pipeline_emit_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'max_pool_Pipeline_emit_loop' pipeline 'emit_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_Pipeline_emit_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 384.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/s_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/m_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/halted' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/error' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'max_pool/tx_id' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'max_pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'halted', 'error', 'tx_id' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_12s_12_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_32s_32ns_32_36_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32s_32ns_32_36_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool'.
+INFO: [RTMG 210-278] Implementing memory 'max_pool_matrix_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 387.215 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.91 seconds; current allocated memory: 395.008 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.17 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.45 seconds; current allocated memory: 399.465 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for max_pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for max_pool.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 113.48 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:27; Allocated memory: 113.234 MB.
+POOL_STAGE_COMPLETED synth
+INFO: [HLS 200-112] Total CPU user time: 17.43 seconds. Total CPU system time: 2.65 seconds. Total elapsed time: 30.4 seconds; peak allocated memory: 399.465 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 32s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

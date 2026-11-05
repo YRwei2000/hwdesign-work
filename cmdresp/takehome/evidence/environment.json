@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "python_executable": "/home/yw9286/waveflow-venv/bin/python",
+  "numpy": "2.5.4",
+  "vitis_executable": "/eda/xilinx/2026.1/Vitis/bin/vitis-run",
+  "vitis_version": "2026.1",
+  "build_config_vitis_version": "2026.1",
+  "license_variables_present": {
+    "XILINXD_LICENSE_FILE": true,
+    "LM_LICENSE_FILE": true
+  },
+  "license_values_recorded": false,
+  "environment_upgraded": false
+}

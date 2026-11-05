@@ -1,0 +1,32 @@
+{
+  "result_bit": {
+    "rejected": true,
+    "problems": [
+      "words differs"
+    ]
+  },
+  "missing_tlast": {
+    "rejected": true,
+    "problems": [
+      "words differs"
+    ]
+  },
+  "wrong_status": {
+    "rejected": true,
+    "problems": [
+      "status differs"
+    ]
+  },
+  "extra_read": {
+    "rejected": true,
+    "problems": [
+      "consumed differs"
+    ]
+  },
+  "fake_result": {
+    "rejected": true,
+    "problems": [
+      "words differs"
+    ]
+  }
+}

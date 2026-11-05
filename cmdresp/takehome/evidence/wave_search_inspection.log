@@ -1,0 +1,167 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 31-jul-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Nov  4 23:29:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source inspect_wave.tcl -notrace
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/AESL_inst_max_pool_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/grp_max_pool_Pipeline_1_fu_318_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/grp_max_pool_Pipeline_emit_loop_fu_395_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/grp_max_pool_Pipeline_header_loop_fu_328_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/grp_max_pool_Pipeline_receive_loop_fu_367_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/grp_max_pool_Pipeline_window_rows_window_columns_fu_383_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/grp_write_axi4_stream_impl_fu_352_activity
+open_wave_config pool_proj/solution1/sim/verilog/max_pool.wcfg
+DATABASE simulation_1
+WAVE_COMMANDS save_wave_config find_next_wave_value add_wave_group suspend_wave_config_updates add_wave_virtual_bus open_wave_database add_wave get_wave_configs add_wave_marker select_wave_objects open_wave_config create_wave_config set_wave_prop move_wave current_wave_config remove_wave get_waves log_wave resume_wave_config_updates add_wave_divider close_wave_config report_wave_props
+RDI_WAVE_COMMANDS 
+RDI_DATA_COMMANDS ::rdi::get_app_data ::rdi::get_app_data_release ::rdi::get_data_dir
+Property           Type                Read-only  Value
+CLASS              string              true       wave_design_object
+COLOR              string              false      #FFFF00
+DESIGN_OBJECT      string              true       /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID
+DISPLAY_NAME       string              false      s_in_TVALID
+FULL_NAME          string              true       /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID
+HEIGHT             int                 false      20
+IS_HEIGHT_DEFAULT  bool                true       1
+IS_REVERSED        bool                false      0
+NAME_STYLE         enum                false      short
+RADIX              enum                false      default
+WAVE_CONFIG        wave_configuration  true       max_pool.wcfg
+COMMAND report_property [lindex [get_waves -r *s_in_TVALID*] 0] RC 0 RESULT 
+COMMAND help add_wave_virtual_bus RC 0 RESULT add_wave_virtual_bus
+
+Description: 
+Add a new virtual bus
+
+Syntax: 
+add_wave_virtual_bus  [-into <args>] [-at_wave <args>] [-after_wave <args>]
+                      [-before_wave <args>] [-reverse] [-radix <arg>]
+                      [-color <arg>] [-quiet] [-verbose] [<name>]
+
+Returns: 
+The new virtual bus
+
+Usage: 
+  Name            Description
+  ---------------------------
+  [-into]         the wave configuration, group, or virtual bus into which 
+                  the new virtual bus will be inserted.
+  [-at_wave]      inserts the new virtual bus into the specified wave object,
+                  or after the specified wave object if not a group or 
+                  virtual bus
+  [-after_wave]   inserts the new virtual bus after the specified wave object
+  [-before_wave]  inserts the new virtual bus before the specified wave 
+                  object
+  [-reverse]      reverses the displayed bit order of the new virtual bus
+  [-radix]        sets the displayed radix of the new virtual bus to the 
+                  specified radix. Allowed values are: default, dec, bin, 
+                  oct, hex, unsigned, ascii, smag
+  [-color]        sets the displayed color of the new virtual bus to the 
+                  specified color, which can be a standard color name or a 
+                  string of the form #RRGGBB
+                  Default: default
+  [-quiet]        Ignore command errors
+  [-verbose]      Suspend message limits during command execution
+  [<name>]        the displayed name of the new virtual bus to the specified 
+                  string
+                  Default: new_virtual_bus
+
+Categories: 
+Waveform
+
+Description:
+
+  The add_wave_virtual_bus command creates a new virtual bus of the specified
+  <name>. The command inserts the virtual bus into the wave configuration
+  (WCFG) where specified, or by default at the bottom of the existing WCFG.
+  It returns a vb### for the newly-created virtual bus.
+
+  Note: This command can only be used when running a simulation. At a
+  minimum, you must specify a name, which is the name of the new virtual bus
+
+Arguments:
+
+  -into <wcfgGroupVbusObj> - (Optional) Specifies the wave configuration,
+  group, or virtual bus into which the new virtual bus object(s) are
+  inserted. If <wcfgGroupVbusObj> is a string instead of an object, it is
+  treated as the name of a group in the current WCFG. If no such group is
+  found, the tool searches the names of the virtual buses of the current
+  WCFG. If still not found, the tool searches the names of all WCFG objects.
+  If no -into object is specified, the current wave configuration is assumed.
+
+  -at_wave <waveObj> - (Optional) Adds a virtual bus object at a specified
+  wave object. If <waveObj> is a string, it is treated as the display name of
+  a wave object.
+
+  -after_wave <waveObj> - (Optional) Adds a virtual bus object after a
+  specified wave object. If <waveObj> is a string, it is treated as the
+  display name of a wave object.
+
+  -before_wave <waveObj> - (Optional) Adds a virtual bus object before a
+  specified wave object. If <waveObj> is a string, it is treated as the
+  display name of a wave object.
+
+  -reverse - (Optional) Sets the IS_REVERSED property of the new virtual bus
+  object(s) to true.
+
+  -radix <arg> - (Optional) Sets the radix property of the new virtual bus
+  object(s) to radix. Allowed values are: default, dec, bin, oct, hex,
+  unsigned, ascii, or smag.
+
+  -color <arg> - (Optional) Sets the color property of the new wave object(s)
+  to the specified color, which can be a pre-defined color name or a color
+  specified by a six-digit RGB format (RRGGBB).
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Optional) Sets the DISPLAY_NAME property of the new virtual bus
+  object to <name>.
+
+Examples:
+
+  Add a virtual bus of the name dout_tvalid to the end of the current
+  waveform configuration:
+
+    add_wave_virtual_bus dout_tvalid 
+    
+
+See Also:
+
+   *  add_wave_divider
+   *  add_wave_group
+   *  add_wave_marker
+   *  add_wave
+
+DEBUG: Welcome to find_next_wave_value::execute ...
+DEBUG: wvobjectName = /apatb_max_pool_top/AESL_inst_max_pool/s_in_TVALID
+DEBUG: wvobject = (NULL)
+DEBUG: time = 0
+DEBUG: pattern = 1
+DEBUG: Next value is not found.
+COMMAND find_next_wave_value -wave [lindex [get_waves -r *s_in_TVALID*] 0] -time 0ns 1 RC 0 RESULT 
+DEBUG: Welcome to find_next_wave_value::execute ...
+DEBUG: wvobjectName = /apatb_max_pool_top/AESL_inst_max_pool/s_in_TREADY
+DEBUG: wvobject = (NULL)
+DEBUG: time = 0
+DEBUG: pattern = 1
+DEBUG: Next value is not found.
+COMMAND find_next_wave_value -wave [lindex [get_waves -r *s_in_TREADY*] 0] -time 0ns 1 RC 0 RESULT 
+COMMAND info commands ::*::*wave* RC 0 RESULT 
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 23:29:12 2026...

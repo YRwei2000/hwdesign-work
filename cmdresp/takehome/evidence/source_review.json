@@ -1,0 +1,42 @@
+{
+  "review_type": "manual source review with retained source hashes; no RTL timing claim",
+  "findings": [
+    {
+      "requirement": "No input timeout",
+      "source": "max_pool_body_impl.tpp",
+      "observation": "Blocking s_in.read and generated blocking lane reader; no empty-input status, timer or timeout path"
+    },
+    {
+      "requirement": "Parameter precedence and safe arithmetic",
+      "source": "max_pool_body_impl.tpp",
+      "observation": "Ordered early returns in parameter_error; dimensions used for products, indexing and division only after success"
+    },
+    {
+      "requirement": "Per-activation reset and fresh stream recovery",
+      "source": "pool_tb.cpp",
+      "observation": "New streams inside scenario loop; poisoned status before each call; kernel clears status at entry"
+    },
+    {
+      "requirement": "Unknown transaction ID",
+      "source": "max_pool_body_impl.tpp",
+      "observation": "Fixed 0xffffffff until second word received; no read follows a detectable header violation"
+    },
+    {
+      "requirement": "Full result buffering and payload-error discard",
+      "source": "max_pool_body_impl.tpp",
+      "observation": "All input validated before pooling and results array filled before emit_loop; any payload error returns before that loop"
+    },
+    {
+      "requirement": "Whole scenario suite in first cosim",
+      "source": "run.tcl",
+      "observation": "No scenario argument/filter; same data/scenarios.txt for C simulation and sole cosim_design call"
+    }
+  ],
+  "source_sha256": {
+    "max_pool_body_impl.tpp": "6cf0658eef72f95ec733ea64f1917a079f9a9e0663662266106820744f9d9e72",
+    "pool_tb.cpp": "a6a7f263ff3f4a6f98960eed6d5bafa0b59226203d98bc617a6259b08b873ac9",
+    "run.tcl": "7bc08be24ff24ec56a239208513fe44c2b18ab5cdf5f2b59b79208d20a1c26e9"
+  },
+  "c_order_all_pass": true,
+  "python_timing_model": false
+}

@@ -1,0 +1,2 @@
+ERROR: runtime address 0x2AE0 never received a complete state snapshot; first missing byte offset=8
+Diagnostic log: /home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/sim/verilog/max_pool.wdb.wdbdecode_failure.log

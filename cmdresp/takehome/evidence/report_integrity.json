@@ -1,0 +1,12 @@
+{
+  "relative_links_exist": true,
+  "missing": [],
+  "source_manifest_matches": true,
+  "model_freeze_matches": true,
+  "numeric_checks_pass": true,
+  "overall_pass": false,
+  "prompt_version": "v2",
+  "source_hashes_checked": 33,
+  "prompt_matches_git_head": true,
+  "license_values_absent_from_retained_text": true
+}

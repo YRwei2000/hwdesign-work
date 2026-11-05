@@ -1,0 +1,71 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 23:52:56 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/takehome/query_cosim.tcl'
+[1mSYNTAX [0m
+  [1mcosim_design[0m [OPTIONS]
+
+[1mDESCRIPTION[0m
+  Executes post-synthesis co-simulation of the generated RTL with the original C-based testbench.
+
+[1mOPTIONS[0m
+  [1m-O[0m
+    Enables optimize compilation of the C testbench and RTL wrapper. Without optimization, cosim_design will compile the
+    testbench as quickly as possible.
+  [1m-argv[0m <string> 
+    Option to specify the argument list for the behavioral testbench. The <string> will be passed to the main C function.
+  [1m-compiled_library_dir[0m <string> 
+    Option to specify the compiled library directory during simulation with 3rd party simulators.
+  [1m-coverage[0m
+    This option enables the coverage feature during simulation with the VCS simulator.
+  [1m-disable_binary_tv[0m
+    Use plain text binary test vector files instead of binary compressed format
+  [1m-disable_deadlock_detection[0m
+    Disables deadlock detection
+  [1m-disable_dependency_check[0m
+    Disables dependency checks
+  [1m-enable_dataflow_profiling[0m
+    This option turns on the dataflow channel profiling to track channel sizes during simulation
+  [1m-enable_fifo_sizing[0m
+    This option turns on auto dataflow FIFO channel size tuning during simulation
+  [1m-enable_tasks_with_m_axi[0m
+    Enables simulation of "hls::task" and ap_ctrl_none with stable top pointers
+  [1m-hwemu_trace_dir[0m <string> 
+    Specify hwemu trace test vector file folder
+  [1m-ldflags[0m <string> 
+    Provides for the specification of options that need to be passed to the linker for co-simulation. This is typically used
+    to pass on include path information or library information for the C test bench.
+  [1m-mflags[0m <string> [31m DEPRECATED[0m
+    Provides for the specification of options that need to be passed to the compiler for systemc simulation. This is
+    typically used to speed up compilation.
+  [1m-random_stall[0m
+    Enable random stalling of top level interfaces during co-simulation
+  [1m-rtl[0m <vhdl|[4mverilog[0m>
+    Specify RTL language to use for C/RTL co-simulation.
+  [1m-setup[0m
+    When this option is specified, all the simulation files will be created in the "sim/<HDL>" directory of the active
+    solution, but the simulation will not be executed.
+  [1m-stable_axilite_update[0m
+    Enable axilite to config registers which is stable compared with previous transaction
+  [1m-stdmath[0m [=true|[4mfalse[0m]
+    Link the system standard math library
+  [1m-tool[0m <vcs|questa|modelsim|riviera|xcelium|[4mxsim[0m>
+    Option to select the HDL simulator to be used to co-simulate the RTL with the C testbench.
+  [1m-trace_level[0m <all|port|port_hier|[4mnone[0m>
+    Determines the level of waveform tracing during C/RTL cosimulation.
+  [1m-user_stall[0m <string> 
+    Specify which ports to stall via a json file
+  [1m-wave_debug[0m
+    Opens the Vivado waveform viewer during co-simulation (simulation will not exit until the viewer is closed)
+
+[1mSEE ALSO[0m
+  docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1399-vitis-hls&resourceid=rpg1583259720879.html
+
+INFO: [HLS 200-112] Total CPU user time: 1.41 seconds. Total CPU system time: 0.24 seconds. Total elapsed time: 1.52 seconds; peak allocated memory: 128.070 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 3s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

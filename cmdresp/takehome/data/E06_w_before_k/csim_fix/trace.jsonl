@@ -1,0 +1,8 @@
+{"kind":"START","tx":0,"index":0,"remaining":21,"output":0}
+{"kind":"HREAD","tx":4294967295,"index":1,"remaining":20,"output":0}
+{"kind":"HREAD","tx":1154,"index":2,"remaining":19,"output":0}
+{"kind":"HREAD","tx":1154,"index":3,"remaining":18,"output":0}
+{"kind":"HREAD","tx":1154,"index":4,"remaining":17,"output":0}
+{"kind":"HREAD","tx":1154,"index":5,"remaining":16,"output":0}
+{"kind":"HREAD","tx":1154,"index":6,"remaining":15,"output":0}
+{"kind":"ERROR","tx":1154,"index":4,"remaining":15,"output":0}

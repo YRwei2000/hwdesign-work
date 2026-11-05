@@ -1,0 +1,2428 @@
+{
+  "T01_worked": {
+    "pass_": true,
+    "problems": [],
+    "source": "T01_worked",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 101,
+        "response_last_cycle": 148,
+        "first_payload_cycle": 149,
+        "last_payload_cycle": 164,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T02_negative_ties_zero": {
+    "pass_": true,
+    "problems": [],
+    "source": "T02_negative_ties_zero",
+    "full_fixture_words": 78,
+    "received_words": 78,
+    "expected_received_words": 78,
+    "output_words": 30,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 201,
+        "response_last_cycle": 461,
+        "first_payload_cycle": 462,
+        "last_payload_cycle": 477,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 202,
+        "response_last_cycle": 710,
+        "first_payload_cycle": 711,
+        "last_payload_cycle": 726,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 203,
+        "response_last_cycle": 959,
+        "first_payload_cycle": 960,
+        "last_payload_cycle": 967,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 204,
+        "response_last_cycle": 1155,
+        "first_payload_cycle": 1156,
+        "last_payload_cycle": 1163,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T03_parameter_changes": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "T03_parameter_changes",
+    "full_fixture_words": 148,
+    "received_words": 135,
+    "expected_received_words": 135,
+    "output_words": 27,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 301,
+        "response_last_cycle": 1496,
+        "first_payload_cycle": 1497,
+        "last_payload_cycle": 1512,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 302,
+        "response_last_cycle": 1745,
+        "first_payload_cycle": 1746,
+        "last_payload_cycle": 1769,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 303,
+        "response_last_cycle": 2044,
+        "first_payload_cycle": 2045,
+        "last_payload_cycle": 2108,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 304,
+        "response_last_cycle": 2437,
+        "first_payload_cycle": 2438,
+        "last_payload_cycle": 2438,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 30,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 2515
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T04_bounds": {
+    "pass_": true,
+    "problems": [],
+    "source": "T04_bounds",
+    "full_fixture_words": 8350,
+    "received_words": 8350,
+    "expected_received_words": 8350,
+    "output_words": 4300,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 401,
+        "response_last_cycle": 2663,
+        "first_payload_cycle": 2664,
+        "last_payload_cycle": 2727,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 402,
+        "response_last_cycle": 3833,
+        "first_payload_cycle": 3834,
+        "last_payload_cycle": 3897,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 403,
+        "response_last_cycle": 5192,
+        "first_payload_cycle": 5193,
+        "last_payload_cycle": 9288,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 404,
+        "response_last_cycle": 71063,
+        "first_payload_cycle": 71064,
+        "last_payload_cycle": 75159,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T05_end_first": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "T05_end_first",
+    "full_fixture_words": 19,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 84331
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T06_normal_boundary": {
+    "pass_": true,
+    "problems": [],
+    "source": "T06_normal_boundary",
+    "full_fixture_words": 20,
+    "received_words": 20,
+    "expected_received_words": 20,
+    "output_words": 11,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 601,
+        "response_last_cycle": 84479,
+        "first_payload_cycle": 84480,
+        "last_payload_cycle": 84487,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T07_performance": {
+    "pass_": true,
+    "problems": [],
+    "source": "T07_performance",
+    "full_fixture_words": 4108,
+    "received_words": 4108,
+    "expected_received_words": 4108,
+    "output_words": 1027,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 701,
+        "response_last_cycle": 84820,
+        "first_payload_cycle": 84821,
+        "last_payload_cycle": 88916,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "T08_random": {
+    "pass_": true,
+    "problems": [],
+    "source": "T08_random",
+    "full_fixture_words": 3098,
+    "received_words": 3098,
+    "expected_received_words": 3098,
+    "output_words": 568,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 801,
+        "response_last_cycle": 110723,
+        "first_payload_cycle": 110724,
+        "last_payload_cycle": 110741,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 802,
+        "response_last_cycle": 110949,
+        "first_payload_cycle": 110950,
+        "last_payload_cycle": 111333,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 803,
+        "response_last_cycle": 112328,
+        "first_payload_cycle": 112329,
+        "last_payload_cycle": 112544,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 804,
+        "response_last_cycle": 113203,
+        "first_payload_cycle": 113204,
+        "last_payload_cycle": 113252,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 805,
+        "response_last_cycle": 113509,
+        "first_payload_cycle": 113510,
+        "last_payload_cycle": 113709,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 806,
+        "response_last_cycle": 114362,
+        "first_payload_cycle": 114363,
+        "last_payload_cycle": 114490,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 807,
+        "response_last_cycle": 114999,
+        "first_payload_cycle": 115000,
+        "last_payload_cycle": 115000,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 808,
+        "response_last_cycle": 115161,
+        "first_payload_cycle": 115162,
+        "last_payload_cycle": 117209,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E01_magic": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E01_magic",
+    "full_fixture_words": 21,
+    "received_words": 1,
+    "expected_received_words": 1,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 4294967295
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1007,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 20,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 128119
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E01_magic": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E01_magic",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5000,
+        "response_last_cycle": 128267,
+        "first_payload_cycle": 128268,
+        "last_payload_cycle": 128283,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E02_header_short_1": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E02_header_short_1",
+    "full_fixture_words": 16,
+    "received_words": 1,
+    "expected_received_words": 1,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 4294967295
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 128483
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E02_header_short_1": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E02_header_short_1",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5003,
+        "response_last_cycle": 128631,
+        "first_payload_cycle": 128632,
+        "last_payload_cycle": 128647,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E02_header_short_2": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E02_header_short_2",
+    "full_fixture_words": 17,
+    "received_words": 2,
+    "expected_received_words": 2,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1021
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 128849
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E02_header_short_2": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E02_header_short_2",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5006,
+        "response_last_cycle": 128997,
+        "first_payload_cycle": 128998,
+        "last_payload_cycle": 129013,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E02_header_short_3": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E02_header_short_3",
+    "full_fixture_words": 18,
+    "received_words": 3,
+    "expected_received_words": 3,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1028
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 129217
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E02_header_short_3": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E02_header_short_3",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5009,
+        "response_last_cycle": 129365,
+        "first_payload_cycle": 129366,
+        "last_payload_cycle": 129381,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E02_header_short_4": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E02_header_short_4",
+    "full_fixture_words": 19,
+    "received_words": 4,
+    "expected_received_words": 4,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1035
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 129587
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E02_header_short_4": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E02_header_short_4",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5012,
+        "response_last_cycle": 129735,
+        "first_payload_cycle": 129736,
+        "last_payload_cycle": 129751,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E02_header_short_5": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E02_header_short_5",
+    "full_fixture_words": 20,
+    "received_words": 5,
+    "expected_received_words": 5,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1042
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 129959
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E02_header_short_5": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E02_header_short_5",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5015,
+        "response_last_cycle": 130107,
+        "first_payload_cycle": 130108,
+        "last_payload_cycle": 130123,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E03_header_missing": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E03_header_missing",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1049
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 130333
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E03_header_missing": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E03_header_missing",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5018,
+        "response_last_cycle": 130481,
+        "first_payload_cycle": 130482,
+        "last_payload_cycle": 130497,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E04_unknown_opcode": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E04_unknown_opcode",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 2,
+      "48": 1056
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 130711
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E04_unknown_opcode": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E04_unknown_opcode",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5021,
+        "response_last_cycle": 130859,
+        "first_payload_cycle": 130860,
+        "last_payload_cycle": 130875,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_h_zero": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_h_zero",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 3,
+      "48": 1063
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 131089
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_h_zero": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_h_zero",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5024,
+        "response_last_cycle": 131237,
+        "first_payload_cycle": 131238,
+        "last_payload_cycle": 131253,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_h_large": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_h_large",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 3,
+      "48": 1070
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 131467
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_h_large": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_h_large",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5027,
+        "response_last_cycle": 131615,
+        "first_payload_cycle": 131616,
+        "last_payload_cycle": 131631,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_w_zero": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_w_zero",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 4,
+      "48": 1077
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 131845
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_w_zero": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_w_zero",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5030,
+        "response_last_cycle": 131993,
+        "first_payload_cycle": 131994,
+        "last_payload_cycle": 132009,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_w_large": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_w_large",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 4,
+      "48": 1084
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 132223
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_w_large": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_w_large",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5033,
+        "response_last_cycle": 132371,
+        "first_payload_cycle": 132372,
+        "last_payload_cycle": 132387,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_k_zero": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_k_zero",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 5,
+      "48": 1091
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 132601
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_k_zero": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_k_zero",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5036,
+        "response_last_cycle": 132749,
+        "first_payload_cycle": 132750,
+        "last_payload_cycle": 132765,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_k_large": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_k_large",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 5,
+      "48": 1098
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 132979
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_k_large": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_k_large",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5039,
+        "response_last_cycle": 133127,
+        "first_payload_cycle": 133128,
+        "last_payload_cycle": 133143,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_window_h": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_window_h",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 6,
+      "48": 1105
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 133357
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_window_h": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_window_h",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5042,
+        "response_last_cycle": 133505,
+        "first_payload_cycle": 133506,
+        "last_payload_cycle": 133521,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_window_w": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_window_w",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 6,
+      "48": 1112
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 133735
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_window_w": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_window_w",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5045,
+        "response_last_cycle": 133883,
+        "first_payload_cycle": 133884,
+        "last_payload_cycle": 133899,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_div_h": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_div_h",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 7,
+      "48": 1119
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 67,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 134149
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_div_h": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_div_h",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5048,
+        "response_last_cycle": 134297,
+        "first_payload_cycle": 134298,
+        "last_payload_cycle": 134313,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E05_div_w": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E05_div_w",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 7,
+      "48": 1126
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 101,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 134597
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E05_div_w": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E05_div_w",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5051,
+        "response_last_cycle": 134745,
+        "first_payload_cycle": 134746,
+        "last_payload_cycle": 134761,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_format_before_opcode": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_format_before_opcode",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 1,
+      "48": 1133
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 27,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 134971
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_format_before_opcode": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_format_before_opcode",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5054,
+        "response_last_cycle": 135119,
+        "first_payload_cycle": 135120,
+        "last_payload_cycle": 135135,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_opcode_before_parameters": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_opcode_before_parameters",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 2,
+      "48": 1140
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 135349
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_opcode_before_parameters": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_opcode_before_parameters",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5057,
+        "response_last_cycle": 135497,
+        "first_payload_cycle": 135498,
+        "last_payload_cycle": 135513,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_h_before_w_k": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_h_before_w_k",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 3,
+      "48": 1147
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 135727
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_h_before_w_k": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_h_before_w_k",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5060,
+        "response_last_cycle": 135875,
+        "first_payload_cycle": 135876,
+        "last_payload_cycle": 135891,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_w_before_k": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_w_before_k",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 4,
+      "48": 1154
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 136105
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_w_before_k": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_w_before_k",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5063,
+        "response_last_cycle": 136253,
+        "first_payload_cycle": 136254,
+        "last_payload_cycle": 136269,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_k_before_window": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_k_before_window",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 5,
+      "48": 1161
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 136483
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_k_before_window": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_k_before_window",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5066,
+        "response_last_cycle": 136631,
+        "first_payload_cycle": 136632,
+        "last_payload_cycle": 136647,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E06_window_before_div": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E06_window_before_div",
+    "full_fixture_words": 21,
+    "received_words": 6,
+    "expected_received_words": 6,
+    "output_words": 0,
+    "actual_status": {
+      "16": 1,
+      "32": 6,
+      "48": 1168
+    },
+    "ordering": [],
+    "pending": {
+      "pass_": false,
+      "word": 1088421888,
+      "last": 0,
+      "held_cycles": 31,
+      "cycles_after_status": 15,
+      "unaccepted_words": 15,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 136861
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E06_window_before_div": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E06_window_before_div",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5069,
+        "response_last_cycle": 137009,
+        "first_payload_cycle": 137010,
+        "last_payload_cycle": 137025,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E07_payload_first": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E07_payload_first",
+    "full_fixture_words": 20,
+    "received_words": 7,
+    "expected_received_words": 7,
+    "output_words": 3,
+    "actual_status": {
+      "16": 1,
+      "32": 8,
+      "48": 1175
+    },
+    "ordering": [
+      {
+        "tx_id": 1175,
+        "response_last_cycle": 137322,
+        "first_payload_cycle": 137323,
+        "last_payload_cycle": 137323,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 26,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 137349
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E07_payload_first": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E07_payload_first",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5072,
+        "response_last_cycle": 137497,
+        "first_payload_cycle": 137498,
+        "last_payload_cycle": 137513,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E07_payload_later": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E07_payload_later",
+    "full_fixture_words": 26,
+    "received_words": 13,
+    "expected_received_words": 13,
+    "output_words": 3,
+    "actual_status": {
+      "16": 1,
+      "32": 8,
+      "48": 1182
+    },
+    "ordering": [
+      {
+        "tx_id": 1182,
+        "response_last_cycle": 137810,
+        "first_payload_cycle": 137811,
+        "last_payload_cycle": 137817,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 26,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 137843
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E07_payload_later": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E07_payload_later",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5075,
+        "response_last_cycle": 137991,
+        "first_payload_cycle": 137992,
+        "last_payload_cycle": 138007,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E07_payload_missing": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E07_payload_missing",
+    "full_fixture_words": 35,
+    "received_words": 22,
+    "expected_received_words": 22,
+    "output_words": 3,
+    "actual_status": {
+      "16": 1,
+      "32": 9,
+      "48": 1189
+    },
+    "ordering": [
+      {
+        "tx_id": 1189,
+        "response_last_cycle": 138304,
+        "first_payload_cycle": 138305,
+        "last_payload_cycle": 138320,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 25,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 138345
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E07_payload_missing": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E07_payload_missing",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5078,
+        "response_last_cycle": 138493,
+        "first_payload_cycle": 138494,
+        "last_payload_cycle": 138509,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E07_payload_one_missing": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E07_payload_one_missing",
+    "full_fixture_words": 20,
+    "received_words": 7,
+    "expected_received_words": 7,
+    "output_words": 3,
+    "actual_status": {
+      "16": 1,
+      "32": 9,
+      "48": 1196
+    },
+    "ordering": [
+      {
+        "tx_id": 1196,
+        "response_last_cycle": 138806,
+        "first_payload_cycle": 138807,
+        "last_payload_cycle": 138807,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 26,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 138833
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E07_payload_one_missing": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E07_payload_one_missing",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5081,
+        "response_last_cycle": 138981,
+        "first_payload_cycle": 138982,
+        "last_payload_cycle": 138997,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "E08_prior_success": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E08_prior_success",
+    "full_fixture_words": 50,
+    "received_words": 37,
+    "expected_received_words": 37,
+    "output_words": 10,
+    "actual_status": {
+      "16": 1,
+      "32": 8,
+      "48": 1204
+    },
+    "ordering": [
+      {
+        "tx_id": 1203,
+        "response_last_cycle": 139294,
+        "first_payload_cycle": 139295,
+        "last_payload_cycle": 139310,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      },
+      {
+        "tx_id": 1204,
+        "response_last_cycle": 139543,
+        "first_payload_cycle": 139544,
+        "last_payload_cycle": 139552,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 25,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 139577
+    },
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_E08_prior_success": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E08_prior_success",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5084,
+        "response_last_cycle": 139725,
+        "first_payload_cycle": 139726,
+        "last_payload_cycle": 139741,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "BP_success": {
+    "pass_": true,
+    "problems": [],
+    "source": "T01_worked",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 101,
+        "response_last_cycle": 140050,
+        "first_payload_cycle": 140051,
+        "last_payload_cycle": 140066,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": {
+      "pass_": true,
+      "stalled_last_header_cycles": 12,
+      "response_last_cycle": 140050,
+      "first_payload_cycle": 140051,
+      "payload_handshakes_before_response_complete": 0,
+      "first_stall_cycle": 140038,
+      "last_stall_cycle": 140049
+    },
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "BP_payload_error": {
+    "pass_": false,
+    "problems": [
+      "pending word not held unaccepted through observation/reset"
+    ],
+    "source": "E07_payload_first",
+    "full_fixture_words": 20,
+    "received_words": 7,
+    "expected_received_words": 7,
+    "output_words": 3,
+    "actual_status": {
+      "16": 1,
+      "32": 8,
+      "48": 1175
+    },
+    "ordering": [
+      {
+        "tx_id": 1175,
+        "response_last_cycle": 140375,
+        "first_payload_cycle": 140376,
+        "last_payload_cycle": 140376,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": {
+      "pass_": false,
+      "word": 1347374924,
+      "last": 0,
+      "held_cycles": 26,
+      "cycles_after_status": 15,
+      "unaccepted_words": 13,
+      "valid": 1,
+      "ready": 0,
+      "final_cycle": 140402
+    },
+    "backpressure": {
+      "pass_": true,
+      "stalled_last_header_cycles": 12,
+      "response_last_cycle": 140375,
+      "first_payload_cycle": 140376,
+      "payload_handshakes_before_response_complete": 0,
+      "first_stall_cycle": 140363,
+      "last_stall_cycle": 140374
+    },
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  },
+  "R_BP_payload_error": {
+    "pass_": true,
+    "problems": [],
+    "source": "R_E07_payload_first",
+    "full_fixture_words": 28,
+    "received_words": 28,
+    "expected_received_words": 28,
+    "output_words": 7,
+    "actual_status": {
+      "16": 0,
+      "32": 0,
+      "48": 0
+    },
+    "ordering": [
+      {
+        "tx_id": 5072,
+        "response_last_cycle": 140550,
+        "first_payload_cycle": 140551,
+        "last_payload_cycle": 140566,
+        "pass_": true,
+        "signals": {
+          "input": "rtl_protocol_tb.dut.s_in_TVALID/TREADY/TDATA/TLAST",
+          "output": "rtl_protocol_tb.dut.m_out_TVALID/TREADY/TDATA/TLAST"
+        }
+      }
+    ],
+    "pending": null,
+    "backpressure": null,
+    "reset_before_activation": true,
+    "reset_after_observation": true
+  }
+}

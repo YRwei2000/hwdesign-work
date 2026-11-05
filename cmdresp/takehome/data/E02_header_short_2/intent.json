@@ -1,0 +1,16 @@
+{
+  "purpose": "Early header TLAST on word 2",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1021,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "opcode": 1,
+      "error": 1,
+      "input_start": 0,
+      "read_count": 2
+    }
+  ]
+}

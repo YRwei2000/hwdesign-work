@@ -1,0 +1,1068 @@
+{
+  "T01_worked": {
+    "pass_": false,
+    "problems": [
+      "tx 101: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 101,
+        "response_last_cycle": 151,
+        "first_input_cycle": 35,
+        "last_input_cycle": 166,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "T02_negative_ties_zero": {
+    "pass_": false,
+    "problems": [
+      "tx 201: external payload accepted before response completed",
+      "tx 202: external payload accepted before response completed",
+      "tx 203: external payload accepted before response completed",
+      "tx 204: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 201,
+        "response_last_cycle": 444,
+        "first_input_cycle": 328,
+        "last_input_cycle": 459,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 202,
+        "response_last_cycle": 694,
+        "first_input_cycle": 578,
+        "last_input_cycle": 709,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 203,
+        "response_last_cycle": 944,
+        "first_input_cycle": 828,
+        "last_input_cycle": 951,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 204,
+        "response_last_cycle": 1141,
+        "first_input_cycle": 1025,
+        "last_input_cycle": 1148,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 78,
+    "output_count": 30
+  },
+  "T03_parameter_changes": {
+    "pass_": false,
+    "problems": [
+      "tx 301: external payload accepted before response completed",
+      "tx 302: external payload accepted before response completed",
+      "tx 303: external payload accepted before response completed",
+      "tx 304: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 301,
+        "response_last_cycle": 1462,
+        "first_input_cycle": 1346,
+        "last_input_cycle": 1477,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 302,
+        "response_last_cycle": 1712,
+        "first_input_cycle": 1596,
+        "last_input_cycle": 1735,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 303,
+        "response_last_cycle": 2012,
+        "first_input_cycle": 1896,
+        "last_input_cycle": 2075,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 304,
+        "response_last_cycle": 2406,
+        "first_input_cycle": 2290,
+        "last_input_cycle": 2290,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 135,
+    "output_count": 27
+  },
+  "T04_bounds": {
+    "pass_": false,
+    "problems": [
+      "tx 401: external payload accepted before response completed",
+      "tx 402: external payload accepted before response completed",
+      "tx 403: external payload accepted before response completed",
+      "tx 404: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 401,
+        "response_last_cycle": 2612,
+        "first_input_cycle": 2496,
+        "last_input_cycle": 2675,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 402,
+        "response_last_cycle": 3783,
+        "first_input_cycle": 3667,
+        "last_input_cycle": 3846,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 403,
+        "response_last_cycle": 5143,
+        "first_input_cycle": 5027,
+        "last_input_cycle": 9238,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 404,
+        "response_last_cycle": 71015,
+        "first_input_cycle": 70899,
+        "last_input_cycle": 75110,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 8350,
+    "output_count": 4300
+  },
+  "T05_end_first": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "T06_normal_boundary": {
+    "pass_": false,
+    "problems": [
+      "tx 601: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 601,
+        "response_last_cycle": 84389,
+        "first_input_cycle": 84273,
+        "last_input_cycle": 84396,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 20,
+    "output_count": 11
+  },
+  "T07_performance": {
+    "pass_": false,
+    "problems": [
+      "tx 701: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 701,
+        "response_last_cycle": 84710,
+        "first_input_cycle": 84594,
+        "last_input_cycle": 88805,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 4108,
+    "output_count": 1027
+  },
+  "T08_random": {
+    "pass_": false,
+    "problems": [
+      "tx 801: external payload accepted before response completed",
+      "tx 802: external payload accepted before response completed",
+      "tx 803: external payload accepted before response completed",
+      "tx 804: external payload accepted before response completed",
+      "tx 805: external payload accepted before response completed",
+      "tx 806: external payload accepted before response completed",
+      "tx 807: external payload accepted before response completed",
+      "tx 808: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 801,
+        "response_last_cycle": 110593,
+        "first_input_cycle": 110477,
+        "last_input_cycle": 110610,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 802,
+        "response_last_cycle": 110820,
+        "first_input_cycle": 110704,
+        "last_input_cycle": 111203,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 803,
+        "response_last_cycle": 112200,
+        "first_input_cycle": 112084,
+        "last_input_cycle": 112415,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 804,
+        "response_last_cycle": 113076,
+        "first_input_cycle": 112960,
+        "last_input_cycle": 113124,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 805,
+        "response_last_cycle": 113383,
+        "first_input_cycle": 113267,
+        "last_input_cycle": 113582,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 806,
+        "response_last_cycle": 114237,
+        "first_input_cycle": 114121,
+        "last_input_cycle": 114364,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 807,
+        "response_last_cycle": 114875,
+        "first_input_cycle": 114759,
+        "last_input_cycle": 114759,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 808,
+        "response_last_cycle": 115038,
+        "first_input_cycle": 114922,
+        "last_input_cycle": 117085,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 3098,
+    "output_count": 568
+  },
+  "E01_magic": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 1,
+    "output_count": 0
+  },
+  "R_E01_magic": {
+    "pass_": false,
+    "problems": [
+      "tx 5000: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5000,
+        "response_last_cycle": 128103,
+        "first_input_cycle": 127987,
+        "last_input_cycle": 128118,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E02_header_short_1": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 1,
+    "output_count": 0
+  },
+  "R_E02_header_short_1": {
+    "pass_": false,
+    "problems": [
+      "tx 5003: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5003,
+        "response_last_cycle": 128426,
+        "first_input_cycle": 128310,
+        "last_input_cycle": 128441,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E02_header_short_2": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 2,
+    "output_count": 0
+  },
+  "R_E02_header_short_2": {
+    "pass_": false,
+    "problems": [
+      "tx 5006: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5006,
+        "response_last_cycle": 128751,
+        "first_input_cycle": 128635,
+        "last_input_cycle": 128766,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E02_header_short_3": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 3,
+    "output_count": 0
+  },
+  "R_E02_header_short_3": {
+    "pass_": false,
+    "problems": [
+      "tx 5009: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5009,
+        "response_last_cycle": 129078,
+        "first_input_cycle": 128962,
+        "last_input_cycle": 129093,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E02_header_short_4": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 4,
+    "output_count": 0
+  },
+  "R_E02_header_short_4": {
+    "pass_": false,
+    "problems": [
+      "tx 5012: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5012,
+        "response_last_cycle": 129407,
+        "first_input_cycle": 129291,
+        "last_input_cycle": 129422,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E02_header_short_5": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 5,
+    "output_count": 0
+  },
+  "R_E02_header_short_5": {
+    "pass_": false,
+    "problems": [
+      "tx 5015: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5015,
+        "response_last_cycle": 129738,
+        "first_input_cycle": 129622,
+        "last_input_cycle": 129753,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E03_header_missing": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E03_header_missing": {
+    "pass_": false,
+    "problems": [
+      "tx 5018: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5018,
+        "response_last_cycle": 130071,
+        "first_input_cycle": 129955,
+        "last_input_cycle": 130086,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E04_unknown_opcode": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E04_unknown_opcode": {
+    "pass_": false,
+    "problems": [
+      "tx 5021: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5021,
+        "response_last_cycle": 130407,
+        "first_input_cycle": 130291,
+        "last_input_cycle": 130422,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_h_zero": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_h_zero": {
+    "pass_": false,
+    "problems": [
+      "tx 5024: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5024,
+        "response_last_cycle": 130744,
+        "first_input_cycle": 130628,
+        "last_input_cycle": 130759,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_h_large": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_h_large": {
+    "pass_": false,
+    "problems": [
+      "tx 5027: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5027,
+        "response_last_cycle": 131081,
+        "first_input_cycle": 130965,
+        "last_input_cycle": 131096,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_w_zero": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_w_zero": {
+    "pass_": false,
+    "problems": [
+      "tx 5030: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5030,
+        "response_last_cycle": 131418,
+        "first_input_cycle": 131302,
+        "last_input_cycle": 131433,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_w_large": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_w_large": {
+    "pass_": false,
+    "problems": [
+      "tx 5033: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5033,
+        "response_last_cycle": 131755,
+        "first_input_cycle": 131639,
+        "last_input_cycle": 131770,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_k_zero": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_k_zero": {
+    "pass_": false,
+    "problems": [
+      "tx 5036: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5036,
+        "response_last_cycle": 132092,
+        "first_input_cycle": 131976,
+        "last_input_cycle": 132107,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_k_large": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_k_large": {
+    "pass_": false,
+    "problems": [
+      "tx 5039: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5039,
+        "response_last_cycle": 132429,
+        "first_input_cycle": 132313,
+        "last_input_cycle": 132444,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_window_h": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_window_h": {
+    "pass_": false,
+    "problems": [
+      "tx 5042: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5042,
+        "response_last_cycle": 132766,
+        "first_input_cycle": 132650,
+        "last_input_cycle": 132781,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_window_w": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_window_w": {
+    "pass_": false,
+    "problems": [
+      "tx 5045: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5045,
+        "response_last_cycle": 133103,
+        "first_input_cycle": 132987,
+        "last_input_cycle": 133118,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_div_h": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_div_h": {
+    "pass_": false,
+    "problems": [
+      "tx 5048: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5048,
+        "response_last_cycle": 133475,
+        "first_input_cycle": 133359,
+        "last_input_cycle": 133490,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E05_div_w": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E05_div_w": {
+    "pass_": false,
+    "problems": [
+      "tx 5051: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5051,
+        "response_last_cycle": 133882,
+        "first_input_cycle": 133766,
+        "last_input_cycle": 133897,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_format_before_opcode": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_format_before_opcode": {
+    "pass_": false,
+    "problems": [
+      "tx 5054: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5054,
+        "response_last_cycle": 134215,
+        "first_input_cycle": 134099,
+        "last_input_cycle": 134230,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_opcode_before_parameters": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_opcode_before_parameters": {
+    "pass_": false,
+    "problems": [
+      "tx 5057: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5057,
+        "response_last_cycle": 134551,
+        "first_input_cycle": 134435,
+        "last_input_cycle": 134566,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_h_before_w_k": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_h_before_w_k": {
+    "pass_": false,
+    "problems": [
+      "tx 5060: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5060,
+        "response_last_cycle": 134888,
+        "first_input_cycle": 134772,
+        "last_input_cycle": 134903,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_w_before_k": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_w_before_k": {
+    "pass_": false,
+    "problems": [
+      "tx 5063: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5063,
+        "response_last_cycle": 135225,
+        "first_input_cycle": 135109,
+        "last_input_cycle": 135240,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_k_before_window": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_k_before_window": {
+    "pass_": false,
+    "problems": [
+      "tx 5066: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5066,
+        "response_last_cycle": 135562,
+        "first_input_cycle": 135446,
+        "last_input_cycle": 135577,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E06_window_before_div": {
+    "pass_": true,
+    "problems": [],
+    "ordering": [],
+    "input_count": 6,
+    "output_count": 0
+  },
+  "R_E06_window_before_div": {
+    "pass_": false,
+    "problems": [
+      "tx 5069: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5069,
+        "response_last_cycle": 135899,
+        "first_input_cycle": 135783,
+        "last_input_cycle": 135914,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E07_payload_first": {
+    "pass_": false,
+    "problems": [
+      "tx 1175: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 1175,
+        "response_last_cycle": 136192,
+        "first_input_cycle": 136076,
+        "last_input_cycle": 136076,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 7,
+    "output_count": 3
+  },
+  "R_E07_payload_first": {
+    "pass_": false,
+    "problems": [
+      "tx 5072: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5072,
+        "response_last_cycle": 136346,
+        "first_input_cycle": 136230,
+        "last_input_cycle": 136361,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E07_payload_later": {
+    "pass_": false,
+    "problems": [
+      "tx 1182: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 1182,
+        "response_last_cycle": 136639,
+        "first_input_cycle": 136523,
+        "last_input_cycle": 136645,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 13,
+    "output_count": 3
+  },
+  "R_E07_payload_later": {
+    "pass_": false,
+    "problems": [
+      "tx 5075: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5075,
+        "response_last_cycle": 136799,
+        "first_input_cycle": 136683,
+        "last_input_cycle": 136814,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E07_payload_missing": {
+    "pass_": false,
+    "problems": [
+      "tx 1189: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 1189,
+        "response_last_cycle": 137092,
+        "first_input_cycle": 136976,
+        "last_input_cycle": 137107,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 22,
+    "output_count": 3
+  },
+  "R_E07_payload_missing": {
+    "pass_": false,
+    "problems": [
+      "tx 5078: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5078,
+        "response_last_cycle": 137261,
+        "first_input_cycle": 137145,
+        "last_input_cycle": 137276,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E07_payload_one_missing": {
+    "pass_": false,
+    "problems": [
+      "tx 1196: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 1196,
+        "response_last_cycle": 137554,
+        "first_input_cycle": 137438,
+        "last_input_cycle": 137438,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 7,
+    "output_count": 3
+  },
+  "R_E07_payload_one_missing": {
+    "pass_": false,
+    "problems": [
+      "tx 5081: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5081,
+        "response_last_cycle": 137708,
+        "first_input_cycle": 137592,
+        "last_input_cycle": 137723,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  },
+  "E08_prior_success": {
+    "pass_": false,
+    "problems": [
+      "tx 1203: external payload accepted before response completed",
+      "tx 1204: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 1203,
+        "response_last_cycle": 138001,
+        "first_input_cycle": 137885,
+        "last_input_cycle": 138016,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      },
+      {
+        "tx_id": 1204,
+        "response_last_cycle": 138251,
+        "first_input_cycle": 138135,
+        "last_input_cycle": 138259,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 37,
+    "output_count": 10
+  },
+  "R_E08_prior_success": {
+    "pass_": false,
+    "problems": [
+      "tx 5084: external payload accepted before response completed"
+    ],
+    "ordering": [
+      {
+        "tx_id": 5084,
+        "response_last_cycle": 138413,
+        "first_input_cycle": 138297,
+        "last_input_cycle": 138428,
+        "header_before_payload": false,
+        "results_after_valid_input": true
+      }
+    ],
+    "input_count": 28,
+    "output_count": 7
+  }
+}

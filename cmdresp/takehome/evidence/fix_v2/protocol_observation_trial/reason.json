@@ -1,0 +1,7 @@
+{
+  "layer": "RTL testbench observation window",
+  "dut_changed": false,
+  "failure": "16 falling-edge waits after a status read at a rising edge contain only 15 complete subsequent rising-edge samples",
+  "correction": "Wait 17 falling edges to observe >=16 full sampled cycles after status; keep original strict checker",
+  "rerun": "Only independent full-fixture protocol suite; retain C simulation, synthesis and standard co-simulation"
+}

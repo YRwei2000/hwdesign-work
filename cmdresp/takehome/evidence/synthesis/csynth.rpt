@@ -1,0 +1,339 @@
+
+
+================================================================
+== Synthesis Summary Report of 'max_pool'
+================================================================
++ General Information: 
+    * Date:           Wed Nov  4 23:22:55 2026
+    * Version:        2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:        pool_proj
+    * Solution:       solution1
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
+* Performance & Resource Estimates: 
++----------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-----------+-------+---------+---------+-----------+-----------+-----+
+|                       Modules                      |  Issue |               | Iteration|         | Trip |          |       Latency       |       |         |         |           |           |     |
+|                       & Loops                      |  Type  | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack |  BRAM   |   DSP   |     FF    |    LUT    | URAM|
++----------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-----------+-------+---------+---------+-----------+-----------+-----+
+|+ max_pool                                          |  Timing|              -|         -|        -|     -|        no|        -|          -|  -1.51|  16 (5%)|  12 (5%)|  3854 (3%)|  4219 (7%)|    -|
+| o command_loop                                     |       -|              -|    590166|        -|     -|        no|        -|          -|   7.30|        -|        -|          -|          -|    -|
+|  + max_pool_Pipeline_1                             |       -|              -|         -|        7|     -|       yes|        7|     70.000|   2.47|        -|        -|    5 (~0%)|   49 (~0%)|    -|
+|   o Loop 1                                         |       -|              -|         1|        1|     6|       yes|        5|     50.000|   7.30|        -|        -|          -|          -|    -|
+|  + max_pool_Pipeline_header_loop                   |       -|              -|         -|       16|     -|        no|       16|    160.000|   2.18|        -|        -|  274 (~0%)|  289 (~0%)|    -|
+|   o header_loop                                    |       -|              -|         2|        2|     6|       yes|       13|    130.000|   7.30|        -|        -|          -|          -|    -|
+|  + write_axi4_stream_impl                          |       -|              -|         -|        3|     -|        no|        3|     30.000|   6.01|        -|        -|    4 (~0%)|   70 (~0%)|    -|
+|  + max_pool_Pipeline_receive_loop                  |       -|              -|         -|     4098|     -|       yes|     4098|  4.098e+04|   0.59|        -|        -|  101 (~0%)|  197 (~0%)|    -|
+|   o receive_loop                                   |       -|              -|         2|        1|  4096|       yes|     4096|  4.096e+04|   7.30|        -|        -|          -|          -|    -|
+|  + max_pool_Pipeline_emit_loop                     |       -|              -|         -|     4098|     -|       yes|     4098|  4.098e+04|   1.57|        -|        -|   36 (~0%)|  166 (~0%)|    -|
+|   o emit_loop                                      |       -|              -|         2|        1|  4096|       yes|     4096|  4.096e+04|   7.30|        -|        -|          -|          -|    -|
+|  o pool_rows                                       |       -|              -|      9091|        -|    64|        no|   581824|  5.818e+06|   7.30|        -|        -|          -|          -|    -|
+|   o pool_columns                                   |       -|              -|       142|        -|    64|        no|     9088|  9.088e+04|   7.30|        -|        -|          -|          -|    -|
+|    + max_pool_Pipeline_window_rows_window_columns  |       -|              -|         -|      136|     -|       yes|      136|  1.360e+03|   0.19|        -|  1 (~0%)|  379 (~0%)|   555 (1%)|    -|
+|     o window_rows_window_columns                   |       -|              -|         9|        2|    64|       yes|      134|  1.340e+03|   7.30|        -|        -|          -|          -|    -|
++----------------------------------------------------+--------+---------------+----------+---------+------+----------+---------+-----------+-------+---------+---------+-----------+-----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | halted      | 0x10   | 32    | R      | Data signal of halted            |                                                                      |
+| s_axi_control | halted_ctrl | 0x14   | 32    | R      | Control signal of halted         | 0=halted_ap_vld                                                      |
+| s_axi_control | error       | 0x20   | 32    | R      | Data signal of error             |                                                                      |
+| s_axi_control | error_ctrl  | 0x24   | 32    | R      | Control signal of error          | 0=error_ap_vld                                                       |
+| s_axi_control | tx_id       | 0x30   | 32    | R      | Data signal of tx_id             |                                                                      |
+| s_axi_control | tx_id_ctrl  | 0x34   | 32    | R      | Control signal of tx_id          | 0=tx_id_ap_vld                                                       |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| m_out     | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| s_in      | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------------------------------------------------------------------+
+| Argument | Direction | Datatype                                                                    |
++----------+-----------+-----------------------------------------------------------------------------+
+| s_in     | in        | stream<hls::axis<ap_int<32>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
+| m_out    | out       | stream<hls::axis<ap_int<32>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
+| halted   | out       | ap_uint<1>&                                                                 |
+| error    | out       | ap_uint<8>&                                                                 |
+| tx_id    | out       | ap_uint<32>&                                                                |
++----------+-----------+-----------------------------------------------------------------------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+---------------------------------------+
+| Argument | HW Interface  | HW Type   | HW Info                               |
++----------+---------------+-----------+---------------------------------------+
+| s_in     | s_in          | interface |                                       |
+| m_out    | m_out         | interface |                                       |
+| halted   | s_axi_control | register  | name=halted offset=0x10 range=32      |
+| halted   | s_axi_control | register  | name=halted_ctrl offset=0x14 range=32 |
+| error    | s_axi_control | register  | name=error offset=0x20 range=32       |
+| error    | s_axi_control | register  | name=error_ctrl offset=0x24 range=32  |
+| tx_id    | s_axi_control | register  | name=tx_id offset=0x30 range=32       |
+| tx_id    | s_axi_control | register  | name=tx_id_ctrl offset=0x34 range=32  |
++----------+---------------+-----------+---------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------+-----+--------+-----------------------+--------+-----------+---------+
+| Name                                            | DSP | Pragma | Variable              | Op     | Impl      | Latency |
++-------------------------------------------------+-----+--------+-----------------------+--------+-----------+---------+
+| + max_pool                                      | 12  |        |                       |        |           |         |
+|   add_ln12_fu_501_p2                            |     |        | add_ln12              | add    | fabric    | 0       |
+|   icmp_ln12_fu_517_p2                           |     |        | icmp_ln12             | seteq  | auto      | 0       |
+|   add_ln13_fu_523_p2                            |     |        | add_ln13              | add    | fabric    | 0       |
+|   icmp_ln13_fu_539_p2                           |     |        | icmp_ln13             | seteq  | auto      | 0       |
+|   add_ln14_fu_545_p2                            |     |        | add_ln14              | add    | fabric    | 0       |
+|   icmp_ln14_fu_561_p2                           |     |        | icmp_ln14             | seteq  | auto      | 0       |
+|   icmp_ln15_fu_567_p2                           |     |        | icmp_ln15             | setgt  | auto      | 0       |
+|   icmp_ln15_1_fu_573_p2                         |     |        | icmp_ln15_1           | setgt  | auto      | 0       |
+|   or_ln15_fu_579_p2                             |     |        | or_ln15               | or     | auto      | 0       |
+|   urem_32s_32ns_32_36_seq_1_U59                 |     |        | urem_ln16             | urem   | auto_seq  | 35      |
+|   icmp_ln16_fu_648_p2                           |     |        | icmp_ln16             | seteq  | auto      | 0       |
+|   urem_32s_32ns_32_36_seq_1_U60                 |     |        | urem_ln16_1           | urem   | auto_seq  | 35      |
+|   icmp_ln16_1_fu_658_p2                         |     |        | icmp_ln16_1           | seteq  | auto      | 0       |
+|   mul_32s_32s_32_2_1_U58                        | 3   |        | count                 | mul    | auto      | 1       |
+|   udiv_32s_32ns_32_36_seq_1_U61                 |     |        | oh                    | udiv   | auto_seq  | 35      |
+|   udiv_32s_32ns_32_36_seq_1_U62                 |     |        | ow                    | udiv   | auto_seq  | 35      |
+|   grp_fu_424_p2                                 |     |        | add_ln64              | add    | fabric    | 0       |
+|   icmp_ln56_fu_692_p2                           |     |        | icmp_ln56             | seteq  | auto      | 0       |
+|   select_ln65_cast_cast_fu_701_p3               |     |        | select_ln65_cast_cast | select | auto_sel  | 0       |
+|   mul_32ns_32ns_64_2_1_U57                      | 4   |        | mul_ln72              | mul    | auto      | 1       |
+|   icmp_ln72_fu_728_p2                           |     |        | icmp_ln72             | setlt  | auto      | 0       |
+|   r_1_fu_733_p2                                 |     |        | r_1                   | add    | fabric    | 0       |
+|   mul_12s_12s_12_1_1_U63                        | 1   |        | mul_ln76              | mul    | auto      | 0       |
+|   mul_12s_12s_12_1_1_U65                        | 1   |        | mul_ln76_1            | mul    | auto      | 0       |
+|   mul_12s_12s_12_1_1_U64                        | 1   |        | mul_ln74              | mul    | auto      | 0       |
+|   icmp_ln74_fu_757_p2                           |     |        | icmp_ln74             | seteq  | auto      | 0       |
+|   add_ln74_fu_762_p2                            |     |        | add_ln74              | add    | fabric    | 0       |
+|   mul_12s_12s_12_1_1_U66                        | 1   |        | mul_ln76_2            | mul    | auto      | 0       |
+|   add_ln76_fu_782_p2                            |     |        | add_ln76              | add    | fabric    | 0       |
+|   add_ln85_fu_777_p2                            |     |        | add_ln85              | add    | fabric    | 0       |
+|   mul_32s_32s_32_2_1_U58                        | 3   |        | nout                  | mul    | auto      | 1       |
+|   grp_fu_424_p2                                 |     |        | add_ln93              | add    | fabric    | 0       |
+|  + max_pool_Pipeline_1                          | 0   |        |                       |        |           |         |
+|    add_ln30_fu_100_p2                           |     |        | add_ln30              | add    | fabric    | 0       |
+|    icmp_ln30_fu_120_p2                          |     |        | icmp_ln30             | seteq  | auto      | 0       |
+|  + max_pool_Pipeline_header_loop                | 0   |        |                       |        |           |         |
+|    icmp_ln33_fu_298_p2                          |     |        | icmp_ln33             | seteq  | auto      | 0       |
+|    add_ln33_fu_304_p2                           |     |        | add_ln33              | add    | fabric    | 0       |
+|    icmp_ln37_fu_341_p2                          |     |        | icmp_ln37             | setne  | auto      | 0       |
+|    id_fu_346_p3                                 |     |        | id                    | select | auto_sel  | 0       |
+|    icmp_ln39_fu_354_p2                          |     |        | icmp_ln39             | seteq  | auto      | 0       |
+|    icmp_ln39_1_fu_359_p2                        |     |        | icmp_ln39_1           | setne  | auto      | 0       |
+|    and_ln39_fu_365_p2                           |     |        | and_ln39              | and    | auto      | 0       |
+|    icmp_ln39_2_fu_371_p2                        |     |        | icmp_ln39_2           | seteq  | auto      | 0       |
+|    xor_ln39_fu_376_p2                           |     |        | xor_ln39              | xor    | auto      | 0       |
+|    or_ln39_fu_381_p2                            |     |        | or_ln39               | or     | auto      | 0       |
+|  + max_pool_Pipeline_receive_loop               | 0   |        |                       |        |           |         |
+|    icmp_ln56_fu_129_p2                          |     |        | icmp_ln56             | setlt  | auto      | 0       |
+|    add_ln56_fu_135_p2                           |     |        | add_ln56              | add    | fabric    | 0       |
+|    icmp_ln64_fu_158_p2                          |     |        | icmp_ln64             | seteq  | auto      | 0       |
+|    xor_ln64_fu_164_p2                           |     |        | xor_ln64              | xor    | auto      | 0       |
+|  + max_pool_Pipeline_window_rows_window_columns | 1   |        |                       |        |           |         |
+|    icmp_ln77_fu_159_p2                          |     |        | icmp_ln77             | seteq  | auto      | 0       |
+|    add_ln77_fu_164_p2                           |     |        | add_ln77              | add    | fabric    | 0       |
+|    icmp_ln79_fu_173_p2                          |     |        | icmp_ln79             | seteq  | auto      | 0       |
+|    select_ln76_fu_186_p3                        |     |        | select_ln76           | select | auto_sel  | 0       |
+|    empty_22_fu_192_p3                           |     |        | empty_22              | select | auto_sel  | 0       |
+|    add_ln77_1_fu_199_p2                         |     |        | add_ln77_1            | add    | fabric    | 0       |
+|    ama_addmuladd_12s_12s_12s_12s_12_4_1_U39     | 1   |        | add_ln81              | add    | dsp_slice | 3       |
+|    ama_addmuladd_12s_12s_12s_12s_12_4_1_U39     | 1   |        | mul_ln81              | mul    | dsp_slice | 3       |
+|    add_ln81_1_fu_213_p2                         |     |        | add_ln81_1            | add    | fabric    | 0       |
+|    ama_addmuladd_12s_12s_12s_12s_12_4_1_U39     | 1   |        | add_ln81_2            | add    | dsp_slice | 3       |
+|    icmp_ln82_fu_289_p2                          |     |        | icmp_ln82             | setne  | auto      | 0       |
+|    icmp_ln82_1_fu_295_p2                        |     |        | icmp_ln82_1           | seteq  | auto      | 0       |
+|    or_ln82_fu_301_p2                            |     |        | or_ln82               | or     | auto      | 0       |
+|    icmp_ln82_2_fu_260_p2                        |     |        | icmp_ln82_2           | setne  | auto      | 0       |
+|    icmp_ln82_3_fu_266_p2                        |     |        | icmp_ln82_3           | seteq  | auto      | 0       |
+|    or_ln82_1_fu_307_p2                          |     |        | or_ln82_1             | or     | auto      | 0       |
+|    fcmp_32ns_32ns_1_2_no_dsp_1_U38              |     |        | tmp_2                 | fcmp   | auto      | 1       |
+|    and_ln82_fu_311_p2                           |     |        | and_ln82              | and    | auto      | 0       |
+|    and_ln82_1_fu_317_p2                         |     |        | and_ln82_1            | and    | auto      | 0       |
+|    best_4_fu_323_p3                             |     |        | best_4                | select | auto_sel  | 0       |
+|    add_ln79_fu_218_p2                           |     |        | add_ln79              | add    | fabric    | 0       |
+|  + max_pool_Pipeline_emit_loop                  | 0   |        |                       |        |           |         |
+|    icmp_ln89_fu_111_p2                          |     |        | icmp_ln89             | seteq  | auto      | 0       |
+|    add_ln89_fu_117_p2                           |     |        | add_ln89              | add    | fabric    | 0       |
+|    tlast_fu_128_p2                              |     |        | tlast                 | seteq  | auto      | 0       |
++-------------------------------------------------+-----+--------+-----------------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+--------------+-----------+------+------+--------+--------+----------+------+---------+------------------+
+| Name              | Usage        | Type      | BRAM | URAM | CE_REG | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |              |           |      |      |        |        |          |      |         | Banks            |
++-------------------+--------------+-----------+------+------+--------+--------+----------+------+---------+------------------+
+| + max_pool        |              |           | 16   | 0    |        |        |          |      |         |                  |
+|   control_s_axi_U | interface    | s_axilite |      |      |        |        |          |      |         |                  |
+|   matrix_U        | ram_1p array |           | 8    |      | N      |        | matrix   | auto | 1       | 32, 4096, 1      |
+|   results_U       | ram_1p array |           | 8    |      | N      |        | results  | auto | 1       | 32, 4096, 1      |
++-------------------+--------------+-----------+------+------+--------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++--------+---------+-----------------------------------------------------------------------+-----------------+
+| Type   | Options | Location                                                              | Messages        |
++--------+---------+-----------------------------------------------------------------------+-----------------+
+| INLINE |         | in run_lane (include/float32_array_utils.h:51)                        | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:58)                             | Not implemented |
+| INLINE |         | in write_lane (include/float32_array_utils.h:78)                      | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:84)                             | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:104)                            | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:152)                            | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:196)                            | Not implemented |
+| INLINE |         | in run (include/float32_array_utils.h:223)                            | Not implemented |
+| INLINE |         | in read_array_lane (include/float32_array_utils.h:238)                | Not implemented |
+| INLINE |         | in write_array_lane (include/float32_array_utils.h:244)               | Not implemented |
+| INLINE |         | in read_stream_lane (include/float32_array_utils.h:250)               | Not implemented |
+| INLINE |         | in write_stream_lane (include/float32_array_utils.h:256)              | Not implemented |
+| INLINE |         | in read_axi4_stream_lane (include/float32_array_utils.h:268)          | Not implemented |
+| INLINE |         | in read_framed_stream_lane (include/float32_array_utils.h:284)        | Not implemented |
+| INLINE |         | in read_framed_stream_lane (include/float32_array_utils.h:290)        | Not implemented |
+| INLINE |         | in write_framed_stream_lane (include/float32_array_utils.h:297)       | Not implemented |
+| INLINE |         | in read_boundary_lane (include/float32_array_utils.h:307)             | Not implemented |
+| INLINE |         | in read_boundary_lane (include/float32_array_utils.h:313)             | Not implemented |
+| INLINE |         | in write_boundary_lane (include/float32_array_utils.h:319)            | Not implemented |
+| INLINE |         | in write_boundary_lane (include/float32_array_utils.h:325)            | Not implemented |
+| INLINE |         | in elem_read (include/float32_array_utils.h:336)                      | Not implemented |
+| INLINE |         | in elem_write (include/float32_array_utils.h:343)                     | Not implemented |
+| INLINE |         | in read_array_slice_dispatch (include/float32_array_utils.h:382)      | Not implemented |
+| UNROLL |         | in read_array_slice_dispatch (include/float32_array_utils.h:393)      | Not implemented |
+| UNROLL |         | in read_array_slice_dispatch (include/float32_array_utils.h:408)      | Not implemented |
+| UNROLL |         | in read_array_slice_dispatch (include/float32_array_utils.h:418)      | Not implemented |
+| INLINE |         | in read_array_slice_dispatch (include/float32_array_utils.h:427)      | Not implemented |
+| INLINE |         | in read_array_slice (include/float32_array_utils.h:439)               | Not implemented |
+| INLINE |         | in write_array_slice_dispatch (include/float32_array_utils.h:456)     | Not implemented |
+| UNROLL |         | in write_array_slice_dispatch (include/float32_array_utils.h:466)     | Not implemented |
+| INLINE |         | in write_array_slice_dispatch (include/float32_array_utils.h:479)     | Not implemented |
+| INLINE |         | in write_array_slice (include/float32_array_utils.h:491)              | Not implemented |
+| INLINE |         | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:507) | Not implemented |
+| UNROLL |         | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:519) | Not implemented |
+| UNROLL |         | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:534) | Not implemented |
+| UNROLL |         | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:547) | Not implemented |
+| INLINE |         | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:558) | Not implemented |
+| INLINE |         | in write_array_slice_rmw (include/float32_array_utils.h:570)          | Not implemented |
+| INLINE |         | in read_array_slice (include/float32_array_utils.h:580)               | Not implemented |
+| INLINE |         | in write_array_slice (include/float32_array_utils.h:586)              | Not implemented |
+| INLINE |         | in read_stream (include/float32_array_utils.h:592)                    | Not implemented |
+| INLINE |         | in read_axi4_stream (include/float32_array_utils.h:603)               | Not implemented |
+| INLINE |         | in read_axi4_stream (include/float32_array_utils.h:630)               | Not implemented |
+| INLINE |         | in read_axi4_stream (include/float32_array_utils.h:637)               | Not implemented |
+| INLINE |         | in read_axi4_stream (include/float32_array_utils.h:644)               | Not implemented |
+| INLINE |         | in write_stream (include/float32_array_utils.h:652)                   | Not implemented |
+| INLINE |         | in write_axi4_stream (include/float32_array_utils.h:663)              | Not implemented |
+| INLINE |         | in read_framed_stream (include/float32_array_utils.h:677)             | Not implemented |
+| INLINE |         | in read_framed_stream (include/float32_array_utils.h:693)             | Not implemented |
+| INLINE |         | in write_framed_stream (include/float32_array_utils.h:700)            | Not implemented |
++--------+---------+-----------------------------------------------------------------------+-----------------+
+
+* Inferred Pragmas
++----------+---------+---------------------------------------------------------------------------------------------------+-------------------------------+
+| Type     | Options | Location                                                                                          | Inferred From                 |
++----------+---------+---------------------------------------------------------------------------------------------------+-------------------------------+
+| PIPELINE |         | loop window_columns (gen/../max_pool_body_impl.tpp:79:37) in max_pool (max_pool_body_impl.tpp:79) | syn.compile.pipeline_loops=64 |
+| PIPELINE |         | loop header_loop (gen/../max_pool_body_impl.tpp:33:22) in max_pool (max_pool_body_impl.tpp:33)    | syn.compile.pipeline_loops=64 |
+| PIPELINE |         | loop anonymous (gen/../max_pool_body_impl.tpp:30:28) in max_pool (max_pool_body_impl.tpp:30)      | syn.compile.pipeline_loops=64 |
++----------+---------+---------------------------------------------------------------------------------------------------+-------------------------------+
+
+* Implemented Pragmas
++----------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type           | Options                 | Location                                                                                                                                                                                                                |
++----------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| INLINE         |                         | in _zn19float32_array_utils26read_axi4_stream_elem_implili32ee3runern3hls6streamins2_4axisi6ap_intili32eelm0elm0elm0elh56elb0eeeli0eeepfrn11streamutils12tlast_statusei (include/float32_array_utils.h:126)             |
+| INLINE         |                         | in _zn19float32_array_utils27write_axi4_stream_elem_implili32ee3runern3hls6streamins2_4axisi6ap_intili32eelm0elm0elm0elh56elb0eeeli0eeepkfbi (include/float32_array_utils.h:174)                                        |
+| INLINE         |                         | in _zn19float32_array_utils21read_axi4_stream_laneili32eeevrn3hls6streamins1_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeepfirn11streamutils12tlast_statuse (include/float32_array_utils.h:262)                      |
+| INLINE         |                         | in _zn19float32_array_utils22write_axi4_stream_laneili32eeevpkfrn3hls6streamins3_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeebi (include/float32_array_utils.h:275)                                                 |
+| INLINE         |                         | in _zn9pool_impll15parameter_errorejjj (max_pool_body_impl.tpp:11)                                                                                                                                                      |
+| INLINE         |                         | in _zn9pool_impl4bodyili32eli32eeevrn3hls6streamins1_4axisi6ap_intixt_eelm0elm0elm0elh56elb0eeeli0eeerns2_ins3_is4_ixt0_eelm0elm0elm0elh56elb0eeeli0eeer7ap_uintili1eersd_ili8eersd_ili32ee (max_pool_body_impl.tpp:23) |
+| LOOP_TRIPCOUNT | max=4096 min=1 avg=2048 | in max_pool_pipeline_receive_loop (max_pool_body_impl.tpp:58)                                                                                                                                                           |
+| LOOP_TRIPCOUNT | max=64 min=1 avg=32     | in max_pool (max_pool_body_impl.tpp:73)                                                                                                                                                                                 |
+| LOOP_TRIPCOUNT | max=64 min=1 avg=32     | in max_pool (max_pool_body_impl.tpp:75)                                                                                                                                                                                 |
+| LOOP_TRIPCOUNT | max=8 min=1 avg=4       | in max_pool (max_pool_body_impl.tpp:78)                                                                                                                                                                                 |
+| LOOP_TRIPCOUNT | max=8 min=1 avg=4       | in max_pool (max_pool_body_impl.tpp:80)                                                                                                                                                                                 |
+| LOOP_TRIPCOUNT | max=4096 min=1 avg=2048 | in max_pool_pipeline_emit_loop (max_pool_body_impl.tpp:91)                                                                                                                                                              |
++----------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++----------------+--------------------------------------+-----------------------------------------------------------------------+
+| Type           | Options                              | Location                                                              |
++----------------+--------------------------------------+-----------------------------------------------------------------------+
+| INTERFACE      | axis port=s_in                       | in max_pool (gen/max_pool.cpp:10)                                     |
+| INTERFACE      | axis port=m_out                      | in max_pool (gen/max_pool.cpp:11)                                     |
+| INTERFACE      | s_axilite port=halted bundle=control | in max_pool (gen/max_pool.cpp:12)                                     |
+| INTERFACE      | s_axilite port=error bundle=control  | in max_pool (gen/max_pool.cpp:13)                                     |
+| INTERFACE      | s_axilite port=tx_id bundle=control  | in max_pool (gen/max_pool.cpp:14)                                     |
+| INTERFACE      | s_axilite port=return bundle=control | in max_pool (gen/max_pool.cpp:15)                                     |
+| INLINE         |                                      | in run (include/float32_array_utils.h:126)                            |
+| INLINE         |                                      | in run (include/float32_array_utils.h:174)                            |
+| INLINE         |                                      | in read_axi4_stream_lane (include/float32_array_utils.h:262)          |
+| INLINE         |                                      | in write_axi4_stream_lane (include/float32_array_utils.h:275)         |
+| PIPELINE       | ii=1                                 | in read_array_slice_dispatch (include/float32_array_utils.h:404)      |
+| PIPELINE       | ii=1                                 | in read_array_slice_dispatch (include/float32_array_utils.h:432)      |
+| PIPELINE       | ii=1                                 | in write_array_slice_dispatch (include/float32_array_utils.h:463)     |
+| PIPELINE       | ii=1                                 | in write_array_slice_dispatch (include/float32_array_utils.h:484)     |
+| PIPELINE       | ii=1                                 | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:531) |
+| PIPELINE       | ii=1                                 | in write_array_slice_rmw_dispatch (include/float32_array_utils.h:563) |
+| PIPELINE       | ii=1                                 | in flush_axi4_stream_to_tlast (include/streamutils_hls.h:191)         |
+| INLINE         |                                      | in parameter_error (max_pool_body_impl.tpp:11)                        |
+| INLINE         |                                      | in body (max_pool_body_impl.tpp:23)                                   |
+| PIPELINE       | ii=1                                 | in body (max_pool_body_impl.tpp:57)                                   |
+| LOOP_TRIPCOUNT | min=1 max=4096                       | in body (max_pool_body_impl.tpp:58)                                   |
+| LOOP_TRIPCOUNT | min=1 max=64                         | in body (max_pool_body_impl.tpp:73)                                   |
+| LOOP_TRIPCOUNT | min=1 max=64                         | in body (max_pool_body_impl.tpp:75)                                   |
+| LOOP_TRIPCOUNT | min=1 max=8                          | in body (max_pool_body_impl.tpp:78)                                   |
+| LOOP_TRIPCOUNT | min=1 max=8                          | in body (max_pool_body_impl.tpp:80)                                   |
+| PIPELINE       | ii=1                                 | in body (max_pool_body_impl.tpp:90)                                   |
+| LOOP_TRIPCOUNT | min=1 max=4096                       | in body (max_pool_body_impl.tpp:91)                                   |
++----------------+--------------------------------------+-----------------------------------------------------------------------+
+
+

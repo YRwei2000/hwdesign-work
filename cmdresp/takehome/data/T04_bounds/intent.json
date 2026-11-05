@@ -1,0 +1,62 @@
+{
+  "purpose": "Minimum/maximum H W, K1 and K8",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 401,
+      "h": 1,
+      "w": 64,
+      "k": 1,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 64,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 64
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 402,
+      "h": 64,
+      "w": 1,
+      "k": 1,
+      "input_start": 70,
+      "header_end": 76,
+      "received": 64,
+      "output_start": 67,
+      "error": 0,
+      "result_count": 64
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 403,
+      "h": 64,
+      "w": 64,
+      "k": 1,
+      "input_start": 140,
+      "header_end": 146,
+      "received": 4096,
+      "output_start": 134,
+      "error": 0,
+      "result_count": 4096
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 404,
+      "h": 64,
+      "w": 64,
+      "k": 8,
+      "input_start": 4242,
+      "header_end": 4248,
+      "received": 4096,
+      "output_start": 4233,
+      "error": 0,
+      "result_count": 64
+    },
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 8344
+    }
+  ]
+}

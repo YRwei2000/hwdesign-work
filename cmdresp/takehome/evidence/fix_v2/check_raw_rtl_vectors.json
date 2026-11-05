@@ -1,0 +1,266 @@
+{
+  "T01_worked": {
+    "pass_": true,
+    "transaction": 0
+  },
+  "T02_negative_ties_zero": {
+    "pass_": true,
+    "transaction": 1
+  },
+  "T03_parameter_changes": {
+    "pass_": true,
+    "transaction": 2
+  },
+  "T04_bounds": {
+    "pass_": true,
+    "transaction": 3
+  },
+  "T05_end_first": {
+    "pass_": true,
+    "transaction": 4
+  },
+  "T06_normal_boundary": {
+    "pass_": true,
+    "transaction": 5
+  },
+  "T07_performance": {
+    "pass_": true,
+    "transaction": 6
+  },
+  "T08_random": {
+    "pass_": true,
+    "transaction": 7
+  },
+  "E01_magic": {
+    "pass_": true,
+    "transaction": 8
+  },
+  "R_E01_magic": {
+    "pass_": true,
+    "transaction": 9
+  },
+  "E02_header_short_1": {
+    "pass_": true,
+    "transaction": 10
+  },
+  "R_E02_header_short_1": {
+    "pass_": true,
+    "transaction": 11
+  },
+  "E02_header_short_2": {
+    "pass_": true,
+    "transaction": 12
+  },
+  "R_E02_header_short_2": {
+    "pass_": true,
+    "transaction": 13
+  },
+  "E02_header_short_3": {
+    "pass_": true,
+    "transaction": 14
+  },
+  "R_E02_header_short_3": {
+    "pass_": true,
+    "transaction": 15
+  },
+  "E02_header_short_4": {
+    "pass_": true,
+    "transaction": 16
+  },
+  "R_E02_header_short_4": {
+    "pass_": true,
+    "transaction": 17
+  },
+  "E02_header_short_5": {
+    "pass_": true,
+    "transaction": 18
+  },
+  "R_E02_header_short_5": {
+    "pass_": true,
+    "transaction": 19
+  },
+  "E03_header_missing": {
+    "pass_": true,
+    "transaction": 20
+  },
+  "R_E03_header_missing": {
+    "pass_": true,
+    "transaction": 21
+  },
+  "E04_unknown_opcode": {
+    "pass_": true,
+    "transaction": 22
+  },
+  "R_E04_unknown_opcode": {
+    "pass_": true,
+    "transaction": 23
+  },
+  "E05_h_zero": {
+    "pass_": true,
+    "transaction": 24
+  },
+  "R_E05_h_zero": {
+    "pass_": true,
+    "transaction": 25
+  },
+  "E05_h_large": {
+    "pass_": true,
+    "transaction": 26
+  },
+  "R_E05_h_large": {
+    "pass_": true,
+    "transaction": 27
+  },
+  "E05_w_zero": {
+    "pass_": true,
+    "transaction": 28
+  },
+  "R_E05_w_zero": {
+    "pass_": true,
+    "transaction": 29
+  },
+  "E05_w_large": {
+    "pass_": true,
+    "transaction": 30
+  },
+  "R_E05_w_large": {
+    "pass_": true,
+    "transaction": 31
+  },
+  "E05_k_zero": {
+    "pass_": true,
+    "transaction": 32
+  },
+  "R_E05_k_zero": {
+    "pass_": true,
+    "transaction": 33
+  },
+  "E05_k_large": {
+    "pass_": true,
+    "transaction": 34
+  },
+  "R_E05_k_large": {
+    "pass_": true,
+    "transaction": 35
+  },
+  "E05_window_h": {
+    "pass_": true,
+    "transaction": 36
+  },
+  "R_E05_window_h": {
+    "pass_": true,
+    "transaction": 37
+  },
+  "E05_window_w": {
+    "pass_": true,
+    "transaction": 38
+  },
+  "R_E05_window_w": {
+    "pass_": true,
+    "transaction": 39
+  },
+  "E05_div_h": {
+    "pass_": true,
+    "transaction": 40
+  },
+  "R_E05_div_h": {
+    "pass_": true,
+    "transaction": 41
+  },
+  "E05_div_w": {
+    "pass_": true,
+    "transaction": 42
+  },
+  "R_E05_div_w": {
+    "pass_": true,
+    "transaction": 43
+  },
+  "E06_format_before_opcode": {
+    "pass_": true,
+    "transaction": 44
+  },
+  "R_E06_format_before_opcode": {
+    "pass_": true,
+    "transaction": 45
+  },
+  "E06_opcode_before_parameters": {
+    "pass_": true,
+    "transaction": 46
+  },
+  "R_E06_opcode_before_parameters": {
+    "pass_": true,
+    "transaction": 47
+  },
+  "E06_h_before_w_k": {
+    "pass_": true,
+    "transaction": 48
+  },
+  "R_E06_h_before_w_k": {
+    "pass_": true,
+    "transaction": 49
+  },
+  "E06_w_before_k": {
+    "pass_": true,
+    "transaction": 50
+  },
+  "R_E06_w_before_k": {
+    "pass_": true,
+    "transaction": 51
+  },
+  "E06_k_before_window": {
+    "pass_": true,
+    "transaction": 52
+  },
+  "R_E06_k_before_window": {
+    "pass_": true,
+    "transaction": 53
+  },
+  "E06_window_before_div": {
+    "pass_": true,
+    "transaction": 54
+  },
+  "R_E06_window_before_div": {
+    "pass_": true,
+    "transaction": 55
+  },
+  "E07_payload_first": {
+    "pass_": true,
+    "transaction": 56
+  },
+  "R_E07_payload_first": {
+    "pass_": true,
+    "transaction": 57
+  },
+  "E07_payload_later": {
+    "pass_": true,
+    "transaction": 58
+  },
+  "R_E07_payload_later": {
+    "pass_": true,
+    "transaction": 59
+  },
+  "E07_payload_missing": {
+    "pass_": true,
+    "transaction": 60
+  },
+  "R_E07_payload_missing": {
+    "pass_": true,
+    "transaction": 61
+  },
+  "E07_payload_one_missing": {
+    "pass_": true,
+    "transaction": 62
+  },
+  "R_E07_payload_one_missing": {
+    "pass_": true,
+    "transaction": 63
+  },
+  "E08_prior_success": {
+    "pass_": true,
+    "transaction": 64
+  },
+  "R_E08_prior_success": {
+    "pass_": true,
+    "transaction": 65
+  }
+}

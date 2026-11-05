@@ -1,0 +1,17 @@
+{
+  "mapping": {
+    "ap_clk": "apatb_max_pool_top.AESL_inst_max_pool.ap_clk",
+    "s_in_TDATA": "apatb_max_pool_top.AESL_inst_max_pool.s_in_TDATA[31:0]",
+    "s_in_TVALID": "apatb_max_pool_top.AESL_inst_max_pool.s_in_TVALID",
+    "s_in_TREADY": "apatb_max_pool_top.AESL_inst_max_pool.s_in_TREADY",
+    "s_in_TLAST": "apatb_max_pool_top.AESL_inst_max_pool.s_in_TLAST[0:0]",
+    "m_out_TDATA": "apatb_max_pool_top.AESL_inst_max_pool.m_out_TDATA[31:0]",
+    "m_out_TVALID": "apatb_max_pool_top.AESL_inst_max_pool.m_out_TVALID",
+    "m_out_TREADY": "apatb_max_pool_top.AESL_inst_max_pool.m_out_TREADY",
+    "m_out_TLAST": "apatb_max_pool_top.AESL_inst_max_pool.m_out_TLAST[0:0]"
+  },
+  "clock_period_ticks": 10000,
+  "tick_ns": 0.001,
+  "clock_ns": 10.0,
+  "sampling": "strictly before rising edge"
+}

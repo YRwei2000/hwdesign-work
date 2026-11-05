@@ -1,0 +1,266 @@
+{
+  "T01_worked": {
+    "pass_": true,
+    "problems": []
+  },
+  "T02_negative_ties_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "T03_parameter_changes": {
+    "pass_": true,
+    "problems": []
+  },
+  "T04_bounds": {
+    "pass_": true,
+    "problems": []
+  },
+  "T05_end_first": {
+    "pass_": true,
+    "problems": []
+  },
+  "T06_normal_boundary": {
+    "pass_": true,
+    "problems": []
+  },
+  "T07_performance": {
+    "pass_": true,
+    "problems": []
+  },
+  "T08_random": {
+    "pass_": true,
+    "problems": []
+  },
+  "E01_magic": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E01_magic": {
+    "pass_": true,
+    "problems": []
+  },
+  "E02_header_short_1": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E02_header_short_1": {
+    "pass_": true,
+    "problems": []
+  },
+  "E02_header_short_2": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E02_header_short_2": {
+    "pass_": true,
+    "problems": []
+  },
+  "E02_header_short_3": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E02_header_short_3": {
+    "pass_": true,
+    "problems": []
+  },
+  "E02_header_short_4": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E02_header_short_4": {
+    "pass_": true,
+    "problems": []
+  },
+  "E02_header_short_5": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E02_header_short_5": {
+    "pass_": true,
+    "problems": []
+  },
+  "E03_header_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E03_header_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "E04_unknown_opcode": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E04_unknown_opcode": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_h_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_h_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_h_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_h_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_w_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_w_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_w_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_w_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_k_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_k_zero": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_k_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_k_large": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_window_h": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_window_h": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_window_w": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_window_w": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_div_h": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_div_h": {
+    "pass_": true,
+    "problems": []
+  },
+  "E05_div_w": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E05_div_w": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_format_before_opcode": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_format_before_opcode": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_opcode_before_parameters": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_opcode_before_parameters": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_h_before_w_k": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_h_before_w_k": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_w_before_k": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_w_before_k": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_k_before_window": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_k_before_window": {
+    "pass_": true,
+    "problems": []
+  },
+  "E06_window_before_div": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E06_window_before_div": {
+    "pass_": true,
+    "problems": []
+  },
+  "E07_payload_first": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E07_payload_first": {
+    "pass_": true,
+    "problems": []
+  },
+  "E07_payload_later": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E07_payload_later": {
+    "pass_": true,
+    "problems": []
+  },
+  "E07_payload_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E07_payload_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "E07_payload_one_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E07_payload_one_missing": {
+    "pass_": true,
+    "problems": []
+  },
+  "E08_prior_success": {
+    "pass_": true,
+    "problems": []
+  },
+  "R_E08_prior_success": {
+    "pass_": true,
+    "problems": []
+  }
+}

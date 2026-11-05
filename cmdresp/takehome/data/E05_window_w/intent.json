@@ -1,0 +1,16 @@
+{
+  "purpose": "Isolated parameter violation window_w",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1112,
+      "h": 4,
+      "w": 1,
+      "k": 2,
+      "opcode": 1,
+      "error": 6,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}

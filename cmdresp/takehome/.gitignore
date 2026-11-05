@@ -1,0 +1,13 @@
+# Reproducible Vitis work products; cited evidence is copied outside this tree.
+pool_proj/
+fix_proj/
+off_proj/
+protocol_sim/
+__pycache__/
+.waveflow/
+logs/
+vcd/
+.Xil/
+*.jou
+vitis*.log
+vitis*.str

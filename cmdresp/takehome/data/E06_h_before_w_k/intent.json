@@ -1,0 +1,16 @@
+{
+  "purpose": "Parameter precedence h_before_w_k",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1147,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "opcode": 1,
+      "error": 3,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}

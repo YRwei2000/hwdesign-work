@@ -1,0 +1,31 @@
+{
+  "purpose": "Keep prior success, discard failed matrix results",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 1203,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 16,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 1204,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 22,
+      "header_end": 28,
+      "received": 9,
+      "output_start": 7,
+      "error": 8,
+      "result_count": 0
+    }
+  ]
+}

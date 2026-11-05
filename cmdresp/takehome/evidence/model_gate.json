@@ -1,0 +1,15 @@
+{
+  "pass_": true,
+  "utc": "2026-11-05T04:20:13.638158+00:00",
+  "prompt_version": "v2",
+  "arithmetic_vectors": 516,
+  "activations": 66,
+  "errors": 29,
+  "recoveries": 29,
+  "frozen_sources": {
+    "prompt.md": "5480dbcf4a25a7b8baacff7c97a5a437094ddd74e4eb9f7fbf6aa0511f5280f5",
+    "pool.py": "0d486aa83a69c5cab2892995efe4e52e687fe1227b32fd8092535eea2572ae1e",
+    "oracle.py": "f09735c70b74f9895744b8026feda6be433c78b442efc276ed67ce96b5842fd0",
+    "scenarios.py": "aca51ac1f17034d297b248c5734a00f92d4a30dfa429b2f14fe4c8540624b47b"
+  }
+}

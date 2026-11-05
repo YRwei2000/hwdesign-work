@@ -1,0 +1,16 @@
+{
+  "purpose": "Unknown opcode + invalid parameters",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1140,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "opcode": 99,
+      "error": 2,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}

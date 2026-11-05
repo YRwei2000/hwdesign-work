@@ -1,0 +1,12 @@
+{
+  "pass_": true,
+  "relative_links_exist": true,
+  "current_source_hashes_checked": 46,
+  "retained_artifacts_checked": 245,
+  "original_evidence_unchanged": true,
+  "model_freeze_unchanged": true,
+  "standard_activations": 66,
+  "full_fixture_protocol_activations": 69,
+  "synthesis_clock_ns": 8.294,
+  "input_cycles": 4096
+}

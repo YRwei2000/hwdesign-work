@@ -1,0 +1,23 @@
+{
+  "purpose": "Fresh-stream recovery after E05_w_large",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 5033,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 16,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 22
+    }
+  ]
+}

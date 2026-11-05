@@ -1,0 +1,350 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 23:21:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/takehome/run.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset pool_proj 
+WARNING: [HLS 200-2182] The 'pool_proj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Opening and resetting solution '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj'.
+INFO: [HLS 200-1510] Running: set_top max_pool 
+POOL_CFLAGS -I/home/yw9286/hwdesign-work/cmdresp/takehome -std=c++14 -fno-fast-math
+INFO: [HLS 200-1510] Running: add_files /home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/takehome -std=c++14 -fno-fast-math 
+INFO: [HLS 200-10] Adding design file '/home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/yw9286/hwdesign-work/cmdresp/takehome/pool_tb.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/takehome -std=c++14 -fno-fast-math 
+INFO: [HLS 200-10] Adding test bench file '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -clean -argv /home/yw9286/hwdesign-work/cmdresp/takehome/data csim 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../pool_tb.cpp in debug mode
+   Compiling ../../../../gen/max_pool.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../pool_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../pool_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/max_pool.hpp:21:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/gen/../max_pool_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+In file included from ../../../../gen/max_pool.cpp:1:
+In file included from ../../../../gen/max_pool.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/takehome/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../gen/max_pool.cpp:1:
+In file included from ../../../../gen/max_pool.hpp:21:
+In file included from ../../../../gen/../max_pool_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/takehome/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+BEGIN 0 T01_worked stage=csim initial=28
+END T01_worked halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 1 T02_negative_ties_zero stage=csim initial=78
+END T02_negative_ties_zero halted=0 error=0 tx=0 consumed=78 unread=0
+BEGIN 2 T03_parameter_changes stage=csim initial=148
+END T03_parameter_changes halted=0 error=0 tx=0 consumed=135 unread=13
+BEGIN 3 T04_bounds stage=csim initial=8350
+END T04_bounds halted=0 error=0 tx=0 consumed=8350 unread=0
+BEGIN 4 T05_end_first stage=csim initial=19
+END T05_end_first halted=0 error=0 tx=0 consumed=6 unread=13
+BEGIN 5 T06_normal_boundary stage=csim initial=20
+END T06_normal_boundary halted=0 error=0 tx=0 consumed=20 unread=0
+BEGIN 6 T07_performance stage=csim initial=4108
+END T07_performance halted=0 error=0 tx=0 consumed=4108 unread=0
+BEGIN 7 T08_random stage=csim initial=3098
+END T08_random halted=0 error=0 tx=0 consumed=3098 unread=0
+BEGIN 8 E01_magic stage=csim initial=21
+END E01_magic halted=1 error=1 tx=4294967295 consumed=1 unread=20
+BEGIN 9 R_E01_magic stage=csim initial=28
+END R_E01_magic halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 10 E02_header_short_1 stage=csim initial=16
+END E02_header_short_1 halted=1 error=1 tx=4294967295 consumed=1 unread=15
+BEGIN 11 R_E02_header_short_1 stage=csim initial=28
+END R_E02_header_short_1 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 12 E02_header_short_2 stage=csim initial=17
+END E02_header_short_2 halted=1 error=1 tx=1021 consumed=2 unread=15
+BEGIN 13 R_E02_header_short_2 stage=csim initial=28
+END R_E02_header_short_2 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 14 E02_header_short_3 stage=csim initial=18
+END E02_header_short_3 halted=1 error=1 tx=1028 consumed=3 unread=15
+BEGIN 15 R_E02_header_short_3 stage=csim initial=28
+END R_E02_header_short_3 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 16 E02_header_short_4 stage=csim initial=19
+END E02_header_short_4 halted=1 error=1 tx=1035 consumed=4 unread=15
+BEGIN 17 R_E02_header_short_4 stage=csim initial=28
+END R_E02_header_short_4 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 18 E02_header_short_5 stage=csim initial=20
+END E02_header_short_5 halted=1 error=1 tx=1042 consumed=5 unread=15
+BEGIN 19 R_E02_header_short_5 stage=csim initial=28
+END R_E02_header_short_5 halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 20 E03_header_missing stage=csim initial=21
+END E03_header_missing halted=1 error=1 tx=1049 consumed=6 unread=15
+BEGIN 21 R_E03_header_missing stage=csim initial=28
+END R_E03_header_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 22 E04_unknown_opcode stage=csim initial=21
+END E04_unknown_opcode halted=1 error=2 tx=1056 consumed=6 unread=15
+BEGIN 23 R_E04_unknown_opcode stage=csim initial=28
+END R_E04_unknown_opcode halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 24 E05_h_zero stage=csim initial=21
+END E05_h_zero halted=1 error=3 tx=1063 consumed=6 unread=15
+BEGIN 25 R_E05_h_zero stage=csim initial=28
+END R_E05_h_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 26 E05_h_large stage=csim initial=21
+END E05_h_large halted=1 error=3 tx=1070 consumed=6 unread=15
+BEGIN 27 R_E05_h_large stage=csim initial=28
+END R_E05_h_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 28 E05_w_zero stage=csim initial=21
+END E05_w_zero halted=1 error=4 tx=1077 consumed=6 unread=15
+BEGIN 29 R_E05_w_zero stage=csim initial=28
+END R_E05_w_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 30 E05_w_large stage=csim initial=21
+END E05_w_large halted=1 error=4 tx=1084 consumed=6 unread=15
+BEGIN 31 R_E05_w_large stage=csim initial=28
+END R_E05_w_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 32 E05_k_zero stage=csim initial=21
+END E05_k_zero halted=1 error=5 tx=1091 consumed=6 unread=15
+BEGIN 33 R_E05_k_zero stage=csim initial=28
+END R_E05_k_zero halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 34 E05_k_large stage=csim initial=21
+END E05_k_large halted=1 error=5 tx=1098 consumed=6 unread=15
+BEGIN 35 R_E05_k_large stage=csim initial=28
+END R_E05_k_large halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 36 E05_window_h stage=csim initial=21
+END E05_window_h halted=1 error=6 tx=1105 consumed=6 unread=15
+BEGIN 37 R_E05_window_h stage=csim initial=28
+END R_E05_window_h halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 38 E05_window_w stage=csim initial=21
+END E05_window_w halted=1 error=6 tx=1112 consumed=6 unread=15
+BEGIN 39 R_E05_window_w stage=csim initial=28
+END R_E05_window_w halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 40 E05_div_h stage=csim initial=21
+END E05_div_h halted=1 error=7 tx=1119 consumed=6 unread=15
+BEGIN 41 R_E05_div_h stage=csim initial=28
+END R_E05_div_h halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 42 E05_div_w stage=csim initial=21
+END E05_div_w halted=1 error=7 tx=1126 consumed=6 unread=15
+BEGIN 43 R_E05_div_w stage=csim initial=28
+END R_E05_div_w halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 44 E06_format_before_opcode stage=csim initial=21
+END E06_format_before_opcode halted=1 error=1 tx=1133 consumed=6 unread=15
+BEGIN 45 R_E06_format_before_opcode stage=csim initial=28
+END R_E06_format_before_opcode halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 46 E06_opcode_before_parameters stage=csim initial=21
+END E06_opcode_before_parameters halted=1 error=2 tx=1140 consumed=6 unread=15
+BEGIN 47 R_E06_opcode_before_parameters stage=csim initial=28
+END R_E06_opcode_before_parameters halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 48 E06_h_before_w_k stage=csim initial=21
+END E06_h_before_w_k halted=1 error=3 tx=1147 consumed=6 unread=15
+BEGIN 49 R_E06_h_before_w_k stage=csim initial=28
+END R_E06_h_before_w_k halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 50 E06_w_before_k stage=csim initial=21
+END E06_w_before_k halted=1 error=4 tx=1154 consumed=6 unread=15
+BEGIN 51 R_E06_w_before_k stage=csim initial=28
+END R_E06_w_before_k halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 52 E06_k_before_window stage=csim initial=21
+END E06_k_before_window halted=1 error=5 tx=1161 consumed=6 unread=15
+BEGIN 53 R_E06_k_before_window stage=csim initial=28
+END R_E06_k_before_window halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 54 E06_window_before_div stage=csim initial=21
+END E06_window_before_div halted=1 error=6 tx=1168 consumed=6 unread=15
+BEGIN 55 R_E06_window_before_div stage=csim initial=28
+END R_E06_window_before_div halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 56 E07_payload_first stage=csim initial=20
+END E07_payload_first halted=1 error=8 tx=1175 consumed=7 unread=13
+BEGIN 57 R_E07_payload_first stage=csim initial=28
+END R_E07_payload_first halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 58 E07_payload_later stage=csim initial=26
+END E07_payload_later halted=1 error=8 tx=1182 consumed=13 unread=13
+BEGIN 59 R_E07_payload_later stage=csim initial=28
+END R_E07_payload_later halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 60 E07_payload_missing stage=csim initial=35
+END E07_payload_missing halted=1 error=9 tx=1189 consumed=22 unread=13
+BEGIN 61 R_E07_payload_missing stage=csim initial=28
+END R_E07_payload_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 62 E07_payload_one_missing stage=csim initial=20
+END E07_payload_one_missing halted=1 error=9 tx=1196 consumed=7 unread=13
+BEGIN 63 R_E07_payload_one_missing stage=csim initial=28
+END R_E07_payload_one_missing halted=0 error=0 tx=0 consumed=28 unread=0
+BEGIN 64 E08_prior_success stage=csim initial=50
+END E08_prior_success halted=1 error=8 tx=1204 consumed=37 unread=13
+BEGIN 65 R_E08_prior_success stage=csim initial=28
+END R_E08_prior_success halted=0 error=0 tx=0 consumed=28 unread=0
+RECORDED 66 activations (all scenarios; fresh streams every call)
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8350
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:08; Allocated memory: 0.000 MB.
+POOL_STAGE_COMPLETED csim
+INFO: [HLS 200-112] Total CPU user time: 6.72 seconds. Total CPU system time: 1.11 seconds. Total elapsed time: 10.77 seconds; peak allocated memory: 286.473 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 12s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

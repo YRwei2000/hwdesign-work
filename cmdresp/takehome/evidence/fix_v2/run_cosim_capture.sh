@@ -1,0 +1,4 @@
+
+/eda/xilinx/2026.1/Vivado/bin/xelab xil_defaultlib.apatb_max_pool_top xil_defaultlib.glbl -Oenable_linking_all_libraries  -prj max_pool.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_22 -L floating_point_v7_0_27 --lib "ieee_proposed=./ieee_proposed"  -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./max_pool_subsystem -s max_pool -debug all
+/eda/xilinx/2026.1/Vivado/bin/xsim -testplusarg "UVM_VERBOSITY=UVM_NONE" -testplusarg "UVM_TESTNAME=max_pool_test_lib" -testplusarg "UVM_TIMEOUT=20000000000000" --noieeewarnings max_pool -tclbatch /home/yw9286/hwdesign-work/cmdresp/takehome/evidence/fix_v2/cosim_capture.tcl -view max_pool_dataflow_ana.wcfg -protoinst max_pool.protoinst
+

@@ -1,0 +1,23 @@
+SELECTED 0x2ae0 40 ['/apatb_max_pool_top/ap_clk', '/apatb_max_pool_top/AESL_inst_max_pool/ap_clk', '/apatb_max_pool_top/AESL_inst_max_pool/matrix_U/ap_loop_init', '/apatb_max_pool_top/AESL_inst_max_pool/results_U/ap_ce_reg', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/raw_i', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_header_loop_fu_328/ap_CS_fsm', '/apatb_max_pool_top/AESL_inst_max_pool/grp_write_axi4_stream_impl_fu_352/s_in_TDATA', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_receive_loop_fu_367/add_ln56_fu_135_p2', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/best_1_load_1_reg_431', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_emit_loop_fu_395/ap_NS_fsm', '/apatb_max_pool_top/AESL_inst_max_pool/control_s_axi_U/int_ap_ready', '/apatb_max_pool_top/AESL_inst_max_pool/mul_32ns_32ns_64_2_1_U57/remd', '/apatb_max_pool_top/AESL_inst_max_pool/mul_32s_32s_32_2_1_U58/dout', '/apatb_max_pool_top/AESL_inst_max_pool/urem_32s_32ns_32_36_seq_1_U59/din0_WIDTH', '/apatb_max_pool_top/AESL_inst_max_pool/urem_32s_32ns_32_36_seq_1_U60/load_p1', '/apatb_max_pool_top/AESL_inst_max_pool/udiv_32s_32ns_32_36_seq_1_U61/load_p1_from_p2', '/apatb_max_pool_top/AESL_inst_max_pool/udiv_32s_32ns_32_36_seq_1_U62/state', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_s_in_V_data_V_U/WUSER', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_s_in_V_keep_V_U/RRESP', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_s_in_V_strb_V_U/idx4_block', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_s_in_V_last_V_U/post_loop_state1', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_m_out_V_data_V_U/loop_quit_state', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_m_out_V_keep_V_U/quit_state', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_m_out_V_strb_V_U/quit_block', '/apatb_max_pool_top/AESL_inst_max_pool/regslice_both_m_out_V_last_V_U/i', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_1_fu_318/flow_control_loop_pipe_sequential_init_U/AESL_clock', '/apatb_max_pool_top/AESL_inst_max_pool/grp_max_pool_Pipeline_window_rows_window_columns_fu_383/flow_control_loop_pipe_sequential_init_U/AESL_clock', '/apatb_max_pool_top/AESL_inst_max_pool/udiv_32s_32ns_32_36_seq_1_U62/max_pool_udiv_32s_32ns_32_36_seq_1_divseq_u/AESL_clock']
+Traceback (most recent call last):
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/tools/wdb_converter/waveform_converter.py", line 3293, in load_wdb
+    map_roots_to_dbg(info, dbg, wcfg, logger)
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/tools/wdb_converter/waveform_converter.py", line 1961, in map_roots_to_dbg
+    _reconstruct_stream(stream, wdb)
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/export_wave.py", line 23, in reconstruct_ports
+    original(stream,wdb) # strict completeness/alignment/type checks remain in force
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/tools/wdb_converter/waveform_converter.py", line 1840, in _reconstruct_stream
+    raise DecodeError(
+waveform_converter.DecodeError: runtime address 0x2AE0 never received a complete state snapshot; first missing byte offset=8
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/export_wave.py", line 31, in <module>
+    wave=converter.load_wdb([src])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yw9286/hwdesign-work/cmdresp/takehome/tools/wdb_converter/waveform_converter.py", line 3814, in load_wdb
+    raise DecodeError(f"{exc}\nDiagnostic log: {failure_log}") from exc
+waveform_converter.DecodeError: runtime address 0x2AE0 never received a complete state snapshot; first missing byte offset=8
+Diagnostic log: /home/yw9286/hwdesign-work/cmdresp/takehome/pool_proj/solution1/sim/verilog/max_pool.wdb.wdbdecode_failure.log

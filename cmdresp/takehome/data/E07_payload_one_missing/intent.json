@@ -1,0 +1,18 @@
+{
+  "purpose": "All cached results discarded on payload error",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 1196,
+      "h": 1,
+      "w": 1,
+      "k": 1,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 1,
+      "output_start": 0,
+      "error": 9,
+      "result_count": 0
+    }
+  ]
+}

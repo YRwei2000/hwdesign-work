@@ -1,0 +1,111 @@
+{
+  "words": [
+    [
+      601,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      8388608,
+      0
+    ],
+    [
+      2155872256,
+      0
+    ],
+    [
+      2139095039,
+      0
+    ],
+    [
+      4286578687,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      2147483648,
+      0
+    ],
+    [
+      1065353216,
+      0
+    ],
+    [
+      3212836864,
+      1
+    ]
+  ],
+  "status": {
+    "halted": 0,
+    "error": 0,
+    "tx_id": 0
+  },
+  "consumed": 20,
+  "unread": [],
+  "events": [
+    {
+      "kind": "RESP_DONE",
+      "tx": 601,
+      "consumed": 6,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 7,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 8,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 9,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 10,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 11,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 12,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 13,
+      "output": 3
+    },
+    {
+      "kind": "PREAD",
+      "tx": 601,
+      "consumed": 14,
+      "output": 3
+    }
+  ]
+}

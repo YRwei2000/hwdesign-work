@@ -1,0 +1,19 @@
+{
+  "scenario": "T07_performance",
+  "input_samples": 4096,
+  "output_samples": 1024,
+  "first_input_cycle": 84696,
+  "last_input_cycle": 88791,
+  "last_result_cycle": 110398,
+  "input_cycles": 4096,
+  "total_latency_cycles": 25703,
+  "clock_ns": 10.0,
+  "total_latency_ns": 257030.0,
+  "input_samples_per_cycle": 1.0,
+  "end_to_end_results_per_cycle": 0.03983970742714858,
+  "input_megasamples_per_second": 100.0,
+  "no_host_input_pauses": true,
+  "no_output_backpressure": true,
+  "input_cycle_target": 8192,
+  "input_cycle_target_pass": true
+}

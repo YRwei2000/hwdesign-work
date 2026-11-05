@@ -1,0 +1,150 @@
+
+
+================================================================
+== Vitis HLS Report for 'max_pool_Pipeline_emit_loop'
+================================================================
+* Date:           Wed Nov  4 23:54:59 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        off_proj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.728 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |        3|     4098|  30.000 ns|  40.980 us|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- emit_loop  |        1|     4096|         2|          1|          1|  1 ~ 4096|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    121|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     45|    -|
+|Register         |        -|    -|      36|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      36|    166|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln89_fu_115_p2         |         +|   0|  0|  39|          32|           1|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln89_fu_109_p2        |      icmp|   0|  0|  39|          32|          32|
+    |tlast_fu_126_p2            |      icmp|   0|  0|  39|          32|          32|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 121|          98|          68|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   9|          2|   32|         64|
+    |i_1_fu_54                |   9|          2|   32|         64|
+    |m_out_TDATA_blk_n        |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   67|        134|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_1_fu_54                |  32|   0|   32|          0|
+    |tlast_reg_157            |   1|   0|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  36|   0|   36|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+-----------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  max_pool_Pipeline_emit_loop|  return value|
+|m_out_TREADY      |   in|    1|        axis|               m_out_V_data_V|       pointer|
+|m_out_TDATA       |  out|   32|        axis|               m_out_V_data_V|       pointer|
+|nout              |   in|   32|     ap_none|                         nout|        scalar|
+|results_address0  |  out|   12|   ap_memory|                      results|         array|
+|results_ce0       |  out|    1|   ap_memory|                      results|         array|
+|results_q0        |   in|   32|   ap_memory|                      results|         array|
+|add_ln93          |   in|   32|     ap_none|                     add_ln93|        scalar|
+|m_out_TVALID      |  out|    1|        axis|               m_out_V_last_V|       pointer|
+|m_out_TLAST       |  out|    1|        axis|               m_out_V_last_V|       pointer|
+|m_out_TKEEP       |  out|    4|        axis|               m_out_V_keep_V|       pointer|
+|m_out_TSTRB       |  out|    4|        axis|               m_out_V_strb_V|       pointer|
++------------------+-----+-----+------------+-----------------------------+--------------+
+

@@ -1,0 +1,62 @@
+{
+  "purpose": "Negative maxima, equal values and both zero signs",
+  "actions": [
+    {
+      "kind": "COMPUTE",
+      "tx_id": 201,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 0,
+      "header_end": 6,
+      "received": 16,
+      "output_start": 0,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 202,
+      "h": 4,
+      "w": 4,
+      "k": 2,
+      "input_start": 22,
+      "header_end": 28,
+      "received": 16,
+      "output_start": 7,
+      "error": 0,
+      "result_count": 4
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 203,
+      "h": 2,
+      "w": 4,
+      "k": 2,
+      "input_start": 44,
+      "header_end": 50,
+      "received": 8,
+      "output_start": 14,
+      "error": 0,
+      "result_count": 2
+    },
+    {
+      "kind": "COMPUTE",
+      "tx_id": 204,
+      "h": 2,
+      "w": 4,
+      "k": 1,
+      "input_start": 58,
+      "header_end": 64,
+      "received": 8,
+      "output_start": 19,
+      "error": 0,
+      "result_count": 8
+    },
+    {
+      "kind": "END",
+      "tx_id": 305419896,
+      "input_start": 72
+    }
+  ]
+}

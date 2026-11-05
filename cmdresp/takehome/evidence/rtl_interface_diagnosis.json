@@ -1,0 +1,20 @@
+{
+  "required_contract": "Complete external response header before first payload transfer",
+  "failed_scenario_rows": 41,
+  "total_scenario_rows": 66,
+  "first_worked_case": {
+    "tx_id": 101,
+    "response_last_cycle": 151,
+    "first_input_cycle": 35,
+    "last_input_cycle": 166,
+    "header_before_payload": false,
+    "results_after_valid_input": true
+  },
+  "cause": "Vitis-generated default AXI register slices allow input prefetch and buffer output writes",
+  "generated_boundary": "gen/max_pool.cpp",
+  "generated_boundary_sha256": "3a916a4db6f26c44c7117306bc3568441baf2f4b96d787709a96fa11b5212035",
+  "rtl_source": "evidence/rtl_interface.v",
+  "no_kernel_or_generated_source_modified": true,
+  "no_rebuild_or_further_replay": true,
+  "c_source_order_pass_does_not_establish_external_transfer_order": true
+}

@@ -1,0 +1,82 @@
+{
+  "part": "xc7z020-clg484-1",
+  "target_ns": 10.0,
+  "estimated_ns": 8.294,
+  "uncertainty_ns": 2.7,
+  "resources": {
+    "BRAM_18K": 16,
+    "DSP": 12,
+    "FF": 3853,
+    "LUT": 4214,
+    "URAM": 0
+  },
+  "loops": {
+    "max_pool_Pipeline_emit_loop_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "isPerfectNested": "0",
+        "PipelineII": "1",
+        "PipelineDepth": "2",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "max_pool_Pipeline_1_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "TripCount": "6",
+        "isPerfectNested": "0",
+        "Latency": "5",
+        "AbsoluteTimeLatency": "50",
+        "PipelineII": "1",
+        "PipelineDepth": "1",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "max_pool_Pipeline_receive_loop_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "isPerfectNested": "0",
+        "PipelineII": "1",
+        "PipelineDepth": "2",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "max_pool_Pipeline_window_rows_window_columns_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "isPerfectNested": "0",
+        "PipelineII": "2",
+        "PipelineDepth": "9",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "max_pool_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "TripCount": "undef",
+        "isPerfectNested": "0",
+        "Latency": "undef",
+        "AbsoluteTimeLatency": "undef",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "max_pool_Pipeline_header_loop_csynth.xml": [
+      {
+        "Slack": "7.30",
+        "isPerfectNested": "0",
+        "PipelineII": "2",
+        "PipelineDepth": "2",
+        "PerformancePragma": "-",
+        "InstanceList": "\n"
+      }
+    ],
+    "write_axi4_stream_impl_csynth.xml": []
+  },
+  "source": "evidence/fix_v2/synthesis/max_pool_csynth.xml",
+  "clock_pass": true
+}

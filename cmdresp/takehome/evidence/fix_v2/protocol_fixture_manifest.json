@@ -1,0 +1,1113 @@
+{
+  "scenarios": [
+    {
+      "name": "T01_worked",
+      "source": "T01_worked",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "293ecbc117b4a33216f56525321f197d65f83116ee47f60d726de17f7fb4b184",
+      "expected_sha256": "ad42540a503cf0ac753e1c7eda852cce8e4c132edcc856a434a89c0bd09c1c86",
+      "input_file": "T01_worked.in",
+      "output_file": "T01_worked.out"
+    },
+    {
+      "name": "T02_negative_ties_zero",
+      "source": "T02_negative_ties_zero",
+      "backpressure": false,
+      "full_input_words": 78,
+      "expected_consumed": 78,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "632b6c8ae3c15ddd93a9f1cbb8f63379342abf64ccee9951ac431d0bcbf66f3c",
+      "expected_sha256": "277b3b5a33f6fc72328aa925e13df12f72f05cd505b4f35d874499112f0fc531",
+      "input_file": "T02_negative_ties_zero.in",
+      "output_file": "T02_negative_ties_zero.out"
+    },
+    {
+      "name": "T03_parameter_changes",
+      "source": "T03_parameter_changes",
+      "backpressure": false,
+      "full_input_words": 148,
+      "expected_consumed": 135,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "e65c6151983a93ca8057327550c6bece38fc3c345b9c011bce9b8f180c12a058",
+      "expected_sha256": "659e73bb1a9cba6c9e5285bc2678d7a559fa6500d41456112ad8323f17471c33",
+      "input_file": "T03_parameter_changes.in",
+      "output_file": "T03_parameter_changes.out"
+    },
+    {
+      "name": "T04_bounds",
+      "source": "T04_bounds",
+      "backpressure": false,
+      "full_input_words": 8350,
+      "expected_consumed": 8350,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "8e29c1f49ab21cd8e47c220695d63f7423daeb6f9972ea6b542e5cf05826d586",
+      "expected_sha256": "79c37aa47ca19444847c5840b2bb959dcbe9e4f8cba0f0ad0ce2afa11e5f05a7",
+      "input_file": "T04_bounds.in",
+      "output_file": "T04_bounds.out"
+    },
+    {
+      "name": "T05_end_first",
+      "source": "T05_end_first",
+      "backpressure": false,
+      "full_input_words": 19,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "be1f1208790586713540c046e4ec51716da40706677be1e8841faca408f873a9",
+      "expected_sha256": "3b3bd5257548f54b76781bf54170f8fb92bfda9e4e89616c4a6e3b81ff6da973",
+      "input_file": "T05_end_first.in",
+      "output_file": "T05_end_first.out"
+    },
+    {
+      "name": "T06_normal_boundary",
+      "source": "T06_normal_boundary",
+      "backpressure": false,
+      "full_input_words": 20,
+      "expected_consumed": 20,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "acd152ba4e16778d94dc6abc704217e0ed4e23c4c3ac2ce796bf73fbfbaff5bf",
+      "expected_sha256": "62b415b53a3a9920853f69e8e12ee9a03aa31f34edff60aad30bc88a424fb87c",
+      "input_file": "T06_normal_boundary.in",
+      "output_file": "T06_normal_boundary.out"
+    },
+    {
+      "name": "T07_performance",
+      "source": "T07_performance",
+      "backpressure": false,
+      "full_input_words": 4108,
+      "expected_consumed": 4108,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "e7619c8c77346439ca88ea12d2aae03da22ede2e1fb37cbc46ef662edb0b44d3",
+      "expected_sha256": "342f552037da02dab87cc1423cc1ff09b8a9b23b9f91c7f43c2d480ab5f6e8e0",
+      "input_file": "T07_performance.in",
+      "output_file": "T07_performance.out"
+    },
+    {
+      "name": "T08_random",
+      "source": "T08_random",
+      "backpressure": false,
+      "full_input_words": 3098,
+      "expected_consumed": 3098,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "7129cd5b82686e05ec817094d9f088042316d3ba5512dd7310061c1222b6223e",
+      "expected_sha256": "b0829824fea799d2a25b88347ecbf0cab2df35dc37e5a62c8386bc37037c44aa",
+      "input_file": "T08_random.in",
+      "output_file": "T08_random.out"
+    },
+    {
+      "name": "E01_magic",
+      "source": "E01_magic",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 1,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 4294967295
+      },
+      "input_sha256": "3a834a55f3483cddfa3aa3b4845baa907ba4e1f423bd59358cb02375ad88ae2d",
+      "expected_sha256": "20724748ed1ec8e2663541ea8a4b613eda593ca624377a6d603b888b7d62eb06",
+      "input_file": "E01_magic.in",
+      "output_file": "E01_magic.out"
+    },
+    {
+      "name": "R_E01_magic",
+      "source": "R_E01_magic",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "baccf226cd0ce46ec6020c23431d9f5f28b4e356252b702edd2241cc513cdea7",
+      "expected_sha256": "12ee5cea84cd7b82cb6e58f18bee179c5067e265d37e24a9a8c8860275cfcc27",
+      "input_file": "R_E01_magic.in",
+      "output_file": "R_E01_magic.out"
+    },
+    {
+      "name": "E02_header_short_1",
+      "source": "E02_header_short_1",
+      "backpressure": false,
+      "full_input_words": 16,
+      "expected_consumed": 1,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 4294967295
+      },
+      "input_sha256": "db485c715e367668a49fa58c5cfc36410c0334cdddefdc982036b5aac74ab7eb",
+      "expected_sha256": "cdff0cc979aa179258c4c02c3a0028805abff92933a11584f86636578f6c6353",
+      "input_file": "E02_header_short_1.in",
+      "output_file": "E02_header_short_1.out"
+    },
+    {
+      "name": "R_E02_header_short_1",
+      "source": "R_E02_header_short_1",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "bacafe99251b86cada53f4b24b8f82d61e0472b1293a902a61757adeca1f41c3",
+      "expected_sha256": "db303f918e39d0f31b43ce456aa1d9db67cc85f61de3b9f72f8f84dce31db70e",
+      "input_file": "R_E02_header_short_1.in",
+      "output_file": "R_E02_header_short_1.out"
+    },
+    {
+      "name": "E02_header_short_2",
+      "source": "E02_header_short_2",
+      "backpressure": false,
+      "full_input_words": 17,
+      "expected_consumed": 2,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1021
+      },
+      "input_sha256": "69b1ba796cfaba34e5e26b48fee862ed0ee0e12cdf788236a2c37db2f63a33ec",
+      "expected_sha256": "1c91a72e0cbb8b6f2f1ecebd69df91ced7bd903ff3df3d92dc10f3a337398055",
+      "input_file": "E02_header_short_2.in",
+      "output_file": "E02_header_short_2.out"
+    },
+    {
+      "name": "R_E02_header_short_2",
+      "source": "R_E02_header_short_2",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "d2bf4212b938e1b14792964cb2a0972cd65000bfaac5f93c5de1c3255c2af8d6",
+      "expected_sha256": "5f943132d78841d8039e5322f04f0500ad705a2c25e5419e94238579cd15bac4",
+      "input_file": "R_E02_header_short_2.in",
+      "output_file": "R_E02_header_short_2.out"
+    },
+    {
+      "name": "E02_header_short_3",
+      "source": "E02_header_short_3",
+      "backpressure": false,
+      "full_input_words": 18,
+      "expected_consumed": 3,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1028
+      },
+      "input_sha256": "c96e5ff87ae7a95d1bd203580b8c681409722ee867d49e4986bf08fb10794da9",
+      "expected_sha256": "0b16f417f401477491c866b17ac8ad316fc498f9433b4d5cf2ea772241af102b",
+      "input_file": "E02_header_short_3.in",
+      "output_file": "E02_header_short_3.out"
+    },
+    {
+      "name": "R_E02_header_short_3",
+      "source": "R_E02_header_short_3",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "993a3f9f4f90da8e392c929fb797d8db04c1b7d27d81058c862984dad99b6baf",
+      "expected_sha256": "ea806d639317862ce56612705ebb975476d38fb23b7a75aa19ab2055646ed73f",
+      "input_file": "R_E02_header_short_3.in",
+      "output_file": "R_E02_header_short_3.out"
+    },
+    {
+      "name": "E02_header_short_4",
+      "source": "E02_header_short_4",
+      "backpressure": false,
+      "full_input_words": 19,
+      "expected_consumed": 4,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1035
+      },
+      "input_sha256": "f4540301ef66eb68628c023d3877135f1ce4913597656b70039844659c7e8a33",
+      "expected_sha256": "17b4f413ac21f88f85a90f78d0bb156c0d33c776cbc6dbf66d00df7e71e5fffa",
+      "input_file": "E02_header_short_4.in",
+      "output_file": "E02_header_short_4.out"
+    },
+    {
+      "name": "R_E02_header_short_4",
+      "source": "R_E02_header_short_4",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "cf102dc3ebe96596b6d781d845ded4b0864fa453bca995e38c9451ca06309717",
+      "expected_sha256": "0053b9eff1fc28c09af7b62cc0f909e587704d88b463aaa586d62f6646b34c68",
+      "input_file": "R_E02_header_short_4.in",
+      "output_file": "R_E02_header_short_4.out"
+    },
+    {
+      "name": "E02_header_short_5",
+      "source": "E02_header_short_5",
+      "backpressure": false,
+      "full_input_words": 20,
+      "expected_consumed": 5,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1042
+      },
+      "input_sha256": "298fc4637641edf0c6781089cdc4cf724d12553589dc51d0ea16284fe4c3a523",
+      "expected_sha256": "5707f7ad42d00fdf58e50f48d43d549506ece4f2e7c13d0c196c3e6cbb5dbbe6",
+      "input_file": "E02_header_short_5.in",
+      "output_file": "E02_header_short_5.out"
+    },
+    {
+      "name": "R_E02_header_short_5",
+      "source": "R_E02_header_short_5",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "88daab818db7beb0b49b74159150b64e48916c89607d1fc924ef83305baa85f7",
+      "expected_sha256": "7c659414c94d157fc840a064b24a8f272ad3484097c059782bb8fd9269aa9d97",
+      "input_file": "R_E02_header_short_5.in",
+      "output_file": "R_E02_header_short_5.out"
+    },
+    {
+      "name": "E03_header_missing",
+      "source": "E03_header_missing",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1049
+      },
+      "input_sha256": "b710cafe8aa55d636e315d0db5506db7a72d22555c8574d0f92cdc22628fd3b2",
+      "expected_sha256": "29830c285681fc5560df5151f92783be6a809d308fadc059e6c6b56582e91f0f",
+      "input_file": "E03_header_missing.in",
+      "output_file": "E03_header_missing.out"
+    },
+    {
+      "name": "R_E03_header_missing",
+      "source": "R_E03_header_missing",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "28c097e14f607ecea5db1a3ec5133c2d0c70c604f7c8156f983acd23d9879a30",
+      "expected_sha256": "819e924d9e7d265db353a21bb6ef90d5cd796a3683f4e807f6ebd11d7178e2db",
+      "input_file": "R_E03_header_missing.in",
+      "output_file": "R_E03_header_missing.out"
+    },
+    {
+      "name": "E04_unknown_opcode",
+      "source": "E04_unknown_opcode",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 2,
+        "tx_id": 1056
+      },
+      "input_sha256": "bcdc3a0ce4f8f2e523aa71d8a283f7c1eb269993b72177d0b2fb32a4fb9e468f",
+      "expected_sha256": "1e8654a7743b65aab13e6efc3515744c6b9fbe802cf68fa0e3d3d4d74a3ee02d",
+      "input_file": "E04_unknown_opcode.in",
+      "output_file": "E04_unknown_opcode.out"
+    },
+    {
+      "name": "R_E04_unknown_opcode",
+      "source": "R_E04_unknown_opcode",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "2398f51e54d418be2a6757a1f8e091af4dcba998cbcad6cfe107e2a90646daa8",
+      "expected_sha256": "97ea0019717d47f22e37c1bb44e793fed7125f72cf99058bc94943f621afd1d2",
+      "input_file": "R_E04_unknown_opcode.in",
+      "output_file": "R_E04_unknown_opcode.out"
+    },
+    {
+      "name": "E05_h_zero",
+      "source": "E05_h_zero",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 3,
+        "tx_id": 1063
+      },
+      "input_sha256": "78afd437288bccc67451374ca8a89260b80ec448107e5ac6f9c5cdfb93d282a0",
+      "expected_sha256": "e5b95885523eece4ad1d3a6ec8a159eef4f3ab88a56a23cd3558f8914cfffcc6",
+      "input_file": "E05_h_zero.in",
+      "output_file": "E05_h_zero.out"
+    },
+    {
+      "name": "R_E05_h_zero",
+      "source": "R_E05_h_zero",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "295b57487547e2cea88ca35496025b5a14dfbdc59b6059091b69396fa1ed1918",
+      "expected_sha256": "511eb2a2ba44fd56a9fbf0b2b93d0d9f318d7803e0c945894129f66b1bb6c8d4",
+      "input_file": "R_E05_h_zero.in",
+      "output_file": "R_E05_h_zero.out"
+    },
+    {
+      "name": "E05_h_large",
+      "source": "E05_h_large",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 3,
+        "tx_id": 1070
+      },
+      "input_sha256": "258a96bd23ef05bec4860a9695d352158e0cef9309600f585ab42fbc83c62c1e",
+      "expected_sha256": "f582c6a3e8570ccddb62a68ba076464cc7888837c1619f701744faa7914cdc72",
+      "input_file": "E05_h_large.in",
+      "output_file": "E05_h_large.out"
+    },
+    {
+      "name": "R_E05_h_large",
+      "source": "R_E05_h_large",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "92ce208d6cc28225e4908515d2e7f7fb64a2260582a53356940ec89d0da6e98f",
+      "expected_sha256": "670cd02f5abc0f26b28d4fbc4b13c6484e0dade2d92f9befec23843ea338a797",
+      "input_file": "R_E05_h_large.in",
+      "output_file": "R_E05_h_large.out"
+    },
+    {
+      "name": "E05_w_zero",
+      "source": "E05_w_zero",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 4,
+        "tx_id": 1077
+      },
+      "input_sha256": "e71349e269361fecfe73c530ae4969772932a3c31093b85bba2489e5091d25f2",
+      "expected_sha256": "7b11a55a67e7601c5f55467f9e69c1a618082b49efabba40d3de57c848ec6e0a",
+      "input_file": "E05_w_zero.in",
+      "output_file": "E05_w_zero.out"
+    },
+    {
+      "name": "R_E05_w_zero",
+      "source": "R_E05_w_zero",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "5df886f258831f146bd42b48f4ab5331118bf30ff5adb90abb605422900a6d60",
+      "expected_sha256": "64e4f66f6810280b3d37900fc912f5ab363e60d5a01174aff79aa40f3a494fc8",
+      "input_file": "R_E05_w_zero.in",
+      "output_file": "R_E05_w_zero.out"
+    },
+    {
+      "name": "E05_w_large",
+      "source": "E05_w_large",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 4,
+        "tx_id": 1084
+      },
+      "input_sha256": "03c7dd7b36120eb89c722a582f6898982fb0160f35fcc7e54c2633646dc27c12",
+      "expected_sha256": "606eb0e6f2ac171d56dd9b1280b21037942be565a24600af5ca1e2521c233492",
+      "input_file": "E05_w_large.in",
+      "output_file": "E05_w_large.out"
+    },
+    {
+      "name": "R_E05_w_large",
+      "source": "R_E05_w_large",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "5d4ce3497c5b566ccfb2c3701e0c6e6734be20e6fd19f2432eaa82625ab6174c",
+      "expected_sha256": "29b2f88d21779699cf37a70c9e097e9f46373caa49236293b55c8995ca1a1dac",
+      "input_file": "R_E05_w_large.in",
+      "output_file": "R_E05_w_large.out"
+    },
+    {
+      "name": "E05_k_zero",
+      "source": "E05_k_zero",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 5,
+        "tx_id": 1091
+      },
+      "input_sha256": "0e76ef33e538bd3779387fe1c25e72e7f8e50463374842f7261cddd6b4722704",
+      "expected_sha256": "b6f120d43b742566cd6d23526aa24b128ed7b8b4473ae4e827b400a59cab1571",
+      "input_file": "E05_k_zero.in",
+      "output_file": "E05_k_zero.out"
+    },
+    {
+      "name": "R_E05_k_zero",
+      "source": "R_E05_k_zero",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "dd35d426b664f7a0c6432488c326cf61f54da40f6e39218137c045bbc3dfce77",
+      "expected_sha256": "c8d607b5db6e36f5103a924b471bf2d76ca5a8c8855f85c345c1ffbe4faa1cff",
+      "input_file": "R_E05_k_zero.in",
+      "output_file": "R_E05_k_zero.out"
+    },
+    {
+      "name": "E05_k_large",
+      "source": "E05_k_large",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 5,
+        "tx_id": 1098
+      },
+      "input_sha256": "86a0bad225033eac40fb189d08c2fc983bf91c1f916d567dab33d5ceabba30b6",
+      "expected_sha256": "e132c410c6f3d4b551927dabc69a6354ee91e0f4a1da80e5f2f9a5f959727a5a",
+      "input_file": "E05_k_large.in",
+      "output_file": "E05_k_large.out"
+    },
+    {
+      "name": "R_E05_k_large",
+      "source": "R_E05_k_large",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "24a0ae31e98847e1a77e63cb0a6971143199c6ef428be2b828337c4befe73845",
+      "expected_sha256": "263484ba6675a671e3245c84181851b8f6284f32ee6cc7549b160ad3c8be9fd9",
+      "input_file": "R_E05_k_large.in",
+      "output_file": "R_E05_k_large.out"
+    },
+    {
+      "name": "E05_window_h",
+      "source": "E05_window_h",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 6,
+        "tx_id": 1105
+      },
+      "input_sha256": "a59f7573a4961d3b37798cf880382efb213ebc299d387dd7662690084c2f524b",
+      "expected_sha256": "b1bb20e17310a73862ed0b69f19107af8539aa6356300f7a6eea8597078820cd",
+      "input_file": "E05_window_h.in",
+      "output_file": "E05_window_h.out"
+    },
+    {
+      "name": "R_E05_window_h",
+      "source": "R_E05_window_h",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "1ee881a06b7acf92260fb98966c8101c51fb3ad660e01f0735412a04f3c61168",
+      "expected_sha256": "5d87a548ecac97aeae384f4c51e793e858c579a4bf68a448776ecc3ee46f1e9d",
+      "input_file": "R_E05_window_h.in",
+      "output_file": "R_E05_window_h.out"
+    },
+    {
+      "name": "E05_window_w",
+      "source": "E05_window_w",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 6,
+        "tx_id": 1112
+      },
+      "input_sha256": "a3b2c06f97965a603fb8aabad31c95104ed36eca48975fff2caeab6cd3336aae",
+      "expected_sha256": "50fb03c369dec6d31c5d3d4512041c090c7bec1d97c9258156f375d7c922ff8b",
+      "input_file": "E05_window_w.in",
+      "output_file": "E05_window_w.out"
+    },
+    {
+      "name": "R_E05_window_w",
+      "source": "R_E05_window_w",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "f592e1308bcda73a46724195b0ae5a0ffd3c1f6622d25d68eb65135fe96f9e55",
+      "expected_sha256": "a41f344eaf4636c4b6a7930995c162eb4e36cfb02f4d0a6bb4d5287b5d7404da",
+      "input_file": "R_E05_window_w.in",
+      "output_file": "R_E05_window_w.out"
+    },
+    {
+      "name": "E05_div_h",
+      "source": "E05_div_h",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 7,
+        "tx_id": 1119
+      },
+      "input_sha256": "d4ec17c3a87dbe3bc2a8b2b2909dd14801743f2aad1ce16b4b3a7d715d994c87",
+      "expected_sha256": "8853995e5ea606c9f4b54a766e6760bcd835fd5e4350f0e009fd573f87b79c6c",
+      "input_file": "E05_div_h.in",
+      "output_file": "E05_div_h.out"
+    },
+    {
+      "name": "R_E05_div_h",
+      "source": "R_E05_div_h",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "1457f9097cbebd7138a27a31f24977ae31ae5a8a5b7ddad36fbda4772571ebbf",
+      "expected_sha256": "468bcceb3efacc62273a0505b14923bb67c1588d6550fefbba341c720177dead",
+      "input_file": "R_E05_div_h.in",
+      "output_file": "R_E05_div_h.out"
+    },
+    {
+      "name": "E05_div_w",
+      "source": "E05_div_w",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 7,
+        "tx_id": 1126
+      },
+      "input_sha256": "6a555b1745b6b36d7a16e553cca880224ac5949786cc7855ecdb18c3d00297ef",
+      "expected_sha256": "beebe7ed2eeafbc8aaad87c16d9e1f158540dc276fa1bb00037ce90546b527f6",
+      "input_file": "E05_div_w.in",
+      "output_file": "E05_div_w.out"
+    },
+    {
+      "name": "R_E05_div_w",
+      "source": "R_E05_div_w",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "fe813f9b9e5c14f152d2a21277c436cf28eeaf6b91cb16bd62ce9addf129fa05",
+      "expected_sha256": "dbf9a5bd75f0c6b5be78a125a2f788a38cf2838c6a630ef1ee00fe421f108d22",
+      "input_file": "R_E05_div_w.in",
+      "output_file": "R_E05_div_w.out"
+    },
+    {
+      "name": "E06_format_before_opcode",
+      "source": "E06_format_before_opcode",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 1,
+        "tx_id": 1133
+      },
+      "input_sha256": "e5bc87e81f79627edf28776e9fef52696805ef822de617ca0be5d10d8543c71f",
+      "expected_sha256": "848991f8927170f6b3488a2b5acac0a3c81fd60a0685bc1bba9afe0115f2c651",
+      "input_file": "E06_format_before_opcode.in",
+      "output_file": "E06_format_before_opcode.out"
+    },
+    {
+      "name": "R_E06_format_before_opcode",
+      "source": "R_E06_format_before_opcode",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "38f228394ccf7fe2d4b394403db35ecf8bdfe4d6f7d73d3d693f69159c323472",
+      "expected_sha256": "0f292fd7f3e69e7a98d1af220026c84722994d0f77260695a39f01815d2e12ad",
+      "input_file": "R_E06_format_before_opcode.in",
+      "output_file": "R_E06_format_before_opcode.out"
+    },
+    {
+      "name": "E06_opcode_before_parameters",
+      "source": "E06_opcode_before_parameters",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 2,
+        "tx_id": 1140
+      },
+      "input_sha256": "1daa67f9ecdbb1683924ac0849aaa247fc296a39216fe24e598330e1df8464ee",
+      "expected_sha256": "64a0f6008412c7656177e13d4bac233103b0a3afa236d950eec8934b0855882e",
+      "input_file": "E06_opcode_before_parameters.in",
+      "output_file": "E06_opcode_before_parameters.out"
+    },
+    {
+      "name": "R_E06_opcode_before_parameters",
+      "source": "R_E06_opcode_before_parameters",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "3ea8a198c0cf3b57a00342713a363c0a1b1bd43005ae308baaa64b63298ed174",
+      "expected_sha256": "c47ec8c411d1dc88d2f513f4e98e2da19f4f10336bab61ef44bf70fba4f570df",
+      "input_file": "R_E06_opcode_before_parameters.in",
+      "output_file": "R_E06_opcode_before_parameters.out"
+    },
+    {
+      "name": "E06_h_before_w_k",
+      "source": "E06_h_before_w_k",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 3,
+        "tx_id": 1147
+      },
+      "input_sha256": "d5dfc38ed6ee5ea85bcedd6866ea8bf8daf110c1d64368a754d70b9f2e39d0f5",
+      "expected_sha256": "7789bd2055576ad751fb57db5c294b70eebeed51e7fbb5efed92ee957d9fb4bd",
+      "input_file": "E06_h_before_w_k.in",
+      "output_file": "E06_h_before_w_k.out"
+    },
+    {
+      "name": "R_E06_h_before_w_k",
+      "source": "R_E06_h_before_w_k",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "65aad1ce994f1300f6a9c3a00ca29205472243681257562724a3aeb0b437668e",
+      "expected_sha256": "b9f6553cedce92fb3c41c3e1fe02d38ef9243709483fc33048afa159ddeb59bd",
+      "input_file": "R_E06_h_before_w_k.in",
+      "output_file": "R_E06_h_before_w_k.out"
+    },
+    {
+      "name": "E06_w_before_k",
+      "source": "E06_w_before_k",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 4,
+        "tx_id": 1154
+      },
+      "input_sha256": "cd3359db04f6757d10cbde93626d4a4e44c2043ae5d759b24398b96671259b6e",
+      "expected_sha256": "a38d3b09d69a70aeabe973c0d65daa64262d7238ea4fc0df9358a72f4f72ef8e",
+      "input_file": "E06_w_before_k.in",
+      "output_file": "E06_w_before_k.out"
+    },
+    {
+      "name": "R_E06_w_before_k",
+      "source": "R_E06_w_before_k",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "0b61d15b511ca4a4bc64448a91ca7247c238b7c304131f864cdcb9b554bfd402",
+      "expected_sha256": "a7a535f8b0e7f4f9e4c64e36f3a8a37dc67040c4a3d42597a465228716697064",
+      "input_file": "R_E06_w_before_k.in",
+      "output_file": "R_E06_w_before_k.out"
+    },
+    {
+      "name": "E06_k_before_window",
+      "source": "E06_k_before_window",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 5,
+        "tx_id": 1161
+      },
+      "input_sha256": "b0fb7395b9abfe25f256cc99e264f839c339a47233a9f5cadedc03fb5f1969be",
+      "expected_sha256": "27f798ce0c62522931c399b49528463501d2f7bf5c047d9c4419d7a586934c7a",
+      "input_file": "E06_k_before_window.in",
+      "output_file": "E06_k_before_window.out"
+    },
+    {
+      "name": "R_E06_k_before_window",
+      "source": "R_E06_k_before_window",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "c28eac916640c84c7df0fed0215648af9a5716bd7265090d5b49783896e909cb",
+      "expected_sha256": "2c0eb861128caa0102cdc498ac1fa4abd79505887c6e3df3f3361fd9b8c999c2",
+      "input_file": "R_E06_k_before_window.in",
+      "output_file": "R_E06_k_before_window.out"
+    },
+    {
+      "name": "E06_window_before_div",
+      "source": "E06_window_before_div",
+      "backpressure": false,
+      "full_input_words": 21,
+      "expected_consumed": 6,
+      "expected_status": {
+        "halted": 1,
+        "error": 6,
+        "tx_id": 1168
+      },
+      "input_sha256": "39f724746d03e802b9b29dfeb6820a6114f5d8bf7a959c585a8b685c42c2b27c",
+      "expected_sha256": "6a1461c50d1b156242f7d030071db440cc2c3217b87c5da16229ceaedaad4d80",
+      "input_file": "E06_window_before_div.in",
+      "output_file": "E06_window_before_div.out"
+    },
+    {
+      "name": "R_E06_window_before_div",
+      "source": "R_E06_window_before_div",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "bf31a33bf74a89f0b1497cf2288312002cdd609faf98ed66bbbb0e19c57e7655",
+      "expected_sha256": "c0fd65313093b5f0cbba2a5aafc68c0636cf415abff2556b32b82ae8d94ec662",
+      "input_file": "R_E06_window_before_div.in",
+      "output_file": "R_E06_window_before_div.out"
+    },
+    {
+      "name": "E07_payload_first",
+      "source": "E07_payload_first",
+      "backpressure": false,
+      "full_input_words": 20,
+      "expected_consumed": 7,
+      "expected_status": {
+        "halted": 1,
+        "error": 8,
+        "tx_id": 1175
+      },
+      "input_sha256": "1446a72ecb86ecfeedd8e6a9be9b9db9ad9a202a246679b1834dfa3efe316cb6",
+      "expected_sha256": "7224331e212a5dcbbb84c15629708bc73c1dad8d3c58a040eb6864a0a03c3186",
+      "input_file": "E07_payload_first.in",
+      "output_file": "E07_payload_first.out"
+    },
+    {
+      "name": "R_E07_payload_first",
+      "source": "R_E07_payload_first",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "9c3229165740dcf945cea4ee5d67ecb8a84a754109445ba1c1797eeb05bb0059",
+      "expected_sha256": "78cc7567d1a756ed61f1604cc6eb19d0588ba5f92bf524215ce467b6b4c6b178",
+      "input_file": "R_E07_payload_first.in",
+      "output_file": "R_E07_payload_first.out"
+    },
+    {
+      "name": "E07_payload_later",
+      "source": "E07_payload_later",
+      "backpressure": false,
+      "full_input_words": 26,
+      "expected_consumed": 13,
+      "expected_status": {
+        "halted": 1,
+        "error": 8,
+        "tx_id": 1182
+      },
+      "input_sha256": "3a3b159118c446d50fa6aa4a4af5a135ab62ffe0c6fcb00d1e1e3e4b33fd931e",
+      "expected_sha256": "4cfeded94c0e1a207676ff6376a37d23a91a03e4dbb30882fe0463d7bec57ef0",
+      "input_file": "E07_payload_later.in",
+      "output_file": "E07_payload_later.out"
+    },
+    {
+      "name": "R_E07_payload_later",
+      "source": "R_E07_payload_later",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "77129c2cd53abf85c99eb7c7fa3edbd1a3f24166af8ae3fe171771dfb3a0ed7d",
+      "expected_sha256": "d0d0107275f02b3f64469a2fb259675e7ecb77cf633e4d0d5ff717661ca33221",
+      "input_file": "R_E07_payload_later.in",
+      "output_file": "R_E07_payload_later.out"
+    },
+    {
+      "name": "E07_payload_missing",
+      "source": "E07_payload_missing",
+      "backpressure": false,
+      "full_input_words": 35,
+      "expected_consumed": 22,
+      "expected_status": {
+        "halted": 1,
+        "error": 9,
+        "tx_id": 1189
+      },
+      "input_sha256": "e7bf60bc54bb0750824a5ff180b254732b2b510185438ab71685656647c816be",
+      "expected_sha256": "4fbef49d8dd3f95336f88aaed8c4fe900738a05c2b1d321b642415dd12eb5dd9",
+      "input_file": "E07_payload_missing.in",
+      "output_file": "E07_payload_missing.out"
+    },
+    {
+      "name": "R_E07_payload_missing",
+      "source": "R_E07_payload_missing",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "bca21162871fdbbe4153a382d48c7200cef1f4cfbb6143c789c22a0281eca951",
+      "expected_sha256": "ff42e45a82dd1f71d900802549d39cdabc8604588723fee687f4e230523fb41d",
+      "input_file": "R_E07_payload_missing.in",
+      "output_file": "R_E07_payload_missing.out"
+    },
+    {
+      "name": "E07_payload_one_missing",
+      "source": "E07_payload_one_missing",
+      "backpressure": false,
+      "full_input_words": 20,
+      "expected_consumed": 7,
+      "expected_status": {
+        "halted": 1,
+        "error": 9,
+        "tx_id": 1196
+      },
+      "input_sha256": "ae966a14004aa0f40856bc3b0f2838183091ed62a9d7612814384eface67a712",
+      "expected_sha256": "d21df56917caccc0402e4df58be131f259c8bb1e32c54706b1b5733a2b5fbebb",
+      "input_file": "E07_payload_one_missing.in",
+      "output_file": "E07_payload_one_missing.out"
+    },
+    {
+      "name": "R_E07_payload_one_missing",
+      "source": "R_E07_payload_one_missing",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "d864d13da3f54da167d359c0995ee76901fcc230b793af1cb47f18b3dd66003f",
+      "expected_sha256": "1e727e678f612949dfc9215b0d84494e5d48232f8a20e052053077b3f7b383e8",
+      "input_file": "R_E07_payload_one_missing.in",
+      "output_file": "R_E07_payload_one_missing.out"
+    },
+    {
+      "name": "E08_prior_success",
+      "source": "E08_prior_success",
+      "backpressure": false,
+      "full_input_words": 50,
+      "expected_consumed": 37,
+      "expected_status": {
+        "halted": 1,
+        "error": 8,
+        "tx_id": 1204
+      },
+      "input_sha256": "3f95257366bfee75d7943b062ea6631691f48dad4cca96ea1a09a73cc802b3bf",
+      "expected_sha256": "7a7783a9725357a3bd3764b69c243f4548b4baf135db7781af685eff7f1c0916",
+      "input_file": "E08_prior_success.in",
+      "output_file": "E08_prior_success.out"
+    },
+    {
+      "name": "R_E08_prior_success",
+      "source": "R_E08_prior_success",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "24e3655e725d865135b11756b3c33dd431aabc30d88f509dff57c3c9c6acf5d9",
+      "expected_sha256": "3a1be48b2c096202a94bb688a3e2b0ba32ad27958519526ea64160378ab01450",
+      "input_file": "R_E08_prior_success.in",
+      "output_file": "R_E08_prior_success.out"
+    },
+    {
+      "name": "BP_success",
+      "source": "T01_worked",
+      "backpressure": true,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "293ecbc117b4a33216f56525321f197d65f83116ee47f60d726de17f7fb4b184",
+      "expected_sha256": "ad42540a503cf0ac753e1c7eda852cce8e4c132edcc856a434a89c0bd09c1c86",
+      "input_file": "BP_success.in",
+      "output_file": "BP_success.out"
+    },
+    {
+      "name": "BP_payload_error",
+      "source": "E07_payload_first",
+      "backpressure": true,
+      "full_input_words": 20,
+      "expected_consumed": 7,
+      "expected_status": {
+        "halted": 1,
+        "error": 8,
+        "tx_id": 1175
+      },
+      "input_sha256": "1446a72ecb86ecfeedd8e6a9be9b9db9ad9a202a246679b1834dfa3efe316cb6",
+      "expected_sha256": "7224331e212a5dcbbb84c15629708bc73c1dad8d3c58a040eb6864a0a03c3186",
+      "input_file": "BP_payload_error.in",
+      "output_file": "BP_payload_error.out"
+    },
+    {
+      "name": "R_BP_payload_error",
+      "source": "R_E07_payload_first",
+      "backpressure": false,
+      "full_input_words": 28,
+      "expected_consumed": 28,
+      "expected_status": {
+        "halted": 0,
+        "error": 0,
+        "tx_id": 0
+      },
+      "input_sha256": "9c3229165740dcf945cea4ee5d67ecb8a84a754109445ba1c1797eeb05bb0059",
+      "expected_sha256": "78cc7567d1a756ed61f1604cc6eb19d0588ba5f92bf524215ce467b6b4c6b178",
+      "input_file": "R_BP_payload_error.in",
+      "output_file": "R_BP_payload_error.out"
+    }
+  ],
+  "base_activations": 66,
+  "additional_backpressure_activations": 3,
+  "observed_after_status_cycles": 16,
+  "all_fixture_words_exported": true,
+  "stimulus_independent_of_c_consumption": true
+}

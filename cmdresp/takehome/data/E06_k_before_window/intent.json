@@ -1,0 +1,16 @@
+{
+  "purpose": "Parameter precedence k_before_window",
+  "actions": [
+    {
+      "kind": "REJECT",
+      "tx_id": 1161,
+      "h": 1,
+      "w": 1,
+      "k": 9,
+      "opcode": 1,
+      "error": 5,
+      "input_start": 0,
+      "read_count": 6
+    }
+  ]
+}
