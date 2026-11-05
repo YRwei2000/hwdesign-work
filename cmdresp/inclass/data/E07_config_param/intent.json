@@ -1,0 +1,22 @@
+{
+  "covers": [
+    "E07"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 460,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "REJECT",
+      "opcode": 1,
+      "tx_id": 461,
+      "expected_error": 3,
+      "read_count": 6,
+      "early": null,
+      "missing": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 22:24:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/inclass/compatibility.tcl'
+SCALE_OFFSET_COMPATIBILITY_PROBE
+AVAILABLE open_project
+AVAILABLE set_top
+AVAILABLE add_files
+AVAILABLE open_solution
+AVAILABLE set_part
+AVAILABLE create_clock
+AVAILABLE csim_design
+INFO: [HLS 200-112] Total CPU user time: 1.23 seconds. Total CPU system time: 0.28 seconds. Total elapsed time: 1.38 seconds; peak allocated memory: 127.785 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 3s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

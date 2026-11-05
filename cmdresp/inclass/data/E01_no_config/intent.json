@@ -1,0 +1,20 @@
+{
+  "covers": [
+    "E01"
+  ],
+  "actions": [
+    {
+      "kind": "DATA",
+      "tx_id": 401,
+      "declared": 2,
+      "samples_bits": [
+        1065353216,
+        1073741824
+      ],
+      "last": true,
+      "expected_error": 4,
+      "accepted": 0,
+      "header_end": 6
+    }
+  ]
+}

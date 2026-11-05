@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "arithmetic_vectors": 4112,
+  "activations": 55,
+  "arithmetic_reused": false,
+  "completed_utc": "2026-11-05T03:41:34.678856+00:00",
+  "frozen_sources": {
+    "prompt.md": "eeed664df57ee6224703e28154a77ff6877145fc423e507f7ae10d4012345107",
+    "scale_offset.py": "2a8a0e13c19be5c7a8ae6621fb38383257cfe6b44216a76a5ab5d46142b474c8",
+    "oracle.py": "dc54d8006bb4105049ffa78f44ec0b0d073e40490a9b2441397836d860c35537",
+    "scenarios.py": "954e0480f674bb1a7b90a3dedf3b5d2a4c0595f3770de98c26513ab39dc777b3"
+  }
+}

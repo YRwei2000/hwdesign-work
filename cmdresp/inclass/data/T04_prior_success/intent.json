@@ -1,0 +1,29 @@
+{
+  "covers": [
+    "T04"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 301,
+      "a_bits": 1095761920,
+      "b_bits": 1099431936
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 302,
+      "declared": 1,
+      "samples_bits": [
+        1065353216
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 1,
+      "header_end": 12
+    },
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}

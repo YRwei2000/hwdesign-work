@@ -1,0 +1,51 @@
+{
+  "covers": [
+    "T08"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 620,
+      "a_bits": 2147483648,
+      "b_bits": 2147483648
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 621,
+      "declared": 1,
+      "samples_bits": [
+        1065353216
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 1,
+      "header_end": 12
+    },
+    {
+      "kind": "CONFIG",
+      "tx_id": 622,
+      "a_bits": 1065353216,
+      "b_bits": 0
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 623,
+      "declared": 5,
+      "samples_bits": [
+        2147483648,
+        8388608,
+        2155872256,
+        2139095039,
+        4286578687
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 5,
+      "header_end": 25
+    },
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}

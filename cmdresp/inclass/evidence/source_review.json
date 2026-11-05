@@ -1,0 +1,31 @@
+{
+  "T10": {
+    "pass": true,
+    "method": "Source review: header uses blocking s_in.read(); generated sample-lane reader calls streamutils::read_axi4_word, whose boundary reader uses s.read(). No timeout, empty-input polling, or nonblocking-read failure is converted into status. Permanent starvation is excluded.",
+    "sources": [
+      "scale_offset_body_impl.tpp",
+      "include/float32_array_utils.h",
+      "include/streamutils_hls.h"
+    ]
+  },
+  "no_synthesis_or_cosim": {
+    "pass": true,
+    "method": "Only csim_design exists in the build Tcl; no performance/RTL stages are defined."
+  },
+  "T09": {
+    "pass": true,
+    "method": "verify.trace_check plus exact output/status comparisons over all 55 retained operation traces. RESP_DONE is recorded after the generated response writer; PREAD is recorded immediately after the single-word sample reader. These observations are C execution order, not RTL timing."
+  },
+  "fresh_streams": {
+    "pass": true,
+    "method": "Source review: streams are local to each loop iteration, status is poisoned, and the kernel is called once. Unread input is captured after return; neither stream is reused for recovery."
+  },
+  "source_sha256": {
+    "scale_offset_body_impl.tpp": "a6df6ba54e55f58fb479ebaf700bd217ef7fdd45293d0d20a252c945a5ac8304",
+    "trace.hpp": "8df3d9b902de4f87a258b3f10ce48393b31ca8ff73590ffe3b0bac3c34bcb1c7",
+    "scale_offset_tb.cpp": "304e92aaffa0bf9f87a86b94ea0b0a2059b59085756acc157f40e62a88c38807",
+    "run.tcl": "3990f062d5413f9226e86339b03fc002eb829835b4a1cd84c2b0afbdf6f6021e",
+    "include/float32_array_utils.h": "75ad53073c4f80b7b2ad74cc26227e155223d21cf394e15c3df283c3d4e0a0d0",
+    "include/streamutils_hls.h": "915166144eba5bcd031ca51bd7528e71dcb152a4ccf42e4210e99f1fe036326a"
+  }
+}

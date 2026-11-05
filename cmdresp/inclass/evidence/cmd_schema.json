@@ -1,0 +1,31 @@
+{
+  "schema_name": "CmdHdr",
+  "input_path": "/home/yw9286/hwdesign-work/cmdresp/inclass/scale_offset.py",
+  "ok": true,
+  "summary": "Schema is valid with 1 warning.",
+  "errors": [],
+  "warnings": [
+    {
+      "message": "Multiple schema classes were found. schema_info describes the first discovered schema class.",
+      "code": "multiple_schema_classes",
+      "location": {
+        "line": 42,
+        "column": null,
+        "path": "/home/yw9286/hwdesign-work/cmdresp/inclass/scale_offset.py"
+      }
+    }
+  ],
+  "schema_info": {
+    "name": "CmdHdr",
+    "kind": "DataList",
+    "field_count": 6,
+    "field_names": [
+      "magic",
+      "tx_id",
+      "opcode",
+      "nsamp",
+      "a",
+      "b"
+    ]
+  }
+}

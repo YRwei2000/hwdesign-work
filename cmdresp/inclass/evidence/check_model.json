@@ -1,0 +1,411 @@
+{
+  "T01_T02_reconfigure": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T01",
+      "T02"
+    ]
+  },
+  "T03_reuse": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T03"
+    ]
+  },
+  "T04_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T04"
+    ]
+  },
+  "T04_no_carry": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T04"
+    ]
+  },
+  "R_T04_no_carry": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "T04"
+    ]
+  },
+  "E01_no_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E01"
+    ]
+  },
+  "R_E01_no_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E01"
+    ]
+  },
+  "E02_zero": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E02"
+    ]
+  },
+  "R_E02_zero": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E02"
+    ]
+  },
+  "E03_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ]
+  },
+  "R_E03_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ]
+  },
+  "E03_long_prefix": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ]
+  },
+  "R_E03_long_prefix": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ]
+  },
+  "E04_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E04"
+    ]
+  },
+  "R_E04_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E04"
+    ]
+  },
+  "E05_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E05"
+    ]
+  },
+  "R_E05_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E05"
+    ]
+  },
+  "E06_magic_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ]
+  },
+  "R_E06_magic_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ]
+  },
+  "E06_early_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ]
+  },
+  "R_E06_early_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ]
+  },
+  "E06_early_known_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ]
+  },
+  "R_E06_early_known_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ]
+  },
+  "E06_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ]
+  },
+  "R_E06_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ]
+  },
+  "E07_config_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E07"
+    ]
+  },
+  "R_E07_config_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E07"
+    ]
+  },
+  "E08_header_before_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E08_header_before_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E08_opcode_before_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E08_opcode_before_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E08_param_before_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E08_param_before_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E08_param_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E08_param_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E08_config_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E08_config_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E09_first_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E09"
+    ]
+  },
+  "R_E09_first_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E09"
+    ]
+  },
+  "E09_first_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E09"
+    ]
+  },
+  "R_E09_first_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E09"
+    ]
+  },
+  "E10_one_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E10"
+    ]
+  },
+  "R_E10_one_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E10"
+    ]
+  },
+  "E10_one_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E10"
+    ]
+  },
+  "R_E10_one_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E10"
+    ]
+  },
+  "E_extra_end_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ]
+  },
+  "R_E_extra_end_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ]
+  },
+  "E_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ]
+  },
+  "R_E_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ]
+  },
+  "T05_rounding": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T05"
+    ]
+  },
+  "T06_end_tail": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T06"
+    ]
+  },
+  "T07_empty": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T07"
+    ]
+  },
+  "T08_zero_boundaries": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T08"
+    ]
+  },
+  "T08_round_to_zero_and_normal": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T08"
+    ]
+  },
+  "T_random": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T05"
+    ]
+  }
+}

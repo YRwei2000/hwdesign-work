@@ -1,0 +1,16 @@
+{
+  "covers": [
+    "E08"
+  ],
+  "actions": [
+    {
+      "kind": "REJECT",
+      "opcode": 3,
+      "tx_id": 499,
+      "expected_error": 3,
+      "read_count": 6,
+      "early": null,
+      "missing": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rerun": [
+    "E02_zero",
+    "R_E02_zero",
+    "E08_param_before_config",
+    "R_E08_param_before_config"
+  ],
+  "reason": "Two changed zero-length fixtures, each immediately followed by its required fresh-stream recovery. Kernel, testbench, and generated interfaces unchanged.",
+  "reuse_corrected_expectation": [
+    "E09_first_early",
+    "E09_first_missing"
+  ],
+  "reuse_reason": "These two input streams and the C++ implementation are unchanged; original C simulation correctly emitted no dummy result. Only the erroneous Python expectation/model were corrected.",
+  "preserve_arithmetic_vectors": 4109,
+  "previous_two_case_run": "evidence/vitis_csim_recheck_unpaired.log; superseded only to restore immediate error/recovery ordering."
+}

@@ -1,0 +1,8 @@
+{"kind":"START","tx":0,"index":0,"remaining":26,"out_count":0}
+{"kind":"HREAD","tx":4294967295,"index":1,"remaining":25,"out_count":0}
+{"kind":"HREAD","tx":440,"index":2,"remaining":24,"out_count":0}
+{"kind":"HREAD","tx":440,"index":3,"remaining":23,"out_count":0}
+{"kind":"HREAD","tx":440,"index":4,"remaining":22,"out_count":0}
+{"kind":"HREAD","tx":440,"index":5,"remaining":21,"out_count":0}
+{"kind":"HREAD","tx":440,"index":6,"remaining":20,"out_count":0}
+{"kind":"ERROR","tx":440,"index":2,"remaining":20,"out_count":0}

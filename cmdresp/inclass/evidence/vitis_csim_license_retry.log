@@ -1,0 +1,272 @@
+
+****** vitis-run v2026.1 (64-bit)
+  **** SW Build 6497934 on 2026-06-16-10:22:25
+  **** Start of session at: Wed Nov  4 22:30:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2026.1 6493734
+Sourcing Tcl script '/home/yw9286/hwdesign-work/cmdresp/inclass/run.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset csim_proj 
+WARNING: [HLS 200-2182] The 'csim_proj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Opening and resetting solution '/home/yw9286/hwdesign-work/cmdresp/inclass/csim_proj'.
+INFO: [HLS 200-1510] Running: set_top scale_offset 
+SCALE_OFFSET_CFLAGS -I/home/yw9286/hwdesign-work/cmdresp/inclass -std=c++14 -ffp-contract=off -fno-fast-math
+INFO: [HLS 200-1510] Running: add_files /home/yw9286/hwdesign-work/cmdresp/inclass/gen/scale_offset.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/inclass -std=c++14 -ffp-contract=off -fno-fast-math 
+INFO: [HLS 200-10] Adding design file '/home/yw9286/hwdesign-work/cmdresp/inclass/gen/scale_offset.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/yw9286/hwdesign-work/cmdresp/inclass/scale_offset_tb.cpp -cflags -I/home/yw9286/hwdesign-work/cmdresp/inclass -std=c++14 -ffp-contract=off -fno-fast-math 
+INFO: [HLS 200-10] Adding test bench file '/home/yw9286/hwdesign-work/cmdresp/inclass/scale_offset_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/yw9286/hwdesign-work/cmdresp/inclass/csim_proj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -clean -argv /home/yw9286/hwdesign-work/cmdresp/inclass/data 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../scale_offset_tb.cpp in debug mode
+   Compiling ../../../../gen/scale_offset.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../scale_offset_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/inclass/gen/scale_offset.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/inclass/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../scale_offset_tb.cpp:1:
+In file included from /home/yw9286/hwdesign-work/cmdresp/inclass/gen/scale_offset.hpp:21:
+In file included from /home/yw9286/hwdesign-work/cmdresp/inclass/gen/../scale_offset_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/inclass/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+In file included from ../../../../gen/scale_offset.cpp:1:
+In file included from ../../../../gen/scale_offset.hpp:6:
+In file included from /home/yw9286/hwdesign-work/cmdresp/inclass/include/streamutils_hls.h:11:
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/eda/xilinx/2026.1/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../gen/scale_offset.cpp:1:
+In file included from ../../../../gen/scale_offset.hpp:21:
+In file included from ../../../../gen/../scale_offset_body_impl.tpp:4:
+/home/yw9286/hwdesign-work/cmdresp/inclass/include/float32_array_utils.h:347:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (pf<word_bw>() == 1) {
+       ^
+14 warnings generated.
+T01_T02_reconfigure halted=0 error=0 tx_id=0 consumed=35 unread=0
+T03_reuse halted=0 error=0 tx_id=0 consumed=35 unread=0
+T04_prior_success halted=0 error=0 tx_id=0 consumed=19 unread=0
+T04_no_carry halted=1 error=4 tx_id=303 consumed=6 unread=21
+R_T04_no_carry halted=0 error=0 tx_id=0 consumed=21 unread=0
+E01_no_config halted=1 error=4 tx_id=401 consumed=6 unread=22
+R_E01_no_config halted=0 error=0 tx_id=0 consumed=21 unread=0
+E02_zero halted=1 error=3 tx_id=411 consumed=12 unread=21
+R_E02_zero halted=0 error=0 tx_id=0 consumed=21 unread=0
+E03_early halted=1 error=5 tx_id=421 consumed=15 unread=20
+R_E03_early halted=0 error=0 tx_id=0 consumed=21 unread=0
+E03_long_prefix halted=1 error=5 tx_id=426 consumed=28 unread=20
+R_E03_long_prefix halted=0 error=0 tx_id=0 consumed=21 unread=0
+E04_missing halted=1 error=6 tx_id=431 consumed=15 unread=20
+R_E04_missing halted=0 error=0 tx_id=0 consumed=21 unread=0
+E05_opcode halted=1 error=2 tx_id=440 consumed=6 unread=20
+R_E05_opcode halted=0 error=0 tx_id=0 consumed=21 unread=0
+E06_magic_unknown_id halted=1 error=1 tx_id=4294967295 consumed=1 unread=25
+R_E06_magic_unknown_id halted=0 error=0 tx_id=0 consumed=21 unread=0
+E06_early_unknown_id halted=1 error=1 tx_id=4294967295 consumed=1 unread=20
+R_E06_early_unknown_id halted=0 error=0 tx_id=0 consumed=21 unread=0
+E06_early_known_id halted=1 error=1 tx_id=453 consumed=2 unread=20
+R_E06_early_known_id halted=0 error=0 tx_id=0 consumed=21 unread=0
+E06_missing halted=1 error=1 tx_id=454 consumed=6 unread=20
+R_E06_missing halted=0 error=0 tx_id=0 consumed=21 unread=0
+E07_config_param halted=1 error=3 tx_id=461 consumed=12 unread=20
+R_E07_config_param halted=0 error=0 tx_id=0 consumed=21 unread=0
+E08_header_before_opcode halted=1 error=1 tx_id=470 consumed=6 unread=20
+R_E08_header_before_opcode halted=0 error=0 tx_id=0 consumed=21 unread=0
+E08_opcode_before_param halted=1 error=2 tx_id=471 consumed=6 unread=20
+R_E08_opcode_before_param halted=0 error=0 tx_id=0 consumed=21 unread=0
+E08_param_before_config halted=1 error=3 tx_id=472 consumed=6 unread=21
+R_E08_param_before_config halted=0 error=0 tx_id=0 consumed=21 unread=0
+E08_param_before_payload halted=1 error=3 tx_id=474 consumed=12 unread=21
+R_E08_param_before_payload halted=0 error=0 tx_id=0 consumed=21 unread=0
+E08_config_before_payload halted=1 error=4 tx_id=475 consumed=6 unread=21
+R_E08_config_before_payload halted=0 error=0 tx_id=0 consumed=21 unread=0
+E09_first_early halted=1 error=5 tx_id=481 consumed=13 unread=20
+R_E09_first_early halted=0 error=0 tx_id=0 consumed=21 unread=0
+E09_first_missing halted=1 error=6 tx_id=483 consumed=13 unread=20
+R_E09_first_missing halted=0 error=0 tx_id=0 consumed=21 unread=0
+E10_one_early halted=1 error=5 tx_id=491 consumed=14 unread=20
+R_E10_one_early halted=0 error=0 tx_id=0 consumed=21 unread=0
+E10_one_missing halted=1 error=6 tx_id=493 consumed=14 unread=20
+R_E10_one_missing halted=0 error=0 tx_id=0 consumed=21 unread=0
+E_extra_end_param halted=1 error=3 tx_id=499 consumed=6 unread=20
+R_E_extra_end_param halted=0 error=0 tx_id=0 consumed=21 unread=0
+E_prior_success halted=1 error=5 tx_id=512 consumed=23 unread=20
+R_E_prior_success halted=0 error=0 tx_id=0 consumed=21 unread=0
+T05_rounding halted=0 error=0 tx_id=0 consumed=46 unread=0
+T06_end_tail halted=0 error=0 tx_id=0 consumed=12 unread=20
+T07_empty halted=0 error=0 tx_id=0 consumed=6 unread=20
+T08_zero_boundaries halted=0 error=0 tx_id=0 consumed=36 unread=0
+T_random halted=0 error=0 tx_id=0 consumed=1346 unread=0
+RECORDED 54 fresh-stream activations; FE_TONEAREST=0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1346
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:06; Allocated memory: 0.000 MB.
+SCALE_OFFSET_CSIM_COMPLETED
+INFO: [HLS 200-112] Total CPU user time: 6.47 seconds. Total CPU system time: 1.05 seconds. Total elapsed time: 8.81 seconds; peak allocated memory: 286.516 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 10s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

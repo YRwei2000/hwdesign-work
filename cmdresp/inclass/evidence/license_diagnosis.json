@@ -1,0 +1,31 @@
+{
+  "environment_presence_only": {
+    "XILINXD_LICENSE_FILE": true,
+    "LM_LICENSE_FILE": true
+  },
+  "original_error_log": "evidence/vitis_csim.log",
+  "original_error": [
+    "ERROR: Vivado Design Suite cannot be launched because a valid license was not found. Visit the Vivado Licensing page to choose and generate the right license.",
+    "ERROR: [HLS 200-1023] Part 'xc7z020clg484-1' is not supported. It is either unknown, not installed or does not have an appropriate license."
+  ],
+  "same_command_outside_sandbox_log": "evidence/vitis_csim_license_retry.log",
+  "outside_sandbox_csim_completed": true,
+  "conclusion": "License configuration is present. The identical command succeeded outside the restricted sandbox without changing configuration. This is consistent with sandbox restrictions on license-service access; the exact licensing failure mechanism was not independently established.",
+  "old_lab": "/home/yw9286/hwdesign/labs/rootsolve",
+  "old_lab_csim_ok": true,
+  "old_lab_log_sha256": "820f37c33527215e57f7f5fd95cf2329d546fa8a0559dcc51d206bc3d2cab7fa",
+  "old_lab_config": {
+    "version": "2026.1",
+    "default_part": "xc7z020clg400-1",
+    "default_clock_ns": 10,
+    "entry": "vitis-run --mode hls --tcl run.tcl",
+    "stage": "ROOTSOLVE_STAGE=csim"
+  },
+  "current_config": {
+    "version": "2026.1",
+    "part": "xc7z020clg484-1",
+    "clock_ns": 10
+  },
+  "old_lab_changes": "None; configuration and successful C simulation logs read only.",
+  "secrets": "No license variable values, keys, credentials, or server addresses retained."
+}

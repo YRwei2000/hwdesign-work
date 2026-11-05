@@ -1,0 +1,9 @@
+{
+  "changed_existing_input_files": [],
+  "new_case": "T08_round_to_zero_and_normal",
+  "new_literal_vectors": 3,
+  "arithmetic_vectors_total": 4112,
+  "existing_activations_retained": 54,
+  "kernel_changed": false,
+  "reason": "Normal inputs may round to signed zero or smallest normal: these rounded results are in the supported domain."
+}

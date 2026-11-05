@@ -1,0 +1,17 @@
+{
+  "covers": [
+    "T06"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 610,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "result_bit": {
+    "rejected": true,
+    "problems": [
+      "words mismatch"
+    ]
+  },
+  "output_tlast": {
+    "rejected": true,
+    "problems": [
+      "words mismatch"
+    ]
+  },
+  "wrong_status": {
+    "rejected": true,
+    "problems": [
+      "status mismatch"
+    ]
+  },
+  "extra_input_read": {
+    "rejected": true,
+    "problems": [
+      "consumed mismatch"
+    ]
+  },
+  "fake_empty_result": {
+    "rejected": true,
+    "problems": [
+      "words mismatch"
+    ]
+  }
+}

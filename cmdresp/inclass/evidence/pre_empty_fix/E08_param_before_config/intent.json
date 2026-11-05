@@ -1,0 +1,17 @@
+{
+  "covers": [
+    "E08"
+  ],
+  "actions": [
+    {
+      "kind": "DATA",
+      "tx_id": 472,
+      "declared": 0,
+      "samples_bits": [],
+      "last": true,
+      "expected_error": 3,
+      "accepted": 0,
+      "header_end": 6
+    }
+  ]
+}

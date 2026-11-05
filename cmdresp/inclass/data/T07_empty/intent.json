@@ -1,0 +1,11 @@
+{
+  "covers": [
+    "T07"
+  ],
+  "actions": [
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}

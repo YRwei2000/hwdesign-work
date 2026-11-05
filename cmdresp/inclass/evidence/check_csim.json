@@ -1,0 +1,466 @@
+{
+  "T01_T02_reconfigure": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T01",
+      "T02"
+    ],
+    "trace_events": 46
+  },
+  "T03_reuse": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T03"
+    ],
+    "trace_events": 46
+  },
+  "T04_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T04"
+    ],
+    "trace_events": 24
+  },
+  "T04_no_carry": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T04"
+    ],
+    "trace_events": 8
+  },
+  "R_T04_no_carry": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "T04"
+    ],
+    "trace_events": 28
+  },
+  "E01_no_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E01"
+    ],
+    "trace_events": 8
+  },
+  "R_E01_no_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E01"
+    ],
+    "trace_events": 28
+  },
+  "E02_zero": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E02"
+    ],
+    "trace_events": 15
+  },
+  "R_E02_zero": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E02"
+    ],
+    "trace_events": 28
+  },
+  "E03_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ],
+    "trace_events": 21
+  },
+  "R_E03_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ],
+    "trace_events": 28
+  },
+  "E03_long_prefix": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ],
+    "trace_events": 47
+  },
+  "R_E03_long_prefix": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ],
+    "trace_events": 28
+  },
+  "E04_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E04"
+    ],
+    "trace_events": 21
+  },
+  "R_E04_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E04"
+    ],
+    "trace_events": 28
+  },
+  "E05_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E05"
+    ],
+    "trace_events": 8
+  },
+  "R_E05_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E05"
+    ],
+    "trace_events": 28
+  },
+  "E06_magic_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ],
+    "trace_events": 3
+  },
+  "R_E06_magic_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ],
+    "trace_events": 28
+  },
+  "E06_early_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ],
+    "trace_events": 3
+  },
+  "R_E06_early_unknown_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ],
+    "trace_events": 28
+  },
+  "E06_early_known_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ],
+    "trace_events": 4
+  },
+  "R_E06_early_known_id": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ],
+    "trace_events": 28
+  },
+  "E06_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E06"
+    ],
+    "trace_events": 8
+  },
+  "R_E06_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E06"
+    ],
+    "trace_events": 28
+  },
+  "E07_config_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E07"
+    ],
+    "trace_events": 15
+  },
+  "R_E07_config_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E07"
+    ],
+    "trace_events": 28
+  },
+  "E08_header_before_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 8
+  },
+  "R_E08_header_before_opcode": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E08_opcode_before_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 8
+  },
+  "R_E08_opcode_before_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E08_param_before_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 8
+  },
+  "R_E08_param_before_config": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E08_param_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 15
+  },
+  "R_E08_param_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E08_config_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 8
+  },
+  "R_E08_config_before_payload": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E09_first_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E09"
+    ],
+    "trace_events": 17
+  },
+  "R_E09_first_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E09"
+    ],
+    "trace_events": 28
+  },
+  "E09_first_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E09"
+    ],
+    "trace_events": 17
+  },
+  "R_E09_first_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E09"
+    ],
+    "trace_events": 28
+  },
+  "E10_one_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E10"
+    ],
+    "trace_events": 19
+  },
+  "R_E10_one_early": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E10"
+    ],
+    "trace_events": 28
+  },
+  "E10_one_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E10"
+    ],
+    "trace_events": 19
+  },
+  "R_E10_one_missing": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E10"
+    ],
+    "trace_events": 28
+  },
+  "E_extra_end_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E08"
+    ],
+    "trace_events": 8
+  },
+  "R_E_extra_end_param": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E08"
+    ],
+    "trace_events": 28
+  },
+  "E_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "E03"
+    ],
+    "trace_events": 32
+  },
+  "R_E_prior_success": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "RECOVERY",
+      "E03"
+    ],
+    "trace_events": 28
+  },
+  "T05_rounding": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T05"
+    ],
+    "trace_events": 58
+  },
+  "T06_end_tail": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T06"
+    ],
+    "trace_events": 15
+  },
+  "T07_empty": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T07"
+    ],
+    "trace_events": 8
+  },
+  "T08_zero_boundaries": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T08"
+    ],
+    "trace_events": 48
+  },
+  "T08_round_to_zero_and_normal": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T08"
+    ],
+    "trace_events": 42
+  },
+  "T_random": {
+    "pass": true,
+    "problems": [],
+    "covers": [
+      "T05"
+    ],
+    "trace_events": 2638
+  }
+}

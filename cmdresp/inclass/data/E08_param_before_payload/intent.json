@@ -1,0 +1,25 @@
+{
+  "covers": [
+    "E08"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 473,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 474,
+      "declared": 0,
+      "samples_bits": [
+        1065353216
+      ],
+      "last": false,
+      "expected_error": 3,
+      "accepted": 0,
+      "header_end": 12
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "covers": [
+    "E03"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 420,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 421,
+      "declared": 5,
+      "samples_bits": [
+        1065353216,
+        1073741824,
+        1077936128
+      ],
+      "last": true,
+      "expected_error": 5,
+      "accepted": 2,
+      "header_end": 12
+    }
+  ]
+}

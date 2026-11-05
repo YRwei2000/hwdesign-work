@@ -1,0 +1,55 @@
+{
+  "covers": [
+    "T03"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 201,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 202,
+      "declared": 1,
+      "samples_bits": [
+        1065353216
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 1,
+      "header_end": 12
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 203,
+      "declared": 2,
+      "samples_bits": [
+        1073741824,
+        1077936128
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 2,
+      "header_end": 19
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 204,
+      "declared": 2,
+      "samples_bits": [
+        3212836864,
+        0
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 2,
+      "header_end": 27
+    },
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}

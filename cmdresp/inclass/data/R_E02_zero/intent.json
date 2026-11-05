@@ -1,0 +1,32 @@
+{
+  "covers": [
+    "RECOVERY",
+    "E02"
+  ],
+  "actions": [
+    {
+      "kind": "CONFIG",
+      "tx_id": 305397761,
+      "a_bits": 1073741824,
+      "b_bits": 1065353216
+    },
+    {
+      "kind": "DATA",
+      "tx_id": 305397762,
+      "declared": 3,
+      "samples_bits": [
+        1065353216,
+        1073741824,
+        1077936128
+      ],
+      "last": true,
+      "expected_error": 0,
+      "accepted": 3,
+      "header_end": 12
+    },
+    {
+      "kind": "END",
+      "tx_id": 900
+    }
+  ]
+}
